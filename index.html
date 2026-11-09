@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cynthia Agwaraonye — Technical Deck & Document Design</title>
+<meta name="description" content="Portfolio of technical presentation, report and architectural document design by Cynthia Agwaraonye.">
+<style>
+  :root { --ink:#16181b; --mute:#6b7177; --line:#e3e4e6; --bg:#fafaf8; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  a { color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  header { padding: 88px 0 56px; border-bottom: 1px solid var(--line); }
+  header .eyebrow { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); font-weight: 600; }
+  header h1 { font-size: clamp(36px, 5.5vw, 64px); line-height: 1.04; letter-spacing: -.025em; font-weight: 700; margin: 14px 0 18px; max-width: 900px; }
+  header p { font-size: 19px; color: #3d4247; max-width: 720px; }
+  nav.index { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  nav.index a { text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: #fff; }
+  nav.index a:hover { border-color: var(--ink); }
+  section.project { padding: 72px 0; border-bottom: 1px solid var(--line); }
+  .head { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: start; margin-bottom: 32px; }
+  .num { font-size: 13px; font-weight: 700; letter-spacing: .14em; color: var(--accent); }
+  h2 { font-size: 34px; line-height: 1.1; letter-spacing: -.02em; margin: 8px 0 12px; }
+  .meta { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; font-size: 14px; }
+  .meta dt { color: var(--mute); } .meta dd { font-weight: 500; }
+  .summary { font-size: 17px; color: #33383d; margin-bottom: 18px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .tags span { font-size: 12.5px; padding: 4px 10px; border-radius: 999px; background: var(--tint); color: var(--accentDk); font-weight: 600; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a { font-size: 14px; font-weight: 600; text-decoration: none; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--ink); }
+  .links a.primary { background: var(--ink); color: #fff; }
+  .hero img { width: 100%; display: block; border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 12px 32px rgba(0,0,0,.08); }
+  .thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px; }
+  .thumbs img { width: 100%; display: block; border-radius: 6px; border: 1px solid var(--line); transition: transform .15s; }
+  .thumbs a:hover img { transform: translateY(-2px); }
+  .portrait .hero { max-width: 520px; } .portrait .thumbs { grid-template-columns: repeat(4, minmax(0, 200px)); }
+  footer { padding: 48px 0 72px; font-size: 14px; color: var(--mute); }
+  @media (max-width: 860px) { .head { grid-template-columns: 1fr; gap: 20px; } .thumbs { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Portfolio · Technical deck &amp; document design</div>
+    <h1>Cynthia Agwaraonye</h1>
+    <p>Presentations, reports and architectural documents for QA, software architecture, SDLC and the built environment. Each project shows the deck or document, the visual identity built for it, and the technical diagrams that carry the story.</p>
+    <nav class="index">
+      <a href="#rexxi">01 · Rexxi</a><a href="#dillivry">02 · Dillivry</a><a href="#kare">03 · Kare Health</a><a href="#brightwater">04 · Brightwater Polytechnic</a>
+    </nav>
+  </div>
+</header>
+
+<section class="project" id="rexxi" style="--accent:#12B5A6; --accentDk:#0C8577; --tint:#D6F4F0">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="num">01 · PRESENTATION DECK</div>
+        <h2>Release with confidence</h2>
+        <dl class="meta"><dt>Client</dt><dd>Rexxi · digital payments</dd><dt>Completed</dt><dd>14 May 2025</dd><dt>Format</dt><dd>20-slide PowerPoint, 16:9</dd></dl>
+      </div>
+      <div>
+        <p class="summary">Quality engineering strategy and test automation framework for an engineering leadership audience. Dashboard-style KPI tiles, a test-run heatmap motif, testing lifecycle and CI/CD gate diagrams, a tool evaluation matrix and a risk matrix.</p>
+        <div class="tags"><span>QA strategy</span><span>Test automation</span><span>CI/CD</span><span>Dashboards</span></div>
+        <div class="links"><a class="primary" href="Rexxi_QE-Strategy_2025.pdf">View PDF</a><a href="Rexxi_QE-Strategy_2025.pptx">Download .pptx</a></div>
+      </div>
+    </div>
+    <div class="hero"><img src="rexxi-p1.jpg" alt="Rexxi deck cover slide" loading="lazy"></div>
+    <div class="thumbs">
+      <a href="rexxi-p2.jpg"><img src="rexxi-p2.jpg" alt="Executive summary KPI dashboard" loading="lazy"></a>
+      <a href="rexxi-p8.jpg"><img src="rexxi-p8.jpg" alt="Software testing lifecycle diagram" loading="lazy"></a>
+      <a href="rexxi-p12.jpg"><img src="rexxi-p12.jpg" alt="CI/CD quality gates" loading="lazy"></a>
+      <a href="rexxi-p15.jpg"><img src="rexxi-p15.jpg" alt="Quality dashboard mock-up" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="dillivry" style="--accent:#7B4DFF; --accentDk:#5A2FE0; --tint:#E9E4FF">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="num">02 · ARCHITECTURE DECK</div>
+        <h2>Project Waypoint</h2>
+        <dl class="meta"><dt>Client</dt><dd>Dillivry · on-demand delivery</dd><dt>Completed</dt><dd>26 September 2025</dd><dt>Format</dt><dd>19-slide PowerPoint, 16:9</dd></dl>
+      </div>
+      <div>
+        <p class="summary">Target-state event-driven architecture for a multi-vehicle delivery platform, prepared for an architecture review board. Domain map, dispatch data-flow diagram, UML sequence diagram with latency budget, cloud deployment topology and a risk register.</p>
+        <div class="tags"><span>Microservices</span><span>Event-driven</span><span>UML</span><span>Cloud architecture</span></div>
+        <div class="links"><a class="primary" href="Dillivry_Waypoint-Architecture_2025.pdf">View PDF</a><a href="Dillivry_Waypoint-Architecture_2025.pptx">Download .pptx</a></div>
+      </div>
+    </div>
+    <div class="hero"><img src="dillivry-p1.jpg" alt="Dillivry deck cover slide" loading="lazy"></div>
+    <div class="thumbs">
+      <a href="dillivry-p2.jpg"><img src="dillivry-p2.jpg" alt="Fleet mix overview" loading="lazy"></a>
+      <a href="dillivry-p8.jpg"><img src="dillivry-p8.jpg" alt="Logical architecture" loading="lazy"></a>
+      <a href="dillivry-p10.jpg"><img src="dillivry-p10.jpg" alt="Dispatch data flow diagram" loading="lazy"></a>
+      <a href="dillivry-p11.jpg"><img src="dillivry-p11.jpg" alt="UML sequence diagram" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="project portrait" id="kare" style="--accent:#0F9B74; --accentDk:#0B7458; --tint:#E3F4EC">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="num">03 · PRINT REPORT</div>
+        <h2>SDLC &amp; DevSecOps Maturity Assessment</h2>
+        <dl class="meta"><dt>Client</dt><dd>Kare Health · clinical records software</dd><dt>Completed</dt><dd>17 February 2026</dd><dt>Format</dt><dd>13-page A4 report, print-ready PDF</dd></dl>
+      </div>
+      <div>
+        <p class="summary">Editorial report assessing a regulated health-software delivery lifecycle. Maturity radar and comparison charts, DORA benchmark bands, a findings heatmap, a value stream map, and an impact vs effort matrix for the recommendations.</p>
+        <div class="tags"><span>SDLC</span><span>DevSecOps</span><span>Editorial design</span><span>Data visualisation</span></div>
+        <div class="links"><a class="primary" href="Kare-Health_SDLC-Maturity-Assessment_2026.pdf">View PDF</a><a href="Kare-Health_SDLC-Maturity-Assessment_2026.html">HTML source</a></div>
+      </div>
+    </div>
+    <div class="hero"><img src="kare-p1.jpg" alt="Kare Health report cover" loading="lazy"></div>
+    <div class="thumbs">
+      <a href="kare-p3.jpg"><img src="kare-p3.jpg" alt="Executive summary page" loading="lazy"></a>
+      <a href="kare-p5.jpg"><img src="kare-p5.jpg" alt="Maturity scorecard" loading="lazy"></a>
+      <a href="kare-p6.jpg"><img src="kare-p6.jpg" alt="DORA delivery performance" loading="lazy"></a>
+      <a href="kare-p7.jpg"><img src="kare-p7.jpg" alt="Findings heatmap" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="project" id="brightwater" style="--accent:#E8692A; --accentDk:#B4501A; --tint:#FBE1D2">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="num">04 · ARCHITECTURAL PROPOSAL</div>
+        <h2>Halden Engineering &amp; Innovation Hub</h2>
+        <dl class="meta"><dt>Client</dt><dd>Brightwater Polytechnic · university estates</dd><dt>Completed</dt><dd>4 September 2026</dd><dt>Format</dt><dd>12-sheet A3 landscape, print-ready PDF</dd></dl>
+      </div>
+      <div>
+        <p class="summary">RIBA Stage 2 concept design and building systems integration proposal set out as drawing sheets. Axonometric, site plan, scaled floor plan, environmental section, SysML systems diagram and an energy plant schematic.</p>
+        <div class="tags"><span>Architecture</span><span>Building systems</span><span>SysML</span><span>Sustainability</span></div>
+        <div class="links"><a class="primary" href="Brightwater-Polytechnic_Halden-Hub_Stage2_2026.pdf">View PDF</a><a href="Brightwater-Polytechnic_Halden-Hub_Stage2_2026.html">HTML source</a></div>
+      </div>
+    </div>
+    <div class="hero"><img src="brightwater-p1.jpg" alt="Brightwater proposal cover sheet" loading="lazy"></div>
+    <div class="thumbs">
+      <a href="brightwater-p4.jpg"><img src="brightwater-p4.jpg" alt="Concept massing" loading="lazy"></a>
+      <a href="brightwater-p5.jpg"><img src="brightwater-p5.jpg" alt="Ground floor plan" loading="lazy"></a>
+      <a href="brightwater-p7.jpg"><img src="brightwater-p7.jpg" alt="Environmental section" loading="lazy"></a>
+      <a href="brightwater-p9.jpg"><img src="brightwater-p9.jpg" alt="Energy plant schematic" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>About these projects.</strong> Self-initiated concept work for fictional clients; all names, figures and findings are illustrative. Produced with AI-assisted design tooling.</p>
+    <p style="margin-top:8px">© Cynthia Agwaraonye</p>
+  </div>
+</footer>
+</body>
+</html>

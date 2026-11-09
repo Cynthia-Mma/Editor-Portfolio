@@ -1,0 +1,508 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">
+<title>Kare Health — SDLC &amp; DevSecOps Maturity Assessment (February 2026)</title><meta name="author" content="Designed by Cynthia Agwaraonye"><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: Inter, Arial, sans-serif; color: #14211E; background: #7d8a86; font-size: 8.8pt; line-height: 1.5; }
+.page { width: 210mm; height: 297mm; background: #fff; position: relative; overflow: hidden; page-break-after: always; margin: 0 auto 8mm; display: grid; grid-template-columns: 44mm 1fr; padding: 18mm 16mm 20mm 0; }
+@media print { body { background: none; } .page { margin: 0; } }
+.rail { padding: 0 5mm 0 10mm; border-right: .5pt solid #D5DEDA; margin-right: 8mm; }
+.secno { font-family: "Bitstream Charter", Georgia, serif; font-size: 34pt; font-weight: 700; color: #0F9B74; line-height: 1; margin-bottom: 8mm; }
+.note { margin-bottom: 7mm; } .note b { display: block; font-family: "Bitstream Charter", Georgia, serif; font-size: 15pt; color: #0E2F2A; line-height: 1.05; }
+.note span { display: block; font-size: 7.2pt; color: #6B7C77; margin-top: 1mm; line-height: 1.35; }
+.kicker { font-size: 7pt; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #0F9B74; margin-bottom: 3mm; }
+h2 { font-family: "Bitstream Charter", Georgia, serif; font-size: 25pt; line-height: 1.08; font-weight: 700; color: #0E2F2A; margin-bottom: 5mm; letter-spacing: -.01em; }
+h3 { font-size: 9.5pt; font-weight: 700; margin: 5mm 0 2mm; color: #0E2F2A; }
+.lede { font-family: "Bitstream Charter", Georgia, serif; font-size: 12pt; line-height: 1.45; color: #14211E; margin-bottom: 6mm; max-width: 140mm; }
+p { margin-bottom: 2.2mm; color: #33433F; }
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; } .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; } .g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+.stat b { display: block; font-family: "Bitstream Charter", Georgia, serif; font-size: 26pt; line-height: 1; color: #0E2F2A; }
+.stat span { display: block; font-size: 7.3pt; color: #6B7C77; margin-top: 1.5mm; line-height: 1.35; }
+.stat { border-top: 2pt solid #0F9B74; padding-top: 2.5mm; } .stat.o { border-color: #8A9A3B; }
+.panel { background: #F4F6F5; border-radius: 2mm; padding: 5mm; } .panel.mint { background: #E3F4EC; } .panel.dark { background: #0E2F2A; color: #fff; }
+.panel.dark p { color: #CFE3DB; }
+.cap { font-size: 6.8pt; color: #6B7C77; margin-top: 1.5mm; letter-spacing: .02em; }
+footer { position: absolute; left: 52mm; right: 16mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 6.8pt; color: #6B7C77; }
+footer b { color: #0E2F2A; }
+svg text { font-family: Inter, Arial, sans-serif; }
+svg .ax { font-size: 10.5px; font-weight: 600; fill: #0E2F2A; } svg .tick { font-size: 7.6px; fill: #6B7C77; } svg .tgt { font-size: 7.8px; fill: #8A9A3B; font-weight: 700; }
+svg .val { font-size: 9.5px; font-weight: 700; fill: #0E2F2A; } svg .lab { font-size: 9.5px; fill: #14211E; } svg .band { font-size: 7px; font-weight: 700; letter-spacing: .1em; fill: #0E2F2A; }
+svg .vsmn { font-size: 9.6px; font-weight: 700; } svg .vsmw { font-size: 8.4px; font-weight: 700; } svg .vsmwait { font-size: 8.4px; font-weight: 700; fill: #5E6B25; } svg .vsmtot { font-size: 10px; font-weight: 700; fill: #0E2F2A; }
+svg .lch { font-size: 8.6px; font-weight: 700; fill: #fff; } svg .lcc { font-size: 9px; fill: #14211E; } svg .loopc { font-family: "Bitstream Charter", Georgia, serif; font-size: 15px; font-weight: 700; fill: #0E2F2A; }
+svg .ganttl { font-size: 8px; font-weight: 600; fill: #fff; } svg .ganttm { font-size: 7.8px; font-weight: 700; fill: #0E2F2A; } svg .dotl { font-size: 9px; font-weight: 700; fill: #fff; }
+table { width: 100%; border-collapse: collapse; font-size: 8pt; } td { border-bottom: .4pt solid #D5DEDA; padding: 1.8mm 1.5mm; vertical-align: middle; }
+th { text-align: left; font-size: 6.6pt; letter-spacing: .1em; text-transform: uppercase; color: #6B7C77; border-bottom: 1pt solid #0E2F2A; padding: 1.5mm; }
+.id { font-weight: 700; color: #0F9B74; white-space: nowrap; } .sd { display: inline-block; width: 2.6mm; height: 2.6mm; border-radius: 50%; margin-right: 1.5mm; vertical-align: -.3mm; }
+.big6 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.fcard { border-radius: 2mm; padding: 5mm; background: #F4F6F5; } .fcard .fid { font-size: 7pt; font-weight: 700; letter-spacing: .1em; color: #0F9B74; }
+.fcard b { display: block; font-family: "Bitstream Charter", Georgia, serif; font-size: 30pt; color: #0E2F2A; line-height: 1.05; margin: 1.5mm 0; }
+.fcard .what { font-weight: 700; font-size: 9.2pt; color: #14211E; } .fcard .ev { font-size: 7.6pt; color: #6B7C77; margin-top: 1mm; }
+.step { display: flex; align-items: stretch; gap: 0; margin: 2mm 0 6mm; } .step div { flex: 1; padding: 3mm; font-size: 7.6pt; color: #fff; } .step div b { display: block; font-size: 10pt; }
+/* cover */
+.cover { display: block; padding: 0; background: #0E2F2A; color: #fff; }
+.cover .in { position: absolute; left: 18mm; right: 18mm; }
+.cover .brand { top: 18mm; font-size: 8pt; letter-spacing: .24em; font-weight: 700; text-transform: uppercase; color: #A9D8C6; }
+.cover h1 { top: 60mm; font-family: "Bitstream Charter", Georgia, serif; font-size: 46pt; line-height: 1.0; font-weight: 700; }
+.cover h1 i { color: #0F9B74; font-style: normal; }
+.cover .pulse { top: 140mm; left: 0; right: 0; }
+.cover .sub { top: 196mm; font-family: "Bitstream Charter", Georgia, serif; font-size: 14pt; line-height: 1.4; max-width: 135mm; color: #D6EAE2; }
+.cover .meta { bottom: 18mm; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6mm; font-size: 7.4pt; color: #A9D8C6; border-top: .5pt solid #2C5A51; padding-top: 4mm; }
+.cover .meta b { display: block; color: #fff; font-size: 9pt; margin-top: 1mm; }
+</style></head><body>
+<section class="page cover">
+<div class="in brand">Kare Health · Engineering Excellence Programme</div>
+<h1 class="in">SDLC &amp;<br>DevSecOps<br><i>Maturity</i><br>Assessment</h1>
+<div class="in pulse"><svg viewBox="0 0 800 160" width="100%" preserveAspectRatio="none" aria-hidden="true">
+<polyline points="0,110 180,110 205,110 220,70 236,140 252,20 270,130 285,110 420,110 440,95 455,110 560,110 578,64 592,150 606,40 622,118 636,110 800,110" fill="none" stroke="#0F9B74" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="252" cy="20" r="6" fill="#8A9A3B"/></svg></div>
+<p class="in sub">How the KareCare clinical records platform can ship safer software, faster.</p>
+<div class="in meta"><div>Prepared for<b>Chief Technology Officer</b></div><div>Completed<b>17 February 2026 · v1.0</b></div><div>Design<b>Designed by Cynthia Agwaraonye</b></div></div>
+</section><section class="page"><aside class="rail"><div class="secno">—</div><div class="note"><b>Leeds</b><span>Kare Health HQ, clinical records software since 2011</span></div><div class="note"><b>Nov–Jan</b><span>fieldwork, 3 Nov 2025 – 23 Jan 2026</span></div></aside><main>
+<div class="kicker">Contents</div><h2>Inside this report</h2>
+<table style="font-size:10pt; margin-bottom: 9mm">
+<tr><td class="id" style="width:12mm">01</td><td style="font-weight:600">Executive summary</td><td style="text-align:right;color:#6B7C77">03</td></tr><tr><td class="id" style="width:12mm">02</td><td style="font-weight:600">Method</td><td style="text-align:right;color:#6B7C77">04</td></tr><tr><td class="id" style="width:12mm">03</td><td style="font-weight:600">Maturity scorecard</td><td style="text-align:right;color:#6B7C77">05</td></tr><tr><td class="id" style="width:12mm">04</td><td style="font-weight:600">Delivery performance</td><td style="text-align:right;color:#6B7C77">06</td></tr><tr><td class="id" style="width:12mm">05</td><td style="font-weight:600">Findings</td><td style="text-align:right;color:#6B7C77">07</td></tr><tr><td class="id" style="width:12mm">06</td><td style="font-weight:600">Where the time goes</td><td style="text-align:right;color:#6B7C77">09</td></tr><tr><td class="id" style="width:12mm">07</td><td style="font-weight:600">Target-state secure SDLC</td><td style="text-align:right;color:#6B7C77">10</td></tr><tr><td class="id" style="width:12mm">08</td><td style="font-weight:600">Recommendations & roadmap</td><td style="text-align:right;color:#6B7C77">11</td></tr><tr><td class="id" style="width:12mm">—</td><td style="font-weight:600">Glossary & credits</td><td style="text-align:right;color:#6B7C77">13</td></tr>
+</table>
+<div class="g4">
+<div class="stat"><b>31</b><span>NHS &amp; independent providers</span></div><div class="stat"><b>4.6M</b><span>patient records</span></div>
+<div class="stat"><b>64</b><span>code repositories</span></div><div class="stat o"><b>Class I</b><span>medical device · UK MDR 2002</span></div></div>
+<div class="panel" style="margin-top:9mm; font-size:7.6pt; color:#6B7C77">Kare Health is a fictional organisation. All names, metrics and findings are illustrative, created for a portfolio case study.</div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Contents · <b>02</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">01</div><div class="note"><b>2.4 → 3.5</b><span>maturity target, December 2026</span></div><div class="note"><b>8</b><span>recommendations in three horizons</span></div></aside><main>
+<div class="kicker">Executive summary</div><h2>Strong engineers, slowed by a lifecycle built for annual releases</h2>
+<p class="lede">Code quality is good. Time and risk build up after the merge: in manual regression, environment queues and a weekly change board.</p>
+<div class="g4" style="margin-bottom:9mm">
+<div class="stat"><b>2.4<small style="font-size:12pt">/5</small></b><span>overall maturity</span></div><div class="stat"><b>47 d</b><span>median lead time</span></div>
+<div class="stat"><b>22%</b><span>change failure rate</span></div><div class="stat o"><b>37%</b><span>flow efficiency</span></div></div>
+<div class="g2">
+<div><h3 style="margin-top:0">Three findings</h3>
+<div style="display:flex;gap:3mm;margin-bottom:4mm"><div style="flex:0 0 7mm;height:7mm;border-radius:50%;background:#0E2F2A;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div><b>Verification is the bottleneck</b><br><span style="color:#6B7C77">92% manual regression; 61% of P1/P2 from integration</span></div></div><div style="display:flex;gap:3mm;margin-bottom:4mm"><div style="flex:0 0 7mm;height:7mm;border-radius:50%;background:#0E2F2A;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div><b>Traceability is late and manual</b><br><span style="color:#6B7C77">≈ 60 person-hours of rework per release</span></div></div><div style="display:flex;gap:3mm;margin-bottom:4mm"><div style="flex:0 0 7mm;height:7mm;border-radius:50%;background:#0E2F2A;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center">3</div><div><b>Security sits outside the pipeline</b><br><span style="color:#6B7C77">SAST on 14 of 64 repos; no SBOM</span></div></div>
+</div>
+<div><h3 style="margin-top:0">Three moves</h3>
+<div style="display:flex;gap:3mm;margin-bottom:4mm"><div style="flex:0 0 7mm;height:7mm;border-radius:50%;background:#0F9B74;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center">→</div><div><b>Automate verification</b><br><span style="color:#6B7C77">70% regression automated by Q4</span></div></div><div style="display:flex;gap:3mm;margin-bottom:4mm"><div style="flex:0 0 7mm;height:7mm;border-radius:50%;background:#0F9B74;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center">→</div><div><b>Generate evidence in the pipeline</b><br><span style="color:#6B7C77">traceability + SBOM per build</span></div></div><div style="display:flex;gap:3mm;margin-bottom:4mm"><div style="flex:0 0 7mm;height:7mm;border-radius:50%;background:#0F9B74;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center">→</div><div><b>Approve by risk, not by meeting</b><br><span style="color:#6B7C77">low-risk changes auto-approve</span></div></div>
+</div></div>
+<div class="panel dark" style="margin-top:6mm; display:grid; grid-template-columns: repeat(3,1fr); gap:5mm">
+<div><b style="font-size:16pt">&lt; 10 days</b><p>lead time by Dec 2026</p></div><div><b style="font-size:16pt">&lt; 12%</b><p>change failure rate</p></div><div><b style="font-size:16pt">£640k</b><p>cost vs £1.1m capacity released</p></div></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Executive summary · <b>03</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">02</div><div class="note"><b>Azure</b><span>UK South primary, UK West DR</span></div><div class="note"><b>IEC 62304</b><span>software life-cycle standard applied</span></div></aside><main>
+<div class="kicker">Method</div><h2>Three evidence sources, eight dimensions, one scale</h2>
+<div class="step">
+<div style="background:#0E2F2A"><b>38</b>interviews &amp; workshops</div><div style="background:#0B7458"><b>64</b>repositories analysed</div><div style="background:#0F9B74"><b>6 months</b>pipeline &amp; incident telemetry</div>
+<div style="background:#8A9A3B"><b>2 sources</b>minimum per score</div><div style="background:#6F7D2E"><b>Calibrated</b>with leads, 20–21 Jan 2026</div></div>
+<h3>Maturity scale</h3>
+<div style="display:flex; align-items:flex-end; gap:2mm; height:56mm; margin-bottom:3mm">
+<div style="flex:1; height:24mm; background:#DCE6E2; border-radius:1.5mm; padding:2.5mm; color:#14211E"><b style="font-size:13pt;font-family:Bitstream Charter,serif">1</b><br><b>Ad hoc</b><br><span style="font-size:7pt">depends on individuals</span></div><div style="flex:1; height:32mm; background:#BFE3D4; border-radius:1.5mm; padding:2.5mm; color:#14211E"><b style="font-size:13pt;font-family:Bitstream Charter,serif">2</b><br><b>Defined</b><br><span style="font-size:7pt">documented, manual</span></div><div style="flex:1; height:40mm; background:#7CCAAE; border-radius:1.5mm; padding:2.5mm; color:#14211E"><b style="font-size:13pt;font-family:Bitstream Charter,serif">3</b><br><b>Automated</b><br><span style="font-size:7pt">tooling enforces</span></div><div style="flex:1; height:48mm; background:#0F9B74; border-radius:1.5mm; padding:2.5mm; color:#fff"><b style="font-size:13pt;font-family:Bitstream Charter,serif">4</b><br><b>Measured</b><br><span style="font-size:7pt">outcomes steer work</span></div><div style="flex:1; height:56mm; background:#0E2F2A; border-radius:1.5mm; padding:2.5mm; color:#fff"><b style="font-size:13pt;font-family:Bitstream Charter,serif">5</b><br><b>Optimising</b><br><span style="font-size:7pt">continuous, data-led</span></div>
+</div><p class="cap">Level 4 is the target for every dimension, matching peers that ship regulated clinical software weekly.</p>
+<div class="g3" style="margin-top:6mm">
+<div class="panel mint"><h3 style="margin-top:0">Frameworks</h3><p>DORA · OWASP SAMM 2.0 · IEC 62304 life-cycle processes</p></div>
+<div class="panel"><h3 style="margin-top:0">In scope</h3><p>EPR, e-prescribing, decision support, patient portal, HL7/FHIR integration engine</p></div>
+<div class="panel"><h3 style="margin-top:0">Out of scope</h3><p>Corporate IT, legacy reporting suite, third-party pathology interfaces</p></div></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Method · <b>04</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">03</div><div class="note"><b>2.4</b><span>overall mean score</span></div><div class="note"><b>−1.6</b><span>average gap to level 4</span></div></aside><main>
+<div class="kicker">Maturity scorecard</div><h2>Code is strong; testing and release lag furthest</h2>
+<div class="g2" style="grid-template-columns: 1.1fr 1fr; align-items:center">
+<div><svg viewBox="0 0 430 430" width="100%" role="img" aria-label="Maturity radar">
+<polygon points="215.0,191.0 232.0,198.0 239.0,215.0 232.0,232.0 215.0,239.0 198.0,232.0 191.0,215.0 198.0,198.0" fill="none" stroke="#D5DEDA" stroke-width="0.6"/>
+<polygon points="215.0,167.0 248.9,181.1 263.0,215.0 248.9,248.9 215.0,263.0 181.1,248.9 167.0,215.0 181.1,181.1" fill="none" stroke="#D5DEDA" stroke-width="0.6"/>
+<polygon points="215.0,143.0 265.9,164.1 287.0,215.0 265.9,265.9 215.0,287.0 164.1,265.9 143.0,215.0 164.1,164.1" fill="none" stroke="#D5DEDA" stroke-width="0.6"/>
+<polygon points="215.0,119.0 282.9,147.1 311.0,215.0 282.9,282.9 215.0,311.0 147.1,282.9 119.0,215.0 147.1,147.1" fill="none" stroke="#D5DEDA" stroke-width="0.6"/>
+<polygon points="215.0,95.0 299.9,130.1 335.0,215.0 299.9,299.9 215.0,335.0 130.1,299.9 95.0,215.0 130.1,130.1" fill="none" stroke="#D5DEDA" stroke-width="1.1"/>
+<line x1="215.0" y1="215.0" x2="215.0" y2="95.0" stroke="#D5DEDA" stroke-width=".6"/>
+<line x1="215.0" y1="215.0" x2="299.9" y2="130.1" stroke="#D5DEDA" stroke-width=".6"/>
+<line x1="215.0" y1="215.0" x2="335.0" y2="215.0" stroke="#D5DEDA" stroke-width=".6"/>
+<line x1="215.0" y1="215.0" x2="299.9" y2="299.9" stroke="#D5DEDA" stroke-width=".6"/>
+<line x1="215.0" y1="215.0" x2="215.0" y2="335.0" stroke="#D5DEDA" stroke-width=".6"/>
+<line x1="215.0" y1="215.0" x2="130.1" y2="299.9" stroke="#D5DEDA" stroke-width=".6"/>
+<line x1="215.0" y1="215.0" x2="95.0" y2="215.0" stroke="#D5DEDA" stroke-width=".6"/>
+<line x1="215.0" y1="215.0" x2="130.1" y2="130.1" stroke="#D5DEDA" stroke-width=".6"/>
+<polygon points="215.0,119.0 282.9,147.1 311.0,215.0 282.9,282.9 215.0,311.0 147.1,282.9 119.0,215.0 147.1,147.1" fill="#8A9A3B" fill-opacity="0.08" stroke="#8A9A3B" stroke-width="2.2" stroke-dasharray="5 4"/>
+<polygon points="215.0,164.6 262.5,167.5 291.8,215.0 259.1,259.1 215.0,260.6 181.1,248.9 162.2,215.0 172.6,172.6" fill="#0F9B74" fill-opacity="0.22" stroke="#0F9B74" stroke-width="2.2" stroke-dasharray=""/>
+<circle cx="215.0" cy="164.6" r="3.4" fill="#0E2F2A"/>
+<circle cx="262.5" cy="167.5" r="3.4" fill="#0E2F2A"/>
+<circle cx="291.8" cy="215.0" r="3.4" fill="#0E2F2A"/>
+<circle cx="259.1" cy="259.1" r="3.4" fill="#0E2F2A"/>
+<circle cx="215.0" cy="260.6" r="3.4" fill="#0E2F2A"/>
+<circle cx="181.1" cy="248.9" r="3.4" fill="#0E2F2A"/>
+<circle cx="162.2" cy="215.0" r="3.4" fill="#0E2F2A"/>
+<circle cx="172.6" cy="172.6" r="3.4" fill="#0E2F2A"/>
+<text x="215.0" y="63.7" text-anchor="middle" class="ax">Requirements &</text>
+<text x="215.0" y="76.7" text-anchor="middle" class="ax">traceability</text>
+<text x="320.2" y="107.3" text-anchor="start" class="ax">Architecture</text>
+<text x="320.2" y="120.3" text-anchor="start" class="ax">& design</text>
+<text x="363.8" y="212.5" text-anchor="start" class="ax">Code &</text>
+<text x="363.8" y="225.5" text-anchor="start" class="ax">review</text>
+<text x="320.2" y="317.7" text-anchor="start" class="ax">Build</text>
+<text x="320.2" y="330.7" text-anchor="start" class="ax">& CI</text>
+<text x="215.0" y="361.3" text-anchor="middle" class="ax">Test</text>
+<text x="215.0" y="374.3" text-anchor="middle" class="ax">automation</text>
+<text x="109.8" y="317.7" text-anchor="end" class="ax">Release &</text>
+<text x="109.8" y="330.7" text-anchor="end" class="ax">deployment</text>
+<text x="66.2" y="212.5" text-anchor="end" class="ax">Security</text>
+<text x="66.2" y="225.5" text-anchor="end" class="ax">(DevSecOps)</text>
+<text x="109.8" y="107.3" text-anchor="end" class="ax">Operations &</text>
+<text x="109.8" y="120.3" text-anchor="end" class="ax">observability</text>
+</svg></div>
+<div><p class="lede" style="font-size:11pt">The three weakest dimensions all sit between merged code and a validated release.</p>
+<div class="stat"><b>1.9</b><span>Test automation, the lowest score</span></div><div class="stat o" style="margin-top:5mm"><b>3.2</b><span>Code &amp; review, the strongest</span></div></div></div>
+<h3>Current vs target by dimension</h3>
+<svg viewBox="0 0 520 274" width="100%" role="img" aria-label="Current versus target maturity">
+<line x1="170.0" x2="170.0" y1="6" y2="252" stroke="#D5DEDA" stroke-width=".6"/><text x="170.0" y="266" text-anchor="middle" class="tick">1</text>
+<line x1="252.5" x2="252.5" y1="6" y2="252" stroke="#D5DEDA" stroke-width=".6"/><text x="252.5" y="266" text-anchor="middle" class="tick">2</text>
+<line x1="335.0" x2="335.0" y1="6" y2="252" stroke="#D5DEDA" stroke-width=".6"/><text x="335.0" y="266" text-anchor="middle" class="tick">3</text>
+<line x1="417.5" x2="417.5" y1="6" y2="252" stroke="#D5DEDA" stroke-width=".6"/><text x="417.5" y="266" text-anchor="middle" class="tick">4</text>
+<line x1="500.0" x2="500.0" y1="6" y2="252" stroke="#D5DEDA" stroke-width=".6"/><text x="500.0" y="266" text-anchor="middle" class="tick">5</text>
+<text x="0" y="22" class="lab">Requirements & traceability</text>
+<line x1="260.8" x2="417.5" y1="18" y2="18" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="18" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="260.8" cy="18" r="6" fill="#0F9B74"/><text x="249.8" y="22" text-anchor="end" class="val">2.1</text>
+<text x="0" y="52" class="lab">Architecture & design</text>
+<line x1="318.5" x2="417.5" y1="48" y2="48" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="48" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="318.5" cy="48" r="6" fill="#0F9B74"/><text x="307.5" y="52" text-anchor="end" class="val">2.8</text>
+<text x="0" y="82" class="lab">Code & review</text>
+<line x1="351.5" x2="417.5" y1="78" y2="78" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="78" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="351.5" cy="78" r="6" fill="#0F9B74"/><text x="340.5" y="82" text-anchor="end" class="val">3.2</text>
+<text x="0" y="112" class="lab">Build & CI</text>
+<line x1="302.0" x2="417.5" y1="108" y2="108" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="108" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="302.0" cy="108" r="6" fill="#0F9B74"/><text x="291.0" y="112" text-anchor="end" class="val">2.6</text>
+<text x="0" y="142" class="lab">Test automation</text>
+<line x1="244.2" x2="417.5" y1="138" y2="138" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="138" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="244.2" cy="138" r="6" fill="#0F9B74"/><text x="233.2" y="142" text-anchor="end" class="val">1.9</text>
+<text x="0" y="172" class="lab">Release & deployment</text>
+<line x1="252.5" x2="417.5" y1="168" y2="168" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="168" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="252.5" cy="168" r="6" fill="#0F9B74"/><text x="241.5" y="172" text-anchor="end" class="val">2.0</text>
+<text x="0" y="202" class="lab">Security (DevSecOps)</text>
+<line x1="269.0" x2="417.5" y1="198" y2="198" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="198" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="269.0" cy="198" r="6" fill="#0F9B74"/><text x="258.0" y="202" text-anchor="end" class="val">2.2</text>
+<text x="0" y="232" class="lab">Operations & observability</text>
+<line x1="293.8" x2="417.5" y1="228" y2="228" stroke="#8A9A3B" stroke-width="3" stroke-opacity=".35"/>
+<circle cx="417.5" cy="228" r="5.5" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2"/>
+<circle cx="293.8" cy="228" r="6" fill="#0F9B74"/><text x="282.8" y="232" text-anchor="end" class="val">2.5</text>
+</svg>
+<p class="cap"><span style="color:#0F9B74">●</span> current, January 2026 &nbsp; <span style="color:#8A9A3B">○</span> target, December 2026</p>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Maturity scorecard · <b>05</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">04</div><div class="note"><b>Aug–Jan</b><span>rolling telemetry window</span></div><div class="note"><b>212</b><span>production changes in the period</span></div></aside><main>
+<div class="kicker">Delivery performance · DORA</div><h2>All four DORA measures sit in the low band</h2>
+<div class="g2" style="gap:5mm 9mm">
+<div><h3 style="margin-top:0">Deployment frequency <span style="color:#6B7C77;font-weight:400">/ month</span></h3><svg viewBox="0 0 250 140" width="100%" role="img" aria-label="Deployments">
+<line x1="30" x2="238" y1="116.0" y2="116.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="119.0" text-anchor="end" class="tick">0</text>
+<line x1="30" x2="238" y1="90.5" y2="90.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="93.5" text-anchor="end" class="tick">1.25</text>
+<line x1="30" x2="238" y1="65.0" y2="65.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="68.0" text-anchor="end" class="tick">2.5</text>
+<line x1="30" x2="238" y1="39.5" y2="39.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="42.5" text-anchor="end" class="tick">3.75</text>
+<line x1="30" x2="238" y1="14.0" y2="14.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="17.0" text-anchor="end" class="tick">5</text>
+
+<line x1="30" x2="238" y1="34.4" y2="34.4" stroke="#8A9A3B" stroke-width="1.4" stroke-dasharray="4 3"/><text x="238" y="30.4" text-anchor="end" class="tgt">target 4</text>
+<polyline points="30,116.0 30.0,95.6 71.6,75.2 113.2,95.6 154.8,95.6 196.4,116.0 238.0,75.2 238.0,116.0" fill="#0F9B74" fill-opacity=".10" stroke="none"/><polyline points="30.0,95.6 71.6,75.2 113.2,95.6 154.8,95.6 196.4,116.0 238.0,75.2" fill="none" stroke="#0F9B74" stroke-width="2.4"/>
+<circle cx="30.0" cy="95.6" r="2.6" fill="#0E2F2A"/><text x="30.0" y="133" text-anchor="middle" class="tick">Aug</text>
+<circle cx="71.6" cy="75.2" r="2.6" fill="#0E2F2A"/><text x="71.6" y="133" text-anchor="middle" class="tick">Sep</text>
+<circle cx="113.2" cy="95.6" r="2.6" fill="#0E2F2A"/><text x="113.2" y="133" text-anchor="middle" class="tick">Oct</text>
+<circle cx="154.8" cy="95.6" r="2.6" fill="#0E2F2A"/><text x="154.8" y="133" text-anchor="middle" class="tick">Nov</text>
+<circle cx="196.4" cy="116.0" r="2.6" fill="#0E2F2A"/><text x="196.4" y="133" text-anchor="middle" class="tick">Dec</text>
+<circle cx="238.0" cy="75.2" r="2.6" fill="#0E2F2A"/><text x="238.0" y="133" text-anchor="middle" class="tick">Jan</text>
+</svg></div>
+<div><h3 style="margin-top:0">Lead time <span style="color:#6B7C77;font-weight:400">median days</span></h3><svg viewBox="0 0 250 140" width="100%" role="img" aria-label="Lead time">
+<line x1="30" x2="238" y1="116.0" y2="116.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="119.0" text-anchor="end" class="tick">0</text>
+<line x1="30" x2="238" y1="90.5" y2="90.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="93.5" text-anchor="end" class="tick">15</text>
+<line x1="30" x2="238" y1="65.0" y2="65.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="68.0" text-anchor="end" class="tick">30</text>
+<line x1="30" x2="238" y1="39.5" y2="39.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="42.5" text-anchor="end" class="tick">45</text>
+<line x1="30" x2="238" y1="14.0" y2="14.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="17.0" text-anchor="end" class="tick">60</text>
+<rect x="30" y="99.0" width="208" height="17.0" fill="#8A9A3B" fill-opacity=".10"/>
+<line x1="30" x2="238" y1="99.0" y2="99.0" stroke="#8A9A3B" stroke-width="1.4" stroke-dasharray="4 3"/><text x="238" y="95.0" text-anchor="end" class="tgt">target 10 d</text>
+<polyline points="30,116.0 30.0,27.6 71.6,32.7 113.2,41.2 154.8,36.1 196.4,39.5 238.0,36.1 238.0,116.0" fill="#0F9B74" fill-opacity=".10" stroke="none"/><polyline points="30.0,27.6 71.6,32.7 113.2,41.2 154.8,36.1 196.4,39.5 238.0,36.1" fill="none" stroke="#0F9B74" stroke-width="2.4"/>
+<circle cx="30.0" cy="27.6" r="2.6" fill="#0E2F2A"/><text x="30.0" y="133" text-anchor="middle" class="tick">Aug</text>
+<circle cx="71.6" cy="32.7" r="2.6" fill="#0E2F2A"/><text x="71.6" y="133" text-anchor="middle" class="tick">Sep</text>
+<circle cx="113.2" cy="41.2" r="2.6" fill="#0E2F2A"/><text x="113.2" y="133" text-anchor="middle" class="tick">Oct</text>
+<circle cx="154.8" cy="36.1" r="2.6" fill="#0E2F2A"/><text x="154.8" y="133" text-anchor="middle" class="tick">Nov</text>
+<circle cx="196.4" cy="39.5" r="2.6" fill="#0E2F2A"/><text x="196.4" y="133" text-anchor="middle" class="tick">Dec</text>
+<circle cx="238.0" cy="36.1" r="2.6" fill="#0E2F2A"/><text x="238.0" y="133" text-anchor="middle" class="tick">Jan</text>
+</svg></div>
+<div><h3 style="margin-top:0">Change failure rate <span style="color:#6B7C77;font-weight:400">%</span></h3><svg viewBox="0 0 250 140" width="100%" role="img" aria-label="CFR">
+<line x1="30" x2="238" y1="116.0" y2="116.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="119.0" text-anchor="end" class="tick">0</text>
+<line x1="30" x2="238" y1="90.5" y2="90.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="93.5" text-anchor="end" class="tick">7.5</text>
+<line x1="30" x2="238" y1="65.0" y2="65.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="68.0" text-anchor="end" class="tick">15</text>
+<line x1="30" x2="238" y1="39.5" y2="39.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="42.5" text-anchor="end" class="tick">22.5</text>
+<line x1="30" x2="238" y1="14.0" y2="14.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="17.0" text-anchor="end" class="tick">30</text>
+<rect x="30" y="75.2" width="208" height="40.8" fill="#8A9A3B" fill-opacity=".10"/>
+<line x1="30" x2="238" y1="75.2" y2="75.2" stroke="#8A9A3B" stroke-width="1.4" stroke-dasharray="4 3"/><text x="238" y="71.2" text-anchor="end" class="tgt">target 12%</text>
+<polyline points="30,116.0 30.0,24.2 71.6,27.6 113.2,34.4 154.8,34.4 196.4,37.8 238.0,41.2 238.0,116.0" fill="#0F9B74" fill-opacity=".10" stroke="none"/><polyline points="30.0,24.2 71.6,27.6 113.2,34.4 154.8,34.4 196.4,37.8 238.0,41.2" fill="none" stroke="#0F9B74" stroke-width="2.4"/>
+<circle cx="30.0" cy="24.2" r="2.6" fill="#0E2F2A"/><text x="30.0" y="133" text-anchor="middle" class="tick">Aug</text>
+<circle cx="71.6" cy="27.6" r="2.6" fill="#0E2F2A"/><text x="71.6" y="133" text-anchor="middle" class="tick">Sep</text>
+<circle cx="113.2" cy="34.4" r="2.6" fill="#0E2F2A"/><text x="113.2" y="133" text-anchor="middle" class="tick">Oct</text>
+<circle cx="154.8" cy="34.4" r="2.6" fill="#0E2F2A"/><text x="154.8" y="133" text-anchor="middle" class="tick">Nov</text>
+<circle cx="196.4" cy="37.8" r="2.6" fill="#0E2F2A"/><text x="196.4" y="133" text-anchor="middle" class="tick">Dec</text>
+<circle cx="238.0" cy="41.2" r="2.6" fill="#0E2F2A"/><text x="238.0" y="133" text-anchor="middle" class="tick">Jan</text>
+</svg></div>
+<div><h3 style="margin-top:0">Time to restore <span style="color:#6B7C77;font-weight:400">median hours</span></h3><svg viewBox="0 0 250 140" width="100%" role="img" aria-label="MTTR">
+<line x1="30" x2="238" y1="116.0" y2="116.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="119.0" text-anchor="end" class="tick">0</text>
+<line x1="30" x2="238" y1="90.5" y2="90.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="93.5" text-anchor="end" class="tick">6</text>
+<line x1="30" x2="238" y1="65.0" y2="65.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="68.0" text-anchor="end" class="tick">12</text>
+<line x1="30" x2="238" y1="39.5" y2="39.5" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="42.5" text-anchor="end" class="tick">18</text>
+<line x1="30" x2="238" y1="14.0" y2="14.0" stroke="#D5DEDA" stroke-width=".5"/><text x="25" y="17.0" text-anchor="end" class="tick">24</text>
+<rect x="30" y="99.0" width="208" height="17.0" fill="#8A9A3B" fill-opacity=".10"/>
+<line x1="30" x2="238" y1="99.0" y2="99.0" stroke="#8A9A3B" stroke-width="1.4" stroke-dasharray="4 3"/><text x="238" y="95.0" text-anchor="end" class="tgt">target 4 h</text>
+<polyline points="30,116.0 30.0,22.5 71.6,26.8 113.2,35.2 154.8,31.0 196.4,39.5 238.0,43.8 238.0,116.0" fill="#0F9B74" fill-opacity=".10" stroke="none"/><polyline points="30.0,22.5 71.6,26.8 113.2,35.2 154.8,31.0 196.4,39.5 238.0,43.8" fill="none" stroke="#0F9B74" stroke-width="2.4"/>
+<circle cx="30.0" cy="22.5" r="2.6" fill="#0E2F2A"/><text x="30.0" y="133" text-anchor="middle" class="tick">Aug</text>
+<circle cx="71.6" cy="26.8" r="2.6" fill="#0E2F2A"/><text x="71.6" y="133" text-anchor="middle" class="tick">Sep</text>
+<circle cx="113.2" cy="35.2" r="2.6" fill="#0E2F2A"/><text x="113.2" y="133" text-anchor="middle" class="tick">Oct</text>
+<circle cx="154.8" cy="31.0" r="2.6" fill="#0E2F2A"/><text x="154.8" y="133" text-anchor="middle" class="tick">Nov</text>
+<circle cx="196.4" cy="39.5" r="2.6" fill="#0E2F2A"/><text x="196.4" y="133" text-anchor="middle" class="tick">Dec</text>
+<circle cx="238.0" cy="43.8" r="2.6" fill="#0E2F2A"/><text x="238.0" y="133" text-anchor="middle" class="tick">Jan</text>
+</svg></div></div>
+<h3>Where Kare sits against DORA benchmark bands</h3>
+<div style="display:grid; grid-template-columns: 30mm 1fr; gap: 1mm 4mm; align-items:center">
+<div><b style="font-size:8pt">Lead time</b></div><div><svg viewBox="0 0 520 58" width="100%" role="img" aria-label="Lead time benchmark">
+<rect x="0.0" y="22" width="128.0" height="16" fill="#DCE6E2"/><text x="4.0" y="52" class="tick">> 6 months</text>
+<rect x="130.0" y="22" width="128.0" height="16" fill="#C3D9D1"/><text x="134.0" y="52" class="tick">1–6 months</text>
+<rect x="260.0" y="22" width="128.0" height="16" fill="#9FCDBB"/><text x="264.0" y="52" class="tick">1 day – 1 week</text>
+<rect x="390.0" y="22" width="128.0" height="16" fill="#6FBFA3"/><text x="394.0" y="52" class="tick">< 1 day</text>
+<text x="4.0" y="34" class="band">LOW</text>
+<text x="134.0" y="34" class="band">MEDIUM</text>
+<text x="264.0" y="34" class="band">HIGH</text>
+<text x="394.0" y="34" class="band">ELITE</text>
+<polygon points="150.0,6 162.0,6 156.0,20" fill="#0E2F2A"/><text x="165.0" y="15" class="val">Kare today · 47 d</text>
+<circle cx="322.4" cy="30" r="6" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2.2"/>
+</svg></div>
+<div><b style="font-size:8pt">Deploy frequency</b></div><div><svg viewBox="0 0 520 58" width="100%" role="img" aria-label="Frequency benchmark">
+<rect x="0.0" y="22" width="128.0" height="16" fill="#DCE6E2"/><text x="4.0" y="52" class="tick">< 1 / 6 months</text>
+<rect x="130.0" y="22" width="128.0" height="16" fill="#C3D9D1"/><text x="134.0" y="52" class="tick">monthly</text>
+<rect x="260.0" y="22" width="128.0" height="16" fill="#9FCDBB"/><text x="264.0" y="52" class="tick">weekly</text>
+<rect x="390.0" y="22" width="128.0" height="16" fill="#6FBFA3"/><text x="394.0" y="52" class="tick">on demand</text>
+<text x="4.0" y="34" class="band">LOW</text>
+<text x="134.0" y="34" class="band">MEDIUM</text>
+<text x="264.0" y="34" class="band">HIGH</text>
+<text x="394.0" y="34" class="band">ELITE</text>
+<polygon points="150.0,6 162.0,6 156.0,20" fill="#0E2F2A"/><text x="165.0" y="15" class="val">Kare today · ~1 / month</text>
+<circle cx="312.0" cy="30" r="6" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2.2"/>
+</svg></div>
+<div><b style="font-size:8pt">Change failure rate</b></div><div><svg viewBox="0 0 520 58" width="100%" role="img" aria-label="CFR benchmark">
+<rect x="0.0" y="22" width="128.0" height="16" fill="#DCE6E2"/><text x="4.0" y="52" class="tick">> 30%</text>
+<rect x="130.0" y="22" width="128.0" height="16" fill="#C3D9D1"/><text x="134.0" y="52" class="tick">16–30%</text>
+<rect x="260.0" y="22" width="128.0" height="16" fill="#9FCDBB"/><text x="264.0" y="52" class="tick">≤ 15%</text>
+<rect x="390.0" y="22" width="128.0" height="16" fill="#6FBFA3"/><text x="394.0" y="52" class="tick">≤ 5%</text>
+<text x="4.0" y="34" class="band">LOW</text>
+<text x="134.0" y="34" class="band">MEDIUM</text>
+<text x="264.0" y="34" class="band">HIGH</text>
+<text x="394.0" y="34" class="band">ELITE</text>
+<polygon points="191.6,6 203.6,6 197.6,20" fill="#0E2F2A"/><text x="206.6" y="15" class="val">Kare today · 22%</text>
+<circle cx="322.4" cy="30" r="6" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2.2"/>
+</svg></div>
+<div><b style="font-size:8pt">Time to restore</b></div><div><svg viewBox="0 0 520 58" width="100%" role="img" aria-label="MTTR benchmark">
+<rect x="0.0" y="22" width="128.0" height="16" fill="#DCE6E2"/><text x="4.0" y="52" class="tick">> 1 week</text>
+<rect x="130.0" y="22" width="128.0" height="16" fill="#C3D9D1"/><text x="134.0" y="52" class="tick">1 day – 1 week</text>
+<rect x="260.0" y="22" width="128.0" height="16" fill="#9FCDBB"/><text x="264.0" y="52" class="tick">< 1 day</text>
+<rect x="390.0" y="22" width="128.0" height="16" fill="#6FBFA3"/><text x="394.0" y="52" class="tick">< 1 hour</text>
+<text x="4.0" y="34" class="band">LOW</text>
+<text x="134.0" y="34" class="band">MEDIUM</text>
+<text x="264.0" y="34" class="band">HIGH</text>
+<text x="394.0" y="34" class="band">ELITE</text>
+<polygon points="316.4,6 328.4,6 322.4,20" fill="#0E2F2A"/><text x="331.4" y="15" class="val">Kare today · 17 h</text>
+<circle cx="374.4" cy="30" r="6" fill="#FFFFFF" stroke="#8A9A3B" stroke-width="2.2"/>
+</svg></div></div>
+<p class="cap">▼ Kare today &nbsp; ○ December 2026 target. December dip reflects the NHS winter change freeze (15 Dec – 5 Jan).</p>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Delivery performance · <b>06</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">05</div><div class="note"><b>6 of 12</b><span>high-severity findings</span></div><div class="note"><b>3</b><span>of them in test &amp; release</span></div></aside><main>
+<div class="kicker">Findings · overview</div><h2>Twelve findings, concentrated in test and release</h2>
+<div class="g2" style="grid-template-columns: 1.6fr 1fr; gap: 8mm; align-items:center">
+<div><h3 style="margin-top:0">Findings by lifecycle phase and severity</h3><svg viewBox="0 0 400 210" width="100%" role="img" aria-label="Findings by phase and severity">
+<text x="191.0" y="16" text-anchor="middle" class="lab" style="font-weight:700;font-size:11px">High</text>
+<text x="273.0" y="16" text-anchor="middle" class="lab" style="font-weight:700;font-size:11px">Medium</text>
+<text x="355.0" y="16" text-anchor="middle" class="lab" style="font-weight:700;font-size:11px">Low</text>
+<text x="0" y="45" class="lab" style="font-size:11px">Requirements & design</text>
+<rect x="152" y="28" width="78" height="26" rx="3" fill="#BFE3D4"/>
+<text x="191.0" y="45" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="234" y="28" width="78" height="26" rx="3" fill="#E3E8C9"/>
+<text x="273.0" y="45" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="316" y="28" width="78" height="26" rx="3" fill="#F4F6F5"/>
+<text x="0" y="75" class="lab" style="font-size:11px">Build & code</text>
+<rect x="152" y="58" width="78" height="26" rx="3" fill="#F4F6F5"/>
+<rect x="234" y="58" width="78" height="26" rx="3" fill="#E3E8C9"/>
+<text x="273.0" y="75" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="316" y="58" width="78" height="26" rx="3" fill="#E3F4EC"/>
+<text x="355.0" y="75" text-anchor="middle" class="val" fill="#14211E">1</text>
+<text x="0" y="105" class="lab" style="font-size:11px">Test & verification</text>
+<rect x="152" y="88" width="78" height="26" rx="3" fill="#0F9B74"/>
+<text x="191.0" y="105" text-anchor="middle" class="val" fill="#FFFFFF">2</text>
+<rect x="234" y="88" width="78" height="26" rx="3" fill="#E3E8C9"/>
+<text x="273.0" y="105" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="316" y="88" width="78" height="26" rx="3" fill="#F4F6F5"/>
+<text x="0" y="135" class="lab" style="font-size:11px">Release & deployment</text>
+<rect x="152" y="118" width="78" height="26" rx="3" fill="#BFE3D4"/>
+<text x="191.0" y="135" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="234" y="118" width="78" height="26" rx="3" fill="#E3E8C9"/>
+<text x="273.0" y="135" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="316" y="118" width="78" height="26" rx="3" fill="#F4F6F5"/>
+<text x="0" y="165" class="lab" style="font-size:11px">Security & compliance</text>
+<rect x="152" y="148" width="78" height="26" rx="3" fill="#BFE3D4"/>
+<text x="191.0" y="165" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="234" y="148" width="78" height="26" rx="3" fill="#E3E8C9"/>
+<text x="273.0" y="165" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="316" y="148" width="78" height="26" rx="3" fill="#F4F6F5"/>
+<text x="0" y="195" class="lab" style="font-size:11px">Operations</text>
+<rect x="152" y="178" width="78" height="26" rx="3" fill="#F4F6F5"/>
+<rect x="234" y="178" width="78" height="26" rx="3" fill="#E3E8C9"/>
+<text x="273.0" y="195" text-anchor="middle" class="val" fill="#14211E">1</text>
+<rect x="316" y="178" width="78" height="26" rx="3" fill="#F4F6F5"/>
+</svg></div>
+<div><div class="stat"><b>6</b><span>high</span></div><div class="stat o" style="margin-top:4mm"><b>5</b><span>medium</span></div><div class="stat" style="margin-top:4mm"><b>1</b><span>low (a strength)</span></div></div></div>
+<h3 style="margin-top:7mm">Finding index</h3>
+<div class="g2" style="gap:0 7mm"><table>
+<tr><td class="id">F-01</td><td>Hazard-to-test traceability rebuilt manually</td><td style="white-space:nowrap"><span class="sd" style="background:#0E2F2A"></span>High</td></tr><tr><td class="id">F-02</td><td>NFRs rarely specified (11 of 142 epics)</td><td style="white-space:nowrap"><span class="sd" style="background:#8A9A3B"></span>Medium</td></tr><tr><td class="id">F-03</td><td>Peer review consistent and effective</td><td style="white-space:nowrap"><span class="sd" style="background:#0F9B74"></span>Low</td></tr><tr><td class="id">F-04</td><td>41 bespoke pipeline definitions</td><td style="white-space:nowrap"><span class="sd" style="background:#8A9A3B"></span>Medium</td></tr><tr><td class="id">F-05</td><td>Regression 92% manual</td><td style="white-space:nowrap"><span class="sd" style="background:#0E2F2A"></span>High</td></tr><tr><td class="id">F-06</td><td>Integration defects escape</td><td style="white-space:nowrap"><span class="sd" style="background:#0E2F2A"></span>High</td></tr>
+</table><table>
+<tr><td class="id">F-07</td><td>Shared, queued test environments</td><td style="white-space:nowrap"><span class="sd" style="background:#8A9A3B"></span>Medium</td></tr><tr><td class="id">F-08</td><td>CAB reviews every change equally</td><td style="white-space:nowrap"><span class="sd" style="background:#0E2F2A"></span>High</td></tr><tr><td class="id">F-09</td><td>Manual deploy and rollback</td><td style="white-space:nowrap"><span class="sd" style="background:#0E2F2A"></span>High</td></tr><tr><td class="id">F-10</td><td>Security testing outside delivery</td><td style="white-space:nowrap"><span class="sd" style="background:#0E2F2A"></span>High</td></tr><tr><td class="id">F-11</td><td>Ad hoc threat modelling</td><td style="white-space:nowrap"><span class="sd" style="background:#8A9A3B"></span>Medium</td></tr><tr><td class="id">F-12</td><td>Infrastructure-only monitoring</td><td style="white-space:nowrap"><span class="sd" style="background:#8A9A3B"></span>Medium</td></tr>
+</table></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Findings · <b>07</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">05</div><div class="note"><b>Integration</b><span>the most common incident root cause</span></div><div class="note"><b>−18 days</b><span>lead-time saving from removing two queues</span></div></aside><main>
+<div class="kicker">Findings · the six high-severity issues</div><h2>The evidence in six numbers</h2>
+<div class="big6">
+<div class="fcard"><div class="fid">F-05</div><b>92%</b><div class="what">of regression is manual</div><div class="ev">1,860 cases, 5 working days per release</div></div><div class="fcard"><div class="fid">F-06</div><b>61%</b><div class="what">of P1/P2 incidents from integration faults</div><div class="ev">HL7 v2 / FHIR and service-contract changes</div></div><div class="fcard"><div class="fid">F-08</div><b>96%</b><div class="what">of CAB reviews change nothing</div><div class="ev">212 changes, 5-day average wait</div></div><div class="fcard"><div class="fid">F-10</div><b>14 / 64</b><div class="what">repositories run SAST</div><div class="ev">no SBOM for any release</div></div><div class="fcard"><div class="fid">F-01</div><b>9%</b><div class="what">of hazard mitigations lack a test</div><div class="ev">traceability rebuilt in Excel each release</div></div><div class="fcard"><div class="fid">F-09</div><b>17 h</b><div class="what">median time to restore</div><div class="ev">manual rollback, database restore required</div></div>
+</div>
+<div class="panel mint" style="margin-top:6mm"><h3 style="margin-top:0">Strengths to retain</h3><p style="margin:0">Universal peer review (F-03) · empowered clinical safety team · modular service boundaries · 80% of Azure resources in Bicep.</p></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Findings · <b>08</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">06</div><div class="note"><b>37%</b><span>flow efficiency today</span></div><div class="note"><b>&gt; 60%</b><span>target flow efficiency</span></div></aside><main>
+<div class="kicker">Value stream</div><h2>Of 47 days lead time, 29.5 are spent waiting</h2>
+<p class="lede">38 changes traced from refined backlog item to production, September–December 2025.</p>
+<div class="panel" style="padding:6mm 5mm 3mm"><svg viewBox="0 0 680 200" width="100%" role="img" aria-label="Value stream map"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#6B7C77"/></marker></defs>
+<rect x="6" y="10" width="84" height="66" rx="4" fill="#FFFFFF" stroke="#0E2F2A" stroke-width="1.3"/>
+<text x="48.0" y="32" text-anchor="middle" class="vsmn" fill="#14211E">Backlog</text>
+<text x="48.0" y="44" text-anchor="middle" class="vsmn" fill="#14211E">refinement</text>
+<text x="48.0" y="66" text-anchor="middle" class="vsmw" fill="#0F9B74">2 d work</text>
+<line x1="91" y1="43" x2="101" y2="43" stroke="#6B7C77" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="6" y="96" width="84" height="54" rx="2" fill="#8A9A3B" fill-opacity="0.9"/>
+<text x="48.0" y="164" text-anchor="middle" class="vsmwait">9 d wait</text>
+<rect x="102" y="10" width="84" height="66" rx="4" fill="#FFFFFF" stroke="#0E2F2A" stroke-width="1.3"/>
+<text x="144.0" y="32" text-anchor="middle" class="vsmn" fill="#14211E">Design & safety</text>
+<text x="144.0" y="44" text-anchor="middle" class="vsmn" fill="#14211E">review</text>
+<text x="144.0" y="66" text-anchor="middle" class="vsmw" fill="#0F9B74">3 d work</text>
+<line x1="187" y1="43" x2="197" y2="43" stroke="#6B7C77" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="102" y="96" width="84" height="36" rx="2" fill="#8A9A3B" fill-opacity="0.9"/>
+<text x="144.0" y="146" text-anchor="middle" class="vsmwait">6 d wait</text>
+<rect x="198" y="10" width="84" height="66" rx="4" fill="#FFFFFF" stroke="#0E2F2A" stroke-width="1.3"/>
+<text x="240.0" y="38" text-anchor="middle" class="vsmn" fill="#14211E">Development</text>
+<text x="240.0" y="66" text-anchor="middle" class="vsmw" fill="#0F9B74">6 d work</text>
+<line x1="283" y1="43" x2="293" y2="43" stroke="#6B7C77" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="198" y="96" width="84" height="12" rx="2" fill="#8A9A3B" fill-opacity="0.45"/>
+<text x="240.0" y="122" text-anchor="middle" class="vsmwait">2 d wait</text>
+<rect x="294" y="10" width="84" height="66" rx="4" fill="#FFFFFF" stroke="#0E2F2A" stroke-width="1.3"/>
+<text x="336.0" y="32" text-anchor="middle" class="vsmn" fill="#14211E">Peer</text>
+<text x="336.0" y="44" text-anchor="middle" class="vsmn" fill="#14211E">review</text>
+<text x="336.0" y="66" text-anchor="middle" class="vsmw" fill="#0F9B74">0.5 d work</text>
+<line x1="379" y1="43" x2="389" y2="43" stroke="#6B7C77" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="294" y="96" width="84" height="18" rx="2" fill="#8A9A3B" fill-opacity="0.45"/>
+<text x="336.0" y="128" text-anchor="middle" class="vsmwait">3 d wait</text>
+<rect x="390" y="10" width="84" height="66" rx="4" fill="#0E2F2A" stroke="#0E2F2A" stroke-width="1.3"/>
+<text x="432.0" y="32" text-anchor="middle" class="vsmn" fill="#FFFFFF">Manual</text>
+<text x="432.0" y="44" text-anchor="middle" class="vsmn" fill="#FFFFFF">regression</text>
+<text x="432.0" y="66" text-anchor="middle" class="vsmw" fill="#E3F4EC">5 d work</text>
+<line x1="475" y1="43" x2="485" y2="43" stroke="#6B7C77" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="390" y="96" width="84" height="24" rx="2" fill="#8A9A3B" fill-opacity="0.45"/>
+<text x="432.0" y="134" text-anchor="middle" class="vsmwait">4 d wait</text>
+<rect x="486" y="10" width="84" height="66" rx="4" fill="#0E2F2A" stroke="#0E2F2A" stroke-width="1.3"/>
+<text x="528.0" y="32" text-anchor="middle" class="vsmn" fill="#FFFFFF">CAB</text>
+<text x="528.0" y="44" text-anchor="middle" class="vsmn" fill="#FFFFFF">approval</text>
+<text x="528.0" y="66" text-anchor="middle" class="vsmw" fill="#E3F4EC">0.5 d work</text>
+<line x1="571" y1="43" x2="581" y2="43" stroke="#6B7C77" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="486" y="96" width="84" height="30" rx="2" fill="#8A9A3B" fill-opacity="0.9"/>
+<text x="528.0" y="140" text-anchor="middle" class="vsmwait">5 d wait</text>
+<rect x="582" y="10" width="84" height="66" rx="4" fill="#FFFFFF" stroke="#0E2F2A" stroke-width="1.3"/>
+<text x="624.0" y="32" text-anchor="middle" class="vsmn" fill="#14211E">Release</text>
+<text x="624.0" y="44" text-anchor="middle" class="vsmn" fill="#14211E">window</text>
+<text x="624.0" y="66" text-anchor="middle" class="vsmw" fill="#0F9B74">0.5 d work</text>
+<rect x="582" y="96" width="84" height="4" rx="2" fill="#8A9A3B" fill-opacity="0.45"/>
+<text x="624.0" y="114" text-anchor="middle" class="vsmwait">0.5 d wait</text>
+<text x="6" y="192" class="vsmtot">Lead time 47 d  ·  work 17.5 d  ·  waiting 29.5 d  ·  flow efficiency 37%</text></svg></div>
+<p class="cap">Boxes: median work per step. Olive bars: median wait before the next step. Dark boxes are the two removable queues.</p>
+<div class="g3" style="margin-top:8mm"><div class="stat o"><b>9 d</b><span>backlog wait, the largest single queue</span></div><div class="stat"><b>9 d</b><span>manual regression plus its queue</span></div><div class="stat"><b>5 d</b><span>CAB wait, with no measurable risk reduction</span></div></div>
+<div class="panel dark" style="margin-top:8mm"><b style="font-size:13pt;font-family:Bitstream Charter,serif">Faster coding would barely move lead time.</b><p style="margin-top:2mm">Removing the regression and CAB queues recovers ≈ 18 days. Running safety review in parallel with development recovers 6 more.</p></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Where the time goes · <b>09</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">07</div><div class="note"><b>IEC 62304</b><span>§5.1, §5.7 evidenced per release</span></div><div class="note"><b>DCB0129</b><span>hazard log linked to tests</span></div></aside><main>
+<div class="kicker">Target-state secure SDLC</div><h2>Evidence produced as the work happens</h2>
+<svg viewBox="0 0 680 210" width="100%" role="img" aria-label="Secure SDLC loop"><circle cx="340" cy="104" r="78" fill="none" stroke="#0F9B74" stroke-width="10" stroke-opacity=".18"/>
+<text x="340" y="100" text-anchor="middle" class="loopc">Evidence</text><text x="340" y="118" text-anchor="middle" class="loopc">by default</text>
+<circle cx="340.0" cy="26.0" r="23" fill="#0F9B74"/><text x="340.0" y="30.0" text-anchor="middle" class="lch">Plan</text>
+<text x="340.0" y="-4.0" text-anchor="middle" class="lcc">Hazard log · DCB0129</text>
+<circle cx="407.5" cy="65.0" r="23" fill="#0F9B74"/><text x="407.5" y="69.0" text-anchor="middle" class="lch">Design</text>
+<text x="441.5" y="69.0" text-anchor="start" class="lcc">STRIDE threat model</text>
+<circle cx="407.5" cy="143.0" r="23" fill="#0E2F2A"/><text x="407.5" y="147.0" text-anchor="middle" class="lch">Build</text>
+<text x="441.5" y="147.0" text-anchor="start" class="lcc">SAST · SBOM</text>
+<circle cx="340.0" cy="182.0" r="23" fill="#0F9B74"/><text x="340.0" y="186.0" text-anchor="middle" class="lch">Verify</text>
+<text x="340.0" y="220.0" text-anchor="middle" class="lcc">Automated regression</text>
+<circle cx="272.5" cy="143.0" r="23" fill="#0E2F2A"/><text x="272.5" y="147.0" text-anchor="middle" class="lch">Release</text>
+<text x="238.5" y="147.0" text-anchor="end" class="lcc">Policy-as-code gates</text>
+<circle cx="272.5" cy="65.0" r="23" fill="#0F9B74"/><text x="272.5" y="69.0" text-anchor="middle" class="lch">Operate</text>
+<text x="238.5" y="69.0" text-anchor="end" class="lcc">SLOs · surveillance</text>
+</svg>
+<h3>Regulatory traceability chain</h3><svg viewBox="0 0 680 90" width="100%" role="img" aria-label="Traceability chain"><defs><marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8A9A3B"/></marker></defs>
+<rect x="0.0" y="10" width="118" height="58" rx="29" fill="#E3F4EC" stroke="#0F9B74" stroke-width="1.2"/><text x="59.0" y="35" text-anchor="middle" class="vsmn">Requirement</text><text x="59.0" y="51" text-anchor="middle" class="tick">Jira epic / story</text>
+<line x1="121.0" y1="39" x2="136.5" y2="39" stroke="#8A9A3B" stroke-width="2" marker-end="url(#a2)"/>
+<rect x="140.5" y="10" width="118" height="58" rx="29" fill="#E3F4EC" stroke="#0F9B74" stroke-width="1.2"/><text x="199.5" y="35" text-anchor="middle" class="vsmn">Hazard</text><text x="199.5" y="51" text-anchor="middle" class="tick">DCB0129 log entry</text>
+<line x1="261.5" y1="39" x2="277.0" y2="39" stroke="#8A9A3B" stroke-width="2" marker-end="url(#a2)"/>
+<rect x="281.0" y="10" width="118" height="58" rx="29" fill="#E3F4EC" stroke="#0F9B74" stroke-width="1.2"/><text x="340.0" y="35" text-anchor="middle" class="vsmn">Test</text><text x="340.0" y="51" text-anchor="middle" class="tick">Xray automated case</text>
+<line x1="402.0" y1="39" x2="417.5" y2="39" stroke="#8A9A3B" stroke-width="2" marker-end="url(#a2)"/>
+<rect x="421.5" y="10" width="118" height="58" rx="29" fill="#E3F4EC" stroke="#0F9B74" stroke-width="1.2"/><text x="480.5" y="35" text-anchor="middle" class="vsmn">Build</text><text x="480.5" y="51" text-anchor="middle" class="tick">signed artefact + SBOM</text>
+<line x1="542.5" y1="39" x2="558.0" y2="39" stroke="#8A9A3B" stroke-width="2" marker-end="url(#a2)"/>
+<rect x="562.0" y="10" width="118" height="58" rx="29" fill="#E3F4EC" stroke="#0F9B74" stroke-width="1.2"/><text x="621.0" y="35" text-anchor="middle" class="vsmn">Release</text><text x="621.0" y="51" text-anchor="middle" class="tick">Git tag + CSO approval</text>
+<text x="340.0" y="86" text-anchor="middle" class="tgt">Red gate if any link is missing · exported per release for IEC 62304 audit</text></svg>
+<h3>Risk-tiered release approval</h3>
+<div class="g3">
+<div class="panel mint"><span class="sd" style="background:#0F9B74"></span><b>Low</b><p style="margin-top:2mm">No hazard impact, all gates green</p><b style="color:#0B7458">→ automatic</b></div>
+<div class="panel" style="background:#EEF1DC"><span class="sd" style="background:#8A9A3B"></span><b>Medium</b><p style="margin-top:2mm">Touches a mitigation or integration contract</p><b style="color:#5E6B25">→ CSO in pull request</b></div>
+<div class="panel dark"><span class="sd" style="background:#fff"></span><b>High</b><p style="margin-top:2mm">New clinical function or data flow</p><b style="color:#A9D8C6">→ safety case + CSO + CTO</b></div></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Target state · <b>10</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">08</div><div class="note"><b>R3</b><span>highest impact for lowest effort</span></div><div class="note"><b>R2</b><span>largest programme, 70% automation</span></div></aside><main>
+<div class="kicker">Recommendations</div><h2>Eight recommendations, sequenced by impact and effort</h2>
+<div class="g2" style="grid-template-columns: .95fr 1.05fr; gap: 7mm; align-items:start">
+<div><svg viewBox="0 0 340 300" width="100%" role="img" aria-label="Impact effort matrix">
+<rect x="34" y="10" width="148.0" height="128.0" fill="#E3F4EC"/>
+<rect x="34" y="10" width="296" height="256" fill="none" stroke="#D5DEDA"/>
+<line x1="182.0" x2="182.0" y1="10" y2="266" stroke="#D5DEDA"/><line x1="34" x2="330" y1="138.0" y2="138.0" stroke="#D5DEDA"/>
+<text x="42" y="28" class="band" fill="#0B7458">QUICK WINS</text><text x="324" y="130.0" text-anchor="end" class="band">MAJOR PROJECTS</text>
+<text x="187.0" y="292" text-anchor="middle" class="lab">Effort →</text><text x="12" y="133.0" class="lab" transform="rotate(-90 12 133.0)" text-anchor="middle">Impact →</text>
+<circle cx="182.0" cy="35.6" r="13" fill="#0E2F2A"/><text x="182.0" y="39.6" text-anchor="middle" class="dotl">R1</text>
+<circle cx="285.6" cy="42.0" r="13" fill="#0E2F2A"/><text x="285.6" y="46.0" text-anchor="middle" class="dotl">R2</text>
+<circle cx="108.0" cy="54.8" r="13" fill="#0E2F2A"/><text x="108.0" y="58.8" text-anchor="middle" class="dotl">R3</text>
+<circle cx="196.8" cy="61.2" r="13" fill="#0E2F2A"/><text x="196.8" y="65.2" text-anchor="middle" class="dotl">R4</text>
+<circle cx="211.6" cy="112.4" r="13" fill="#0F9B74"/><text x="211.6" y="116.4" text-anchor="middle" class="dotl">R5</text>
+<circle cx="122.8" cy="125.2" r="13" fill="#0F9B74"/><text x="122.8" y="129.2" text-anchor="middle" class="dotl">R6</text>
+<circle cx="100.6" cy="150.8" r="13" fill="#0F9B74"/><text x="100.6" y="154.8" text-anchor="middle" class="dotl">R7</text>
+<circle cx="226.4" cy="86.8" r="13" fill="#0F9B74"/><text x="226.4" y="90.8" text-anchor="middle" class="dotl">R8</text>
+</svg><p class="cap">Dark: high impact (≥ 3). Mint quadrant: quick wins.</p></div>
+<table><tr><td class="id">R1</td><td>Standard pipeline templates with SAST, secrets scan and SBOM</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q2</td></tr><tr><td class="id">R2</td><td>Automate 70% of regression, hazard-linked cases first</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q2–Q4</td></tr><tr><td class="id">R3</td><td>Risk-tiered approval replaces the weekly CAB</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q3</td></tr><tr><td class="id">R4</td><td>One traceability graph: Jira + Xray + Git tags</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q2–Q3</td></tr><tr><td class="id">R5</td><td>Ephemeral test environment per pull request</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q2–Q3</td></tr><tr><td class="id">R6</td><td>SLOs and error budgets for patient-facing services</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q3</td></tr><tr><td class="id">R7</td><td>Threat model every epic touching patient data</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q2</td></tr><tr><td class="id">R8</td><td>Weekly release train with feature flags</td><td style="text-align:right;white-space:nowrap;color:#6B7C77">Q4</td></tr></table></div>
+<div class="panel" style="margin-top:7mm; display:grid; grid-template-columns: repeat(3,1fr); gap:5mm">
+<div><b style="color:#0F9B74">Horizon 1 · Q2</b><p>R1 · R4 · R5 · R7: pipelines, traceability, environments</p></div>
+<div><b style="color:#0B7458">Horizon 2 · Q3</b><p>R2 · R3 · R6: automation at scale, risk-tiered approval, SLOs</p></div>
+<div><b style="color:#8A9A3B">Horizon 3 · Q4</b><p>R8: weekly release train with feature flags</p></div></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Recommendations · <b>11</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">08</div><div class="note"><b>Mar–Dec</b><span>2026 delivery window</span></div><div class="note"><b>3</b><span>gate reviews</span></div></aside><main>
+<div class="kicker">2026 roadmap &amp; targets</div><h2>Ten months to a weekly, evidence-ready release</h2>
+<svg viewBox="0 0 680 240" width="100%" role="img" aria-label="2026 roadmap">
+<text x="34.0" y="12" text-anchor="middle" class="tick">Mar</text><line x1="0.0" x2="0.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="102.0" y="12" text-anchor="middle" class="tick">Apr</text><line x1="68.0" x2="68.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="170.0" y="12" text-anchor="middle" class="tick">May</text><line x1="136.0" x2="136.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="238.0" y="12" text-anchor="middle" class="tick">Jun</text><line x1="204.0" x2="204.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="306.0" y="12" text-anchor="middle" class="tick">Jul</text><line x1="272.0" x2="272.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="374.0" y="12" text-anchor="middle" class="tick">Aug</text><line x1="340.0" x2="340.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="442.0" y="12" text-anchor="middle" class="tick">Sep</text><line x1="408.0" x2="408.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="510.0" y="12" text-anchor="middle" class="tick">Oct</text><line x1="476.0" x2="476.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="578.0" y="12" text-anchor="middle" class="tick">Nov</text><line x1="544.0" x2="544.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<text x="646.0" y="12" text-anchor="middle" class="tick">Dec</text><line x1="612.0" x2="612.0" y1="18" y2="216" stroke="#D5DEDA" stroke-width=".5"/>
+<rect x="2.0" y="25" width="200.0" height="18" rx="9" fill="#0E2F2A"/><text x="10.0" y="38" class="ganttl">Pipeline templates & SBOM</text>
+<rect x="70.0" y="49" width="268.0" height="18" rx="9" fill="#0E2F2A"/><text x="78.0" y="62" class="ganttl">Automated security gates</text>
+<rect x="70.0" y="73" width="404.0" height="18" rx="9" fill="#0F9B74"/><text x="78.0" y="86" class="ganttl">Regression automation → 70%</text>
+<rect x="138.0" y="97" width="268.0" height="18" rx="9" fill="#0F9B74"/><text x="146.0" y="110" class="ganttl">Ephemeral test environments</text>
+<rect x="206.0" y="121" width="268.0" height="18" rx="9" fill="#8A9A3B"/><text x="214.0" y="134" class="ganttl">Risk-tiered approval replaces CAB</text>
+<rect x="410.0" y="145" width="268.0" height="18" rx="9" fill="#8A9A3B"/><text x="418.0" y="158" class="ganttl">Weekly release train</text>
+<rect x="274.0" y="169" width="268.0" height="18" rx="9" fill="#0B7458"/><text x="282.0" y="182" class="ganttl">SLOs & error budgets</text>
+<rect x="410.0" y="193" width="268.0" height="18" rx="9" fill="#0B7458"/><text x="418.0" y="206" class="ganttl">Clinical safety dashboard</text>
+<polygon points="204.0,220 210.0,226 204.0,232 198.0,226" fill="#8A9A3B"/><text x="194.0" y="230" text-anchor="end" class="ganttm">Gate review 1</text>
+<polygon points="408.0,220 414.0,226 408.0,232 402.0,226" fill="#8A9A3B"/><text x="398.0" y="230" text-anchor="end" class="ganttm">Gate review 2</text>
+<polygon points="666.4,220 672.4,226 666.4,232 660.4,226" fill="#8A9A3B"/><text x="656.4" y="230" text-anchor="end" class="ganttm">Re-assessment</text>
+</svg>
+<div class="g4" style="margin-top:9mm"><div class="stat"><b>&lt; 10 d</b><span>lead time</span></div><div class="stat"><b>&lt; 12%</b><span>change failure rate</span></div><div class="stat"><b>&lt; 4 h</b><span>time to restore</span></div><div class="stat o"><b>3.5</b><span>overall maturity</span></div></div>
+<div class="g2" style="margin-top:9mm">
+<div class="panel"><h3 style="margin-top:0">Governance</h3><p>Monthly steering with CTO and Clinical Safety Officer. DORA and maturity metrics reported from the pipeline, not from surveys.</p></div>
+<div class="panel"><h3 style="margin-top:0">Re-assessment</h3><p>December 2026, same method and evidence thresholds, so progress is comparable.</p></div></div>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Roadmap · <b>12</b></span></footer></section><section class="page"><aside class="rail"><div class="secno">—</div><div class="note"><b>v1.0</b><span>final, February 2026</span></div></aside><main>
+<div class="kicker">Glossary &amp; credits</div><h2>Glossary</h2>
+<div class="g2" style="gap:0 8mm; font-size:8.4pt">
+<p><b>CAB</b> Change Advisory Board</p><p><b>CSO</b> Clinical Safety Officer, accountable under DCB0129</p><p><b>DAST / SAST</b> dynamic / static application security testing</p><p><b>DCB0129</b> NHS clinical risk standard for health IT manufacturers</p><p><b>DORA</b> four key measures of software delivery performance</p><p><b>DSPT</b> NHS Data Security and Protection Toolkit</p><p><b>DTAC</b> Digital Technology Assessment Criteria</p><p><b>FHIR / HL7 v2</b> healthcare data interchange standards</p><p><b>Flow efficiency</b> work time as a share of lead time</p><p><b>IEC 62304</b> medical device software life-cycle standard</p><p><b>SBOM</b> software bill of materials</p><p><b>SLO</b> service-level objective</p>
+</div>
+<div style="position:absolute; left:50mm; right:16mm; bottom:26mm; border-top:2pt solid #0E2F2A; padding-top:5mm" class="g3">
+<div><div class="kicker" style="margin-bottom:1mm">Client</div>Kare Health Ltd<br>Engineering Excellence Programme<br>Leeds, United Kingdom</div>
+<div><div class="kicker" style="margin-bottom:1mm">Document</div>SDLC &amp; DevSecOps Maturity Assessment<br>Version 1.0 · completed 17 February 2026</div>
+<div><div class="kicker" style="margin-bottom:1mm">Design</div><b style="font-size:10pt">Designed by Cynthia Agwaraonye</b><br>Editorial &amp; information design</div></div>
+<p class="cap" style="position:absolute; left:50mm; bottom:16mm">Fictional client and illustrative data, prepared as a portfolio case study. Set in Bitstream Charter and Inter.</p>
+</main><footer><span>Kare Health · SDLC &amp; DevSecOps Maturity Assessment · February 2026</span><span>Glossary & credits · <b>13</b></span></footer></section></body></html>

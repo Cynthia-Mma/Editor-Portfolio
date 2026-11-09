@@ -1,0 +1,1038 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">
+<title>Brightwater Polytechnic — Halden Engineering &amp; Innovation Hub · RIBA Stage 2 Concept Design (September 2026)</title>
+<meta name="author" content="Designed by Cynthia Agwaraonye"><style>
+@page { size: 420mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: Inter, Arial, sans-serif; color: #1F2326; background: #777; font-size: 9.4pt; line-height: 1.5; font-weight: 400; }
+.page { width: 420mm; height: 297mm; background: #fff; position: relative; overflow: hidden; page-break-after: always; margin: 0 auto 10mm; padding: 16mm 18mm 30mm; }
+@media print { body { background: none; } .page { margin: 0; } }
+.mono, .tb, .code, .lab { font-family: "JetBrains Mono", "Courier New", monospace; }
+.code { font-size: 7.5pt; letter-spacing: .12em; text-transform: uppercase; color: #B4501A; font-weight: 600; margin-bottom: 4mm; }
+h1 { font-family: "Inter Display", Inter, sans-serif; font-weight: 300; font-size: 54pt; line-height: .98; letter-spacing: -.025em; }
+h2 { font-family: "Inter Display", Inter, sans-serif; font-weight: 300; font-size: 30pt; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 7mm; }
+h2 b, h1 b { font-weight: 600; }
+h3 { font-size: 10.5pt; font-weight: 600; margin: 5mm 0 1.5mm; }
+p { margin-bottom: 2.6mm; color: #454B50; }
+.lede { font-size: 12.5pt; line-height: 1.45; color: #1F2326; font-weight: 300; }
+.row { display: grid; gap: 12mm; }
+.lab { font-size: 7pt; letter-spacing: .1em; text-transform: uppercase; color: #878D92; }
+.fig { font-family: "JetBrains Mono", monospace; font-size: 7pt; color: #878D92; margin-top: 2mm; letter-spacing: .04em; }
+.kpi b { display: block; font-family: "Inter Display", Inter; font-weight: 300; font-size: 26pt; line-height: 1; letter-spacing: -.02em; color: #1F2326; }
+.kpi span { font-size: 8pt; color: #878D92; display: block; margin-top: 1.5mm; }
+.kpi { border-top: .6pt solid #1F2326; padding-top: 3mm; }
+table { width: 100%; border-collapse: collapse; font-size: 8.2pt; }
+th { text-align: left; font-family: "JetBrains Mono", monospace; font-weight: 500; font-size: 6.8pt; letter-spacing: .08em; text-transform: uppercase; color: #878D92; border-bottom: .8pt solid #1F2326; padding: 1.6mm 2mm; }
+td { border-bottom: .4pt solid #E4E5E6; padding: 1.6mm 2mm; vertical-align: top; }
+td.n { text-align: right; font-variant-numeric: tabular-nums; }
+tr.sub td { font-weight: 600; border-bottom: .8pt solid #C9CCCE; background: #F3F2EF; }
+.tb { position: absolute; left: 18mm; right: 18mm; bottom: 9mm; display: grid; grid-template-columns: 1.6fr 1.1fr 1.7fr .8fr .9fr .8fr .8fr; border: .6pt solid #1F2326; font-size: 7pt; }
+.tb div { padding: 1.6mm 2.5mm; border-right: .6pt solid #1F2326; line-height: 1.3; }
+.tb div:last-child { border-right: 0; }
+.tb span { display: block; font-size: 5.6pt; letter-spacing: .1em; text-transform: uppercase; color: #878D92; }
+.tb .no { background: #1F2326; color: #fff; font-weight: 700; font-size: 9pt; } .tb .no span { color: #B9C0C5; }
+svg text { font-family: Inter, Arial, sans-serif; }
+svg .lbl { font-size: 10px; font-weight: 600; fill: #1F2326; letter-spacing: .02em; }
+svg .lblw { font-size: 11px; font-weight: 700; fill: #fff; letter-spacing: .18em; }
+svg .lbls { font-size: 9px; fill: #454B50; }
+svg .room { font-size: 10.5px; font-weight: 600; fill: #1F2326; }
+svg .area { font-family: "JetBrains Mono", monospace; font-size: 8.5px; fill: #454B50; }
+svg .grd { font-family: "JetBrains Mono", monospace; font-size: 8px; fill: #878D92; }
+svg .stereo { font-size: 8.5px; fill: #878D92; font-style: italic; }
+svg .bname { font-size: 12.5px; font-weight: 700; fill: #1F2326; }
+svg .bprop { font-family: "JetBrains Mono", monospace; font-size: 9.6px; fill: #454B50; }
+svg .val { font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 600; fill: #1F2326; }
+.legend { display: flex; gap: 6mm; flex-wrap: wrap; font-size: 7.6pt; color: #454B50; margin-top: 3mm; }
+.legend i { display: inline-block; width: 3.4mm; height: 3.4mm; margin-right: 1.5mm; vertical-align: -0.6mm; border: .4pt solid #1F2326; }
+.num { white-space: nowrap; font-family: "JetBrains Mono", monospace; font-size: 8pt; color: #B4501A; font-weight: 600; }
+.step h3 { margin-top: 1mm; }
+.sw { border-radius: 0; overflow: hidden; height: 74mm; border: .4pt solid #C9CCCE; }
+.sw svg { display: block; height: 100%; }
+.tl { position: relative; display: grid; grid-template-columns: repeat(7, 1fr); gap: 0; margin-top: 10mm; }
+.tl::before { content: ""; position: absolute; left: 0; right: 0; top: 4.5mm; border-top: 1pt solid #1F2326; }
+.tl div { position: relative; padding-top: 12mm; padding-right: 5mm; }
+.tl div::before { content: ""; position: absolute; top: 2.5mm; left: 0; width: 4mm; height: 4mm; border-radius: 50%; background: #fff; border: 1.2pt solid #1F2326; }
+.tl div.done::before { background: #E8692A; border-color: #E8692A; }
+.tl b { display: block; font-family: "JetBrains Mono", monospace; font-size: 8pt; color: #B4501A; }
+.tl strong { display: block; font-size: 10pt; margin: 1mm 0; }
+.tl span { font-size: 8pt; color: #454B50; }
+</style></head><body>
+<section class="page ">
+<div style="display:grid; grid-template-columns: 128mm 1fr; gap: 10mm; height: 100%;">
+  <div style="display:flex; flex-direction:column; justify-content:space-between; padding-top: 4mm; height: 245mm;">
+    <div>
+      <div class="code">Brightwater Polytechnic · Estates &amp; Capital Projects</div>
+      <h1>The Halden<br>Engineering &amp;<br>Innovation <b>Hub</b></h1>
+      <p class="lede" style="margin-top:8mm; max-width:115mm">RIBA Stage 2 concept design and building systems integration proposal for a 7,140 m² net-zero teaching and research building.</p>
+    </div>
+    <div>
+      <div class="row" style="grid-template-columns: 1fr 1fr; gap: 6mm; margin-bottom: 10mm">
+        <div class="kpi"><b>7,140 m²</b><span>Gross internal area</span></div>
+        <div class="kpi"><b>£41.8m</b><span>Construction budget (Q3 2026 prices)</span></div>
+        <div class="kpi"><b>62</b><span>kWh/m²·yr operational energy target</span></div>
+        <div class="kpi"><b>Sept 2029</b><span>First teaching term</span></div>
+      </div>
+      <div class="lab">Completed 4 September 2026</div>
+      <div style="font-size:11pt; font-weight:600; margin-top:1.5mm">Designed by Cynthia Agwaraonye</div>
+    </div>
+  </div>
+  <div style="padding-top: 6mm"><svg viewBox="0 0 820 500" width="100%" role="img" aria-label="Axonometric view of the Halden Hub">
+<polygon points="280.0,85.2 658.3,303.6 357.6,477.2 -20.7,258.8" fill="#EEF0EE" stroke="#C9CCCE" stroke-width="0.6" stroke-linejoin="round" />
+<ellipse cx="212.1" cy="132.8" rx="13" ry="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<line x1="212.1" y1="146.8" x2="212.1" y2="140.8" stroke="#5C6B73" stroke-width="1"/>
+<ellipse cx="144.2" cy="172.0" rx="13" ry="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<line x1="144.2" y1="186.0" x2="144.2" y2="180.0" stroke="#5C6B73" stroke-width="1"/>
+<ellipse cx="76.3" cy="211.2" rx="13" ry="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<line x1="76.3" y1="225.2" x2="76.3" y2="219.2" stroke="#5C6B73" stroke-width="1"/>
+<ellipse cx="357.6" cy="440.8" rx="13" ry="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<line x1="357.6" y1="454.8" x2="357.6" y2="448.8" stroke="#5C6B73" stroke-width="1"/>
+<ellipse cx="76.3" cy="278.4" rx="13" ry="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<line x1="76.3" y1="292.4" x2="76.3" y2="286.4" stroke="#5C6B73" stroke-width="1"/>
+<ellipse cx="178.2" cy="342.8" rx="13" ry="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<line x1="178.2" y1="356.8" x2="178.2" y2="350.8" stroke="#5C6B73" stroke-width="1"/>
+<polygon points="207.3,172.0 498.2,340.0 498.2,237.0 207.3,69.0" fill="#FBE1D2" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="571.0,298.0 498.2,340.0 498.2,237.0 571.0,195.0" fill="#F2C4A6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="280.0,27.0 571.0,195.0 498.2,237.0 207.3,69.0" fill="#D5D2CB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="212.1,169.2 493.4,331.6 493.4,318.2 212.1,155.8" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="212.1,145.7 493.4,308.1 493.4,294.6 212.1,132.2" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="212.1,122.2 493.4,284.6 493.4,271.1 212.1,108.7" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="212.1,98.6 493.4,261.0 493.4,247.6 212.1,85.2" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="212.1,75.1 493.4,237.5 493.4,237.5 212.1,75.1" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<line x1="218.9" y1="175.4" x2="218.9" y2="76.8" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="230.5" y1="182.1" x2="230.5" y2="83.5" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="242.2" y1="188.8" x2="242.2" y2="90.2" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="253.8" y1="195.5" x2="253.8" y2="97.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="265.5" y1="202.2" x2="265.5" y2="103.7" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="277.1" y1="209.0" x2="277.1" y2="110.4" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="288.7" y1="215.7" x2="288.7" y2="117.1" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="300.4" y1="222.4" x2="300.4" y2="123.8" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="312.0" y1="229.1" x2="312.0" y2="130.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="323.6" y1="235.8" x2="323.6" y2="137.3" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="335.3" y1="242.6" x2="335.3" y2="144.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="346.9" y1="249.3" x2="346.9" y2="150.7" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="358.6" y1="256.0" x2="358.6" y2="157.4" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="370.2" y1="262.7" x2="370.2" y2="164.2" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="381.8" y1="269.4" x2="381.8" y2="170.9" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="393.5" y1="276.2" x2="393.5" y2="177.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="405.1" y1="282.9" x2="405.1" y2="184.3" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="416.8" y1="289.6" x2="416.8" y2="191.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="428.4" y1="296.3" x2="428.4" y2="197.8" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="440.0" y1="303.0" x2="440.0" y2="204.5" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="451.7" y1="309.8" x2="451.7" y2="211.2" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="463.3" y1="316.5" x2="463.3" y2="217.9" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="475.0" y1="323.2" x2="475.0" y2="224.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="486.6" y1="329.9" x2="486.6" y2="231.4" stroke="#B4501A" stroke-width="1.1"/>
+<polygon points="282.4,35.1 554.0,191.9 546.3,192.4 274.7,35.6" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="270.8,41.8 542.4,198.6 534.6,199.2 263.0,42.4" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="259.1,48.5 530.7,205.3 523.0,205.9 251.4,49.1" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="247.5,55.2 519.1,212.0 511.3,212.6 239.7,55.8" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="235.9,62.0 507.5,218.8 499.7,219.3 228.1,62.5" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="139.4,211.2 430.3,379.2 430.3,294.1 139.4,126.1" fill="#8FA7B3" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="498.2,340.0 430.3,379.2 430.3,294.1 498.2,254.9" fill="#93AAB6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="207.3,86.9 498.2,254.9 430.3,294.1 139.4,126.1" fill="#DCE6EB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="217.0,98.1 246.1,114.9 187.9,148.5 158.8,131.7" fill="#FFFFFF" stroke="#454B50" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="263.0,124.7 292.1,141.5 233.9,175.1 204.8,158.3" fill="#FFFFFF" stroke="#454B50" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="309.1,151.3 338.2,168.1 280.0,201.7 250.9,184.9" fill="#FFFFFF" stroke="#454B50" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="355.2,177.9 384.3,194.7 326.1,228.3 297.0,211.5" fill="#FFFFFF" stroke="#454B50" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="401.2,204.5 430.3,221.3 372.1,254.9 343.0,238.1" fill="#FFFFFF" stroke="#454B50" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="447.3,231.1 476.4,247.9 418.2,281.5 389.1,264.7" fill="#FFFFFF" stroke="#454B50" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="66.6,253.2 357.6,421.2 357.6,341.7 66.6,173.7" fill="#FBE1D2" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="430.3,379.2 357.6,421.2 357.6,341.7 430.3,299.7" fill="#F2C4A6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="139.4,131.7 430.3,299.7 357.6,341.7 66.6,173.7" fill="#E6E2DA" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="71.5,250.4 352.7,412.8 352.7,399.4 71.5,237.0" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="71.5,226.9 352.7,389.3 352.7,375.8 71.5,213.4" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="71.5,203.4 352.7,365.8 352.7,352.3 71.5,189.9" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="71.5,179.8 352.7,342.2 352.7,342.2 71.5,179.8" fill="#8FA7B3" stroke="#454B50" stroke-width="0.4" stroke-linejoin="round" />
+<line x1="78.3" y1="256.6" x2="78.3" y2="181.5" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="89.9" y1="263.3" x2="89.9" y2="188.2" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="101.5" y1="270.0" x2="101.5" y2="195.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="113.2" y1="276.7" x2="113.2" y2="201.7" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="124.8" y1="283.4" x2="124.8" y2="208.4" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="136.4" y1="290.2" x2="136.4" y2="215.1" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="148.1" y1="296.9" x2="148.1" y2="221.8" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="159.7" y1="303.6" x2="159.7" y2="228.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="171.4" y1="310.3" x2="171.4" y2="235.3" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="183.0" y1="317.0" x2="183.0" y2="242.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="194.6" y1="323.8" x2="194.6" y2="248.7" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="206.3" y1="330.5" x2="206.3" y2="255.4" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="217.9" y1="337.2" x2="217.9" y2="262.2" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="229.6" y1="343.9" x2="229.6" y2="268.9" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="241.2" y1="350.6" x2="241.2" y2="275.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="252.8" y1="357.4" x2="252.8" y2="282.3" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="264.5" y1="364.1" x2="264.5" y2="289.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="276.1" y1="370.8" x2="276.1" y2="295.8" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="287.8" y1="377.5" x2="287.8" y2="302.5" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="299.4" y1="384.2" x2="299.4" y2="309.2" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="311.0" y1="391.0" x2="311.0" y2="315.9" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="322.7" y1="397.7" x2="322.7" y2="322.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="334.3" y1="404.4" x2="334.3" y2="329.4" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="346.0" y1="411.1" x2="346.0" y2="336.1" stroke="#B4501A" stroke-width="1.1"/>
+<polygon points="134.5,289.0 173.3,311.4 173.3,308.1 134.5,285.7" fill="#B4501A" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="192.7,300.2 173.3,311.4 173.3,308.1 192.7,296.9" fill="#B4501A" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="153.9,274.5 192.7,296.9 173.3,308.1 134.5,285.7" fill="#E8692A" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polyline points="512.8,177.6 542.8,44 620,44" fill="none" stroke="#1F2326" stroke-width=".6"/>
+<circle cx="512.8" cy="177.6" r="2.2" fill="#1F2326"/>
+<text x="624" y="47" class="lbl">North wing · labs & partnership suite</text>
+<polyline points="444.9,252.1 474.9,84 620,84" fill="none" stroke="#1F2326" stroke-width=".6"/>
+<circle cx="444.9" cy="252.1" r="2.2" fill="#1F2326"/>
+<text x="624" y="87" class="lbl">The Forum · naturally ventilated atrium</text>
+<polyline points="377.0,313.7 407.0,124 620,124" fill="none" stroke="#1F2326" stroke-width=".6"/>
+<circle cx="377.0" cy="313.7" r="2.2" fill="#1F2326"/>
+<text x="624" y="127" class="lbl">South wing · teaching & green roof</text>
+</svg><div class="fig">FIG. 01 — AXONOMETRIC FROM THE SOUTH-WEST · CONCEPT MASSING</div></div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Cover</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-000</div>
+</div></section><section class="page ">
+<div class="code">01 · Brief &amp; vision</div>
+<div class="row" style="grid-template-columns: 1fr 1.1fr; gap: 16mm">
+  <div>
+    <h2>One building for teaching, <b>making</b> and industry partnership</h2>
+    <p class="lede">Three 1960s buildings become one hub for <b>1,900 students</b>, 140 staff and an industry partnership suite, on a brownfield car-park site.</p>
+    <h3>Client objectives</h3>
+    <table>
+      <tr><th style="width:12mm">#</th><th>Objective</th><th>Design response</th></tr>
+      <tr><td class="num">O1</td><td>Make engineering visible and social</td><td>Glazed Forum atrium links every lab to the campus street</td></tr>
+      <tr><td class="num">O2</td><td>Net zero carbon in operation</td><td>All-electric heat pumps, 310 kWp PV, Passivhaus-informed fabric</td></tr>
+      <tr><td class="num">O3</td><td>Flexible for 40 years of curriculum change</td><td>7.5 m structural grid, raised floors, plug-and-play lab services</td></tr>
+      <tr><td class="num">O4</td><td>Showcase smart building technology</td><td>Open-protocol BMS and digital twin used as a teaching resource</td></tr>
+      <tr><td class="num">O5</td><td>Deliver within £41.8m and by summer 2029</td><td>Hybrid CLT–steel frame with offsite-manufactured cores</td></tr>
+    </table>
+  </div>
+  <div>
+    <div class="row" style="grid-template-columns: repeat(3, 1fr); gap: 6mm; margin-bottom: 10mm; margin-top: 2mm">
+      <div class="kpi"><b>1,900</b><span>Students served</span></div>
+      <div class="kpi"><b>4</b><span>Storeys (north wing), 3 south</span></div>
+      <div class="kpi"><b>BREEAM</b><span>Outstanding (target, 2018 NC)</span></div>
+      <div class="kpi"><b>−58%</b><span>Embodied carbon versus RIBA 2025 business-as-usual</span></div>
+      <div class="kpi"><b>2.1 ha</b><span>Site area, brownfield</span></div>
+      <div class="kpi"><b>+15%</b><span>Biodiversity net gain</span></div>
+    </div>
+    <div style="background:#F3F2EF; padding: 7mm;">
+      <div class="lab" style="margin-bottom:3mm">Design principles</div>
+      <div class="row" style="grid-template-columns: 1fr 1fr; gap: 5mm 8mm">
+        <div><div class="num">P1 · Show the work</div><p>Labs face the Forum through glazed screens, so the teaching is visible to anyone passing through.</p></div>
+        <div><div class="num">P2 · Fabric first</div><p>Compact form, high airtightness and fixed shading cut demand before any technology is added.</p></div>
+        <div><div class="num">P3 · Loose fit</div><p>Long-span floors and services zones let rooms change use without structural change.</p></div>
+        <div><div class="num">P4 · Honest materials</div><p>Exposed timber, recycled brick and terrazzo are durable, low-carbon and tactile.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="grid-template-columns: 2fr 1fr; gap: 16mm; margin-top: 10mm; border-top: .6pt solid #1F2326; padding-top: 5mm">
+  <div>
+    <div class="lab" style="margin-bottom:3mm">Accommodation mix · 7,140 m² GIA</div>
+    <div style="display:flex; height: 14mm; border: .6pt solid #1F2326">
+      <div style="width:38.66%; background:#FBE1D2; border-right:.6pt solid #1F2326; padding: 1.5mm 2mm; font-size:7.5pt; font-weight:600; overflow:hidden; white-space:nowrap">39%</div><div style="width:31.09%; background:#E6E2DA; border-right:.6pt solid #1F2326; padding: 1.5mm 2mm; font-size:7.5pt; font-weight:600; overflow:hidden; white-space:nowrap">31%</div><div style="width:11.76%; background:#DCE6EB; border-right:.6pt solid #1F2326; padding: 1.5mm 2mm; font-size:7.5pt; font-weight:600; overflow:hidden; white-space:nowrap">12%</div><div style="width:16.53%; background:#F3F2EF; border-right:.6pt solid #1F2326; padding: 1.5mm 2mm; font-size:7.5pt; font-weight:600; overflow:hidden; white-space:nowrap">17%</div><div style="width:1.96%; background:#D5D2CB; border-right:.6pt solid #1F2326; padding: 1.5mm 2mm; font-size:7.5pt; font-weight:600; overflow:hidden; white-space:nowrap">2%</div>
+    </div>
+    <div class="legend"><span><i style="background:#FBE1D2"></i>Labs &amp; making · 2,760 m²</span><span><i style="background:#E6E2DA"></i>Teaching, study &amp; offices · 2,220 m²</span><span><i style="background:#DCE6EB"></i>Forum · 840 m²</span><span><i style="background:#F3F2EF"></i>Cores &amp; circulation · 1,180 m²</span><span><i style="background:#D5D2CB"></i>Plant · 140 m²</span></div>
+  </div>
+  <div>
+    <div class="lab" style="margin-bottom:3mm">Engagement to date</div>
+    <div class="row" style="grid-template-columns: 1fr 1fr; gap: 3mm 6mm">
+      <div><span class="num" style="font-size:14pt">38</span><br><span style="font-size:8pt;color:#454B50">stakeholder workshops</span></div>
+      <div><span class="num" style="font-size:14pt">412</span><br><span style="font-size:8pt;color:#454B50">student survey responses</span></div>
+      <div><span class="num" style="font-size:14pt">6</span><br><span style="font-size:8pt;color:#454B50">industry partners consulted</span></div>
+      <div><span class="num" style="font-size:14pt">2</span><br><span style="font-size:8pt;color:#454B50">planning pre-application meetings</span></div>
+    </div>
+  </div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Brief & vision</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-001</div>
+</div></section><section class="page ">
+<div class="row" style="grid-template-columns: 112mm 1fr; gap: 14mm">
+  <div>
+    <div class="code">02 · Site analysis</div>
+    <h2>A riverside site between <b>campus</b> and town</h2>
+    <p class="lede" style="font-size:11pt">2.1 ha brownfield site between the River Halden and Campus Street.</p>
+    <h3>Opportunities</h3>
+    <p>+ Long east–west axis, ideal south light<br>+ 11 mature trees retained<br>+ ~6,000 people a day pass the entrance<br>+ River frontage for a public terrace</p>
+    <h3>Constraints</h3>
+    <p>− 30 m flood-zone set-back<br>− Made ground needs remediation<br>− HGV access kept off pedestrian routes<br>− 20 m masterplan height cap</p>
+  </div>
+  <div><svg viewBox="0 0 760 520" width="100%" role="img" aria-label="Site plan">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#C9CDD0" stroke-width="1"/></pattern><marker id="wa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8FA7B3"/></marker><marker id="pa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1F2326"/></marker></defs>
+<path d="M0 40 C 180 10, 380 70, 560 30 S 740 20, 760 34 L760 0 L0 0 Z" fill="#DCE6EB"/>
+<text x="300" y="22" class="lbl" fill="#454B50">RIVER HALDEN · 30 m flood-zone set-back</text>
+<polygon points="162.0,78.0 586.0,62.0 618.0,414.0 130.0,438.0" fill="none" stroke="#E8692A" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="8 4"/>
+<rect x="0" y="462" width="760" height="36" fill="#D5D2CB"/>
+<text x="20" y="484" class="lbl">CAMPUS STREET · pedestrian priority</text>
+<rect x="650" y="40" width="30" height="520" fill="#D5D2CB"/>
+<text x="669" y="140" class="lbl" transform="rotate(90 669 140)">SERVICE ROAD · deliveries &amp; lab gases</text>
+<rect x="20" y="515" width="210" height="60" fill="url(#hatch)" stroke="#C9CCCE"/>
+<text x="30" y="550" class="lbl">Existing: Faraday Building</text>
+<rect x="440" y="515" width="200" height="60" fill="url(#hatch)" stroke="#C9CCCE"/>
+<text x="450" y="550" class="lbl">Existing: Library &amp; Learning Centre</text>
+<rect x="250.0" y="150.0" width="240.0" height="60.0" fill="#1F2326"/>
+<rect x="250.0" y="210.0" width="240.0" height="56.0" fill="#8FA7B3"/>
+<rect x="250.0" y="266.0" width="240.0" height="60.0" fill="#454B50"/>
+<text x="370.0" y="242.0" text-anchor="middle" class="lblw">THE HALDEN HUB</text>
+<circle cx="194" cy="126" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="194" cy="126" r="1.6" fill="#5C6B73"/>
+<circle cx="190" cy="190" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="190" cy="190" r="1.6" fill="#5C6B73"/>
+<circle cx="186" cy="254" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="186" cy="254" r="1.6" fill="#5C6B73"/>
+<circle cx="182" cy="318" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="182" cy="318" r="1.6" fill="#5C6B73"/>
+<circle cx="178" cy="382" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="178" cy="382" r="1.6" fill="#5C6B73"/>
+<circle cx="530" cy="118" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="530" cy="118" r="1.6" fill="#5C6B73"/>
+<circle cx="554" cy="190" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="554" cy="190" r="1.6" fill="#5C6B73"/>
+<circle cx="570" cy="270" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="570" cy="270" r="1.6" fill="#5C6B73"/>
+<circle cx="578" cy="358" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="578" cy="358" r="1.6" fill="#5C6B73"/>
+<circle cx="290" cy="390" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="290" cy="390" r="1.6" fill="#5C6B73"/>
+<circle cx="410" cy="398" r="13" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/><circle cx="410" cy="398" r="1.6" fill="#5C6B73"/>
+<path d="M 120.0 248.0 A 250 190 0 0 0 620.0 248.0" fill="none" stroke="#E8692A" stroke-width="1.6" stroke-dasharray="3 4"/>
+<circle cx="153" cy="343" r="5" fill="#E8692A"/><text x="153" y="360" text-anchor="middle" class="lbls">W 18:00</text>
+<circle cx="370" cy="438" r="5" fill="#E8692A"/><text x="370" y="455" text-anchor="middle" class="lbls">S 12:00</text>
+<circle cx="587" cy="343" r="5" fill="#E8692A"/><text x="587" y="360" text-anchor="middle" class="lbls">E 06:00</text>
+<text x="545.0" y="413.0" class="lbls" fill="#B4501A">summer sun path</text>
+<line x1="40" y1="470" x2="120" y2="420" stroke="#8FA7B3" stroke-width="2.2" marker-end="url(#wa)"/>
+<line x1="62" y1="456" x2="142" y2="406" stroke="#8FA7B3" stroke-width="2.2" marker-end="url(#wa)"/>
+<line x1="84" y1="442" x2="164" y2="392" stroke="#8FA7B3" stroke-width="2.2" marker-end="url(#wa)"/>
+<text x="30" y="500" class="lbls">Prevailing wind · south-west</text>
+<line x1="338.0" y1="466.0" x2="338.0" y2="332.0" stroke="#1F2326" stroke-width="1.6" marker-end="url(#pa)"/>
+<text x="344.0" y="366.0" class="lbls">Main entrance</text>
+<line x1="650.0" y1="182.0" x2="496.0" y2="182.0" stroke="#1F2326" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#pa)"/>
+<text x="502.0" y="176.0" class="lbls">Service yard</text>
+<g transform="translate(710,430)"><circle r="20" fill="none" stroke="#1F2326" stroke-width=".8"/><path d="M0,-17 L7,10 L0,4 L-7,10 Z" fill="#1F2326"/><text y="-24" text-anchor="middle" class="lbl">N</text></g>
+<g transform="translate(510,490)"><rect x="0" y="0" width="40" height="6" fill="#1F2326" stroke="#1F2326" stroke-width=".6"/><rect x="40" y="0" width="40" height="6" fill="#FFFFFF" stroke="#1F2326" stroke-width=".6"/><rect x="80" y="0" width="40" height="6" fill="#1F2326" stroke="#1F2326" stroke-width=".6"/><rect x="120" y="0" width="40" height="6" fill="#FFFFFF" stroke="#1F2326" stroke-width=".6"/><rect x="160" y="0" width="40" height="6" fill="#1F2326" stroke="#1F2326" stroke-width=".6"/><text x="0" y="20" class="lbls">0</text><text x="200" y="20" text-anchor="end" class="lbls">50 m</text></g>
+</svg><div class="fig">FIG. 02 — SITE PLAN · ORIENTATION, ACCESS, SUN PATH AND PREVAILING WIND</div></div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Site analysis</div>
+  <div><span>Scale @ A3</span>1:1000</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-002</div>
+</div></section><section class="page ">
+<div class="code">03 · Design concept</div>
+<div class="row" style="grid-template-columns: 1fr 1.3fr; gap: 14mm; align-items:end; margin-bottom: 8mm">
+  <h2 style="margin:0">From site envelope to a building <b>shaped by daylight</b></h2>
+  <p class="lede" style="margin:0">Daylight, airflow and encounter shape the massing. No step adds area.</p>
+</div>
+<div class="row" style="grid-template-columns: repeat(4, 1fr); gap: 8mm">
+  <div class="step"><div style="background:#F3F2EF"><svg viewBox="0 0 260 190" width="100%" role="img" aria-label="Massing step 1">
+<polygon points="130.0,22.0 247.8,90.0 157.7,142.0 39.9,74.0" fill="#EEF0EE" stroke="#C9CCCE" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="53.8,74.0 157.7,134.0 157.7,97.2 53.8,37.2" fill="#E4E2DD" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="233.9,90.0 157.7,134.0 157.7,97.2 233.9,53.2" fill="#CFCCC6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="130.0,-6.8 233.9,53.2 157.7,97.2 53.8,37.2" fill="#D5D2CB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+</svg></div><div class="num" style="margin-top:3mm">01</div><h3>Site envelope</h3><p>60 × 44 × 18 m: too deep for daylight.</p></div><div class="step"><div style="background:#F3F2EF"><svg viewBox="0 0 260 190" width="100%" role="img" aria-label="Massing step 2">
+<polygon points="130.0,22.0 247.8,90.0 157.7,142.0 39.9,74.0" fill="#EEF0EE" stroke="#C9CCCE" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="104.0,45.0 207.9,105.0 207.9,68.2 104.0,8.2" fill="#E4E2DD" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="233.9,90.0 207.9,105.0 207.9,68.2 233.9,53.2" fill="#CFCCC6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="130.0,-6.8 233.9,53.2 207.9,68.2 104.0,8.2" fill="#D5D2CB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="53.8,74.0 157.7,134.0 157.7,97.2 53.8,37.2" fill="#E4E2DD" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="183.7,119.0 157.7,134.0 157.7,97.2 183.7,82.2" fill="#CFCCC6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="79.8,22.2 183.7,82.2 157.7,97.2 53.8,37.2" fill="#D5D2CB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+</svg></div><div class="num" style="margin-top:3mm">02</div><h3>Split into two wings</h3><p>15 m-deep wings: daylight and cross-ventilation.</p></div><div class="step"><div style="background:#F3F2EF"><svg viewBox="0 0 260 190" width="100%" role="img" aria-label="Massing step 3">
+<polygon points="130.0,22.0 247.8,90.0 157.7,142.0 39.9,74.0" fill="#EEF0EE" stroke="#C9CCCE" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="104.0,45.0 207.9,105.0 207.9,68.2 104.0,8.2" fill="#E4E2DD" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="233.9,90.0 207.9,105.0 207.9,68.2 233.9,53.2" fill="#CFCCC6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="130.0,-6.8 233.9,53.2 207.9,68.2 104.0,8.2" fill="#D5D2CB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="79.8,59.0 183.7,119.0 183.7,88.6 79.8,28.6" fill="#8FA7B3" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="207.9,105.0 183.7,119.0 183.7,88.6 207.9,74.6" fill="#93AAB6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="104.0,14.6 207.9,74.6 183.7,88.6 79.8,28.6" fill="#DCE6EB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="53.8,74.0 157.7,134.0 157.7,97.2 53.8,37.2" fill="#E4E2DD" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="183.7,119.0 157.7,134.0 157.7,97.2 183.7,82.2" fill="#CFCCC6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="79.8,22.2 183.7,82.2 157.7,97.2 53.8,37.2" fill="#D5D2CB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+</svg></div><div class="num" style="margin-top:3mm">03</div><h3>Carve the Forum</h3><p>14 m glazed atrium: social and ventilation heart.</p></div><div class="step"><div style="background:#F3F2EF"><svg viewBox="0 0 260 190" width="100%" role="img" aria-label="Massing step 4">
+<polygon points="130.0,22.0 247.8,90.0 157.7,142.0 39.9,74.0" fill="#EEF0EE" stroke="#C9CCCE" stroke-width="0.5" stroke-linejoin="round" />
+<polygon points="104.0,45.0 207.9,105.0 207.9,68.2 104.0,8.2" fill="#FBE1D2" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="233.9,90.0 207.9,105.0 207.9,68.2 233.9,53.2" fill="#F2C4A6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="130.0,-6.8 233.9,53.2 207.9,68.2 104.0,8.2" fill="#D5D2CB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<line x1="109.2" y1="46.8" x2="109.2" y2="11.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="114.4" y1="49.8" x2="114.4" y2="14.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="119.6" y1="52.8" x2="119.6" y2="17.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="124.8" y1="55.8" x2="124.8" y2="20.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="130.0" y1="58.8" x2="130.0" y2="23.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="135.2" y1="61.8" x2="135.2" y2="26.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="140.4" y1="64.8" x2="140.4" y2="29.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="145.6" y1="67.8" x2="145.6" y2="32.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="150.8" y1="70.8" x2="150.8" y2="35.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="156.0" y1="73.8" x2="156.0" y2="38.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="161.2" y1="76.8" x2="161.2" y2="41.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="166.4" y1="79.8" x2="166.4" y2="44.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="171.6" y1="82.8" x2="171.6" y2="47.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="176.8" y1="85.8" x2="176.8" y2="50.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="182.0" y1="88.8" x2="182.0" y2="53.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="187.2" y1="91.8" x2="187.2" y2="56.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="192.4" y1="94.8" x2="192.4" y2="59.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="197.5" y1="97.8" x2="197.5" y2="62.6" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="202.7" y1="100.8" x2="202.7" y2="65.6" stroke="#B4501A" stroke-width="1.1"/>
+<polygon points="130.9,-3.9 227.9,52.1 225.1,52.3 128.1,-3.7" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="125.7,-0.9 222.7,55.1 219.9,55.3 122.9,-0.7" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="120.5,2.1 217.5,58.1 214.7,58.3 117.7,2.3" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="115.3,5.1 212.3,61.1 209.5,61.3 112.5,5.3" fill="#3D5566" stroke="#2A3B47" stroke-width="0.4" stroke-linejoin="round" />
+<polygon points="79.8,59.0 183.7,119.0 183.7,88.6 79.8,28.6" fill="#8FA7B3" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="207.9,105.0 183.7,119.0 183.7,88.6 207.9,74.6" fill="#93AAB6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="104.0,14.6 207.9,74.6 183.7,88.6 79.8,28.6" fill="#DCE6EB" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="53.8,74.0 157.7,134.0 157.7,105.6 53.8,45.6" fill="#FBE1D2" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="183.7,119.0 157.7,134.0 157.7,105.6 183.7,90.6" fill="#F2C4A6" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<polygon points="79.8,30.6 183.7,90.6 157.7,105.6 53.8,45.6" fill="#E6E2DA" stroke="#1F2326" stroke-width="0.8" stroke-linejoin="round" />
+<line x1="59.0" y1="75.8" x2="59.0" y2="49.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="64.2" y1="78.8" x2="64.2" y2="52.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="69.4" y1="81.8" x2="69.4" y2="55.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="74.6" y1="84.8" x2="74.6" y2="58.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="79.8" y1="87.8" x2="79.8" y2="61.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="85.0" y1="90.8" x2="85.0" y2="64.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="90.2" y1="93.8" x2="90.2" y2="67.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="95.4" y1="96.8" x2="95.4" y2="70.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="100.6" y1="99.8" x2="100.6" y2="73.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="105.8" y1="102.8" x2="105.8" y2="76.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="110.9" y1="105.8" x2="110.9" y2="79.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="116.1" y1="108.8" x2="116.1" y2="82.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="121.3" y1="111.8" x2="121.3" y2="85.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="126.5" y1="114.8" x2="126.5" y2="88.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="131.7" y1="117.8" x2="131.7" y2="91.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="136.9" y1="120.8" x2="136.9" y2="94.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="142.1" y1="123.8" x2="142.1" y2="97.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="147.3" y1="126.8" x2="147.3" y2="100.0" stroke="#B4501A" stroke-width="1.1"/>
+<line x1="152.5" y1="129.8" x2="152.5" y2="103.0" stroke="#B4501A" stroke-width="1.1"/>
+</svg></div><div class="num" style="margin-top:3mm">04</div><h3>Tune to climate</h3><p>South wing drops a storey; PV, green roof, timber fins.</p></div>
+</div>
+<div class="row" style="grid-template-columns: repeat(4, 1fr); gap: 8mm; margin-top: 6mm">
+  <div class="kpi"><b>15 m</b><span>Wing depth: daylight factor ≥ 3% to 92% of floor area</span></div>
+  <div class="kpi"><b>14 m</b><span>Forum width for stack-effect ventilation</span></div>
+  <div class="kpi"><b>40%</b><span>Window-to-wall ratio on south and north façades</span></div>
+  <div class="kpi"><b>0.29</b><span>Form factor (heat-loss area to floor area), compact for its type</span></div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Concept massing</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-010</div>
+</div></section><section class="page ">
+<div class="row" style="grid-template-columns: 1fr 104mm; gap: 12mm">
+  <div><svg viewBox="0 0 720 560" width="100%" role="img" aria-label="Ground floor plan">
+<defs><marker id="ea" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#E8692A"/></marker></defs>
+<defs><pattern id="grid" width="78.75" height="78.75" patternUnits="userSpaceOnUse" x="40" y="40"><path d="M 78.75 0 L 0 0 0 78.75" fill="none" stroke="#E4E5E6" stroke-width=".6"/></pattern></defs>
+<rect x="40" y="40" width="630.0" height="462.0" fill="url(#grid)"/>
+<rect x="40.0" y="40.0" width="294.0" height="157.5" fill="#FBE1D2" stroke="#1F2326" stroke-width="1.4"/>
+<text x="187.0" y="114.8" text-anchor="middle" class="room">Heavy engineering lab</text>
+<text x="187.0" y="130.8" text-anchor="middle" class="area">420 m²</text>
+<rect x="334.0" y="40.0" width="126.0" height="157.5" fill="#FBE1D2" stroke="#1F2326" stroke-width="1.4"/>
+<text x="397.0" y="114.8" text-anchor="middle" class="room">Workshop & stores</text>
+<text x="397.0" y="130.8" text-anchor="middle" class="area">180 m²</text>
+<rect x="460.0" y="40.0" width="97.7" height="157.5" fill="#D5D2CB" stroke="#1F2326" stroke-width="1.4"/>
+<text x="508.8" y="114.8" text-anchor="middle" class="room">Plant</text>
+<text x="508.8" y="130.8" text-anchor="middle" class="area">140 m²</text>
+<rect x="557.6" y="40.0" width="112.3" height="157.5" fill="#F3F2EF" stroke="#1F2326" stroke-width="1.4"/>
+<text x="613.8" y="102.8" text-anchor="middle" class="room">Core</text>
+<text x="613.8" y="114.8" text-anchor="middle" class="room">WC</text>
+<text x="613.8" y="126.8" text-anchor="middle" class="room">goods lift</text>
+<text x="613.8" y="142.8" text-anchor="middle" class="area">170 m²</text>
+<rect x="40.0" y="197.5" width="630.0" height="147.0" fill="#DCE6EB" stroke="#1F2326" stroke-width="1.4"/>
+<text x="355.0" y="267.0" text-anchor="middle" class="room">The Forum</text>
+<text x="355.0" y="283.0" text-anchor="middle" class="area">840 m²</text>
+<rect x="40.0" y="344.5" width="189.0" height="157.5" fill="#E6E2DA" stroke="#1F2326" stroke-width="1.4"/>
+<text x="134.5" y="419.2" text-anchor="middle" class="room">Lecture theatre · 180</text>
+<text x="134.5" y="435.2" text-anchor="middle" class="area">260 m²</text>
+<rect x="229.0" y="344.5" width="84.0" height="157.5" fill="#F3F2EF" stroke="#1F2326" stroke-width="1.4"/>
+<text x="271.0" y="413.2" text-anchor="middle" class="room">Entrance</text>
+<text x="271.0" y="425.2" text-anchor="middle" class="room">core</text>
+<text x="271.0" y="441.2" text-anchor="middle" class="area">120 m²</text>
+<rect x="313.0" y="344.5" width="84.0" height="157.5" fill="#E6E2DA" stroke="#1F2326" stroke-width="1.4"/>
+<text x="355.0" y="419.2" text-anchor="middle" class="room">Café</text>
+<text x="355.0" y="435.2" text-anchor="middle" class="area">120 m²</text>
+<rect x="397.0" y="344.5" width="210.0" height="157.5" fill="#FBE1D2" stroke="#1F2326" stroke-width="1.4"/>
+<text x="502.0" y="419.2" text-anchor="middle" class="room">Makerspace</text>
+<text x="502.0" y="435.2" text-anchor="middle" class="area">300 m²</text>
+<rect x="607.0" y="344.5" width="63.0" height="157.5" fill="#F3F2EF" stroke="#1F2326" stroke-width="1.4"/>
+<text x="638.5" y="423.2" text-anchor="middle" class="room" transform="rotate(-90 638.5 423.2)">WC</text>
+<rect x="40" y="40" width="630.0" height="462.0" fill="none" stroke="#1F2326" stroke-width="3.2"/>
+<path d="M 60.5 375.0 Q 134.5 387.0 208.5 375.0" fill="none" stroke="#5C6B73" stroke-width=".6"/>
+<path d="M 60.5 390.0 Q 134.5 402.0 208.5 390.0" fill="none" stroke="#5C6B73" stroke-width=".6"/>
+<path d="M 60.5 405.0 Q 134.5 417.0 208.5 405.0" fill="none" stroke="#5C6B73" stroke-width=".6"/>
+<path d="M 60.5 420.0 Q 134.5 432.0 208.5 420.0" fill="none" stroke="#5C6B73" stroke-width=".6"/>
+<path d="M 60.5 435.0 Q 134.5 447.0 208.5 435.0" fill="none" stroke="#5C6B73" stroke-width=".6"/>
+<path d="M 60.5 450.0 Q 134.5 462.0 208.5 450.0" fill="none" stroke="#5C6B73" stroke-width=".6"/>
+<path d="M 60.5 465.0 Q 134.5 477.0 208.5 465.0" fill="none" stroke="#5C6B73" stroke-width=".6"/>
+<rect x="412.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<rect x="421.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<rect x="430.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<rect x="439.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<rect x="448.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<rect x="457.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<rect x="466.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<rect x="475.0" y="219.5" width="9" height="40" fill="none" stroke="#454B50" stroke-width=".6"/>
+<text x="448.0" y="273.5" text-anchor="middle" class="area">feature stair</text>
+<circle cx="130.0" cy="309.5" r="11" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<circle cx="220.0" cy="309.5" r="11" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<circle cx="510.0" cy="309.5" r="11" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<circle cx="600.0" cy="309.5" r="11" fill="#E6E2DA" stroke="#5C6B73" stroke-width=".8"/>
+<path d="M 271.0 536.0 L 271.0 508.0" stroke="#E8692A" stroke-width="2.4" marker-end="url(#ea)"/>
+<text x="279.0" y="532.0" class="lbl" fill="#B4501A">MAIN ENTRANCE</text>
+<text x="678.0" y="118.75" class="lbls">service</text><text x="678.0" y="129.75" class="lbls">yard</text>
+<circle cx="40.0" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="40.0" y="25" text-anchor="middle" class="grd">A</text>
+<circle cx="118.8" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="118.8" y="25" text-anchor="middle" class="grd">B</text>
+<circle cx="197.5" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="197.5" y="25" text-anchor="middle" class="grd">C</text>
+<circle cx="276.2" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="276.2" y="25" text-anchor="middle" class="grd">D</text>
+<circle cx="355.0" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="355.0" y="25" text-anchor="middle" class="grd">E</text>
+<circle cx="433.8" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="433.8" y="25" text-anchor="middle" class="grd">F</text>
+<circle cx="512.5" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="512.5" y="25" text-anchor="middle" class="grd">G</text>
+<circle cx="591.2" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="591.2" y="25" text-anchor="middle" class="grd">H</text>
+<circle cx="670.0" cy="22" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="670.0" y="25" text-anchor="middle" class="grd">I</text>
+<circle cx="20" cy="40.0" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="20" y="43.0" text-anchor="middle" class="grd">1</text>
+<circle cx="20" cy="118.8" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="20" y="121.8" text-anchor="middle" class="grd">2</text>
+<circle cx="20" cy="197.5" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="20" y="200.5" text-anchor="middle" class="grd">3</text>
+<circle cx="20" cy="276.2" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="20" y="279.2" text-anchor="middle" class="grd">4</text>
+<circle cx="20" cy="355.0" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="20" y="358.0" text-anchor="middle" class="grd">5</text>
+<circle cx="20" cy="433.8" r="8" fill="none" stroke="#878D92" stroke-width=".7"/><text x="20" y="436.8" text-anchor="middle" class="grd">6</text>
+<g transform="translate(680,510)"><circle r="16" fill="none" stroke="#1F2326" stroke-width=".8"/><path d="M0,-13 L6,8 L0,3 L-6,8 Z" fill="#1F2326"/><text y="-20" text-anchor="middle" class="lbl">N</text></g>
+<g transform="translate(40,538)"><rect x="0.0" y="0" width="52.5" height="5" fill="#1F2326" stroke="#1F2326" stroke-width=".6"/><rect x="52.5" y="0" width="52.5" height="5" fill="#FFFFFF" stroke="#1F2326" stroke-width=".6"/><rect x="105.0" y="0" width="52.5" height="5" fill="#1F2326" stroke="#1F2326" stroke-width=".6"/><rect x="157.5" y="0" width="52.5" height="5" fill="#FFFFFF" stroke="#1F2326" stroke-width=".6"/><text x="0" y="17" class="lbls">0</text><text x="210.0" y="17" text-anchor="end" class="lbls">20 m</text></g>
+</svg>
+    <div class="legend"><span><i style="background:#FBE1D2"></i>Making &amp; labs</span><span><i style="background:#E6E2DA"></i>Teaching &amp; social</span><span><i style="background:#DCE6EB"></i>Forum</span><span><i style="background:#D5D2CB"></i>Plant</span><span><i style="background:#F3F2EF"></i>Cores &amp; circulation</span></div>
+  </div>
+  <div>
+    <div class="code">04 · Ground floor plan</div>
+    <h2>Heavy and noisy at the back, <b>public</b> at the front</h2>
+    <p>— <b>North wing:</b> heavy lab and workshops beside the service yard, on view from the Forum<br>— <b>South wing:</b> lecture theatre, café and makerspace open onto Campus Street</p>
+
+    <h3>Planning grid</h3>
+    <p>7.5 m grid (A–I, 1–6) suits lab benching and efficient CLT spans.</p>
+    <table style="margin-top:4mm">
+      <tr><th>Ground floor</th><th style="text-align:right">m²</th></tr>
+      <tr><td>Heavy engineering lab</td><td class="n">420</td></tr><tr><td>Makerspace</td><td class="n">300</td></tr>
+      <tr><td>Lecture theatre (180)</td><td class="n">260</td></tr><tr><td>The Forum</td><td class="n">840</td></tr>
+      <tr><td>Workshop &amp; stores · Café · Plant</td><td class="n">440</td></tr><tr><td>Cores &amp; circulation</td><td class="n">380</td></tr>
+      <tr class="sub"><td>Total ground floor GIA</td><td class="n">2,640</td></tr>
+    </table>
+  </div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Ground floor plan</div>
+  <div><span>Scale @ A3</span>1:500</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-100</div>
+</div></section><section class="page ">
+<div class="row" style="grid-template-columns: 1fr 1fr; gap: 14mm">
+  <div>
+    <div class="code">05 · Stacking &amp; area schedule</div>
+    <h2>Noise and load lowest down, <b>quiet and partnership</b> work at the top</h2>
+    <svg viewBox="0 0 560 420" width="100%" role="img" aria-label="Stacking diagram">
+<text x="0" y="60" class="grd">LEVEL 3</text>
+<polygon points="70.0,80 123.4,80 149.4,40 96.0,40" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="123.4,80 173.3,80 199.3,40 149.4,40" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="173.3,80 194.6,80 220.6,40 199.3,40" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="194.6,80 230.2,80 256.2,40 220.6,40" fill="#F3F2EF" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="230.2,80 256.2,40 256.2,52 230.2,92" fill="#454B50"/>
+<polygon points="70,80 230.2,80 230.2,92 70,92" fill="#1F2326"/>
+<text x="266.2" y="64" class="val">900 m²</text>
+<text x="0" y="155" class="grd">LEVEL 2</text>
+<polygon points="70.0,175 155.5,175 181.5,135 96.0,135" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="155.5,175 219.5,175 245.5,135 181.5,135" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="219.5,175 294.3,175 320.3,135 245.5,135" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="294.3,175 337.0,175 363.0,135 320.3,135" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="337.0,175 390.5,175 416.5,135 363.0,135" fill="#F3F2EF" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="390.5,175 416.5,135 416.5,147 390.5,187" fill="#454B50"/>
+<polygon points="70,175 390.5,175 390.5,187 70,187" fill="#1F2326"/>
+<text x="426.5" y="159" class="val">1,800 m²</text>
+<text x="0" y="250" class="grd">LEVEL 1</text>
+<polygon points="70.0,270 198.2,270 224.2,230 96.0,230" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="198.2,270 251.6,270 277.6,230 224.2,230" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="251.6,270 297.9,270 323.9,230 277.6,230" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="297.9,270 337.0,270 363.0,230 323.9,230" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="337.0,270 390.5,270 416.5,230 363.0,230" fill="#F3F2EF" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="390.5,270 416.5,230 416.5,242 390.5,282" fill="#454B50"/>
+<polygon points="70,270 390.5,270 390.5,282 70,282" fill="#1F2326"/>
+<text x="426.5" y="254" class="val">1,800 m²</text>
+<text x="0" y="345" class="grd">GROUND FLOOR</text>
+<polygon points="70.0,365 144.8,365 170.8,325 96.0,325" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="144.8,365 198.2,365 224.2,325 170.8,325" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="198.2,365 244.5,365 270.5,325 224.2,325" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="244.5,365 394.0,365 420.0,325 270.5,325" fill="#DCE6EB" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="394.0,365 415.4,365 441.4,325 420.0,325" fill="#E6E2DA" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="415.4,365 447.4,365 473.4,325 441.4,325" fill="#FBE1D2" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="447.4,365 472.3,365 498.3,325 473.4,325" fill="#D5D2CB" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="472.3,365 540.0,365 566.0,325 498.3,325" fill="#F3F2EF" stroke="#1F2326" stroke-width=".8"/>
+<polygon points="540.0,365 566.0,325 566.0,337 540.0,377" fill="#454B50"/>
+<polygon points="70,365 540.0,365 540.0,377 70,377" fill="#1F2326"/>
+<text x="576.0" y="349" class="val">2,640 m²</text>
+</svg>
+    <div class="legend"><span><i style="background:#FBE1D2"></i>Labs &amp; making</span><span><i style="background:#E6E2DA"></i>Teaching, study &amp; offices</span><span><i style="background:#DCE6EB"></i>Forum</span><span><i style="background:#D5D2CB"></i>Plant</span><span><i style="background:#F3F2EF"></i>Core</span></div>
+  </div>
+  <div>
+    <table style="margin-top: 2mm">
+      <tr><th style="width:24mm">Level</th><th>Space</th><th style="text-align:right">GIA m²</th></tr>
+      <tr><td class="mono" style="font-size:7pt;color:#878D92">Level 3</td><td>Industry partnership suite</td><td class="n">300</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 3</td><td>Research offices</td><td class="n">280</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 3</td><td>Roof terrace & meeting</td><td class="n">120</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 3</td><td>Core & circulation</td><td class="n">200</td></tr><tr class="sub"><td></td><td>Subtotal</td><td class="n">900</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 2</td><td>Electronics labs</td><td class="n">480</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 2</td><td>Computer suites</td><td class="n">360</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 2</td><td>Seminar rooms (6)</td><td class="n">420</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 2</td><td>Study space</td><td class="n">240</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 2</td><td>Core & circulation</td><td class="n">300</td></tr><tr class="sub"><td></td><td>Subtotal</td><td class="n">1,800</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 1</td><td>Teaching labs (4)</td><td class="n">720</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 1</td><td>Robotics & autonomy lab</td><td class="n">300</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 1</td><td>Collaboration space</td><td class="n">260</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 1</td><td>Staff offices</td><td class="n">220</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Level 1</td><td>Core & circulation</td><td class="n">300</td></tr><tr class="sub"><td></td><td>Subtotal</td><td class="n">1,800</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>Heavy engineering lab</td><td class="n">420</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>Makerspace</td><td class="n">300</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>Lecture theatre</td><td class="n">260</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>The Forum</td><td class="n">840</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>Café</td><td class="n">120</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>Workshop & stores</td><td class="n">180</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>Plant</td><td class="n">140</td></tr><tr><td class="mono" style="font-size:7pt;color:#878D92">Ground floor</td><td>Core & circulation</td><td class="n">380</td></tr><tr class="sub"><td></td><td>Subtotal</td><td class="n">2,640</td></tr>
+      <tr class="sub" style="font-size:9.5pt"><td></td><td>Total gross internal area</td><td class="n">7,140</td></tr>
+    </table>
+    <p class="fig">Net-to-gross efficiency 74% excluding the Forum. Areas measured to RICS IPMS 1 and rounded to 10 m².</p>
+  </div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Stacking & areas</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-110</div>
+</div></section><section class="page ">
+<div class="row" style="grid-template-columns: 1fr 2fr; gap: 14mm; align-items:end; margin-bottom: 4mm">
+  <div><div class="code">06 · Environmental section</div><h2 style="margin:0">The Forum <b>breathes</b> for the whole building</h2></div>
+  <p class="lede" style="margin:0">Eight months a year the Forum is a solar chimney: air in low on the south façade, out through actuated rooflights.</p>
+</div>
+<svg viewBox="0 0 1100 520" width="100%" role="img" aria-label="Environmental section">
+<defs><marker id="air" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#4F7F99"/></marker><marker id="hot" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#B4501A"/></marker><pattern id="earth" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8 L8 0" stroke="#D2C7B8" stroke-width=".8"/></pattern></defs>
+<rect x="0" y="380" width="1100" height="140" fill="url(#earth)"/>
+<line x1="0" y1="380" x2="1100" y2="380" stroke="#1F2326" stroke-width="2"/>
+<rect x="110.0" y="140.8" width="195.0" height="239.2" fill="#FFFFFF" stroke="#1F2326" stroke-width="2.2"/>
+<rect x="110.0" y="309.4" width="195.0" height="5" fill="#1F2326"/>
+<rect x="110.0" y="254.8" width="195.0" height="5" fill="#1F2326"/>
+<rect x="110.0" y="200.20000000000002" width="195.0" height="5" fill="#1F2326"/>
+<rect x="110.0" y="134.8" width="195.0" height="7" fill="#3D5566" stroke="#1F2326" stroke-width="1"/>
+<rect x="487.0" y="195.4" width="195.0" height="184.6" fill="#FFFFFF" stroke="#1F2326" stroke-width="2.2"/>
+<rect x="487.0" y="309.4" width="195.0" height="5" fill="#1F2326"/>
+<rect x="487.0" y="254.8" width="195.0" height="5" fill="#1F2326"/>
+<rect x="487.0" y="189.4" width="195.0" height="7" fill="#5C6B73" stroke="#1F2326" stroke-width="1"/>
+<line x1="305.0" y1="182.4" x2="487.0" y2="182.4" stroke="#1F2326" stroke-width="2.2"/>
+<polygon points="315.4,182.4 359.6,182.4 359.6,153.8" fill="#DCE6EB" stroke="#1F2326" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="372.6,182.4 416.8,182.4 416.8,153.8" fill="#DCE6EB" stroke="#1F2326" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="429.8,182.4 474.0,182.4 474.0,153.8" fill="#DCE6EB" stroke="#1F2326" stroke-width="1.2" stroke-linejoin="round" />
+<rect x="318.0" y="374.15" width="54.599999999999994" height="5.8500000000000005" fill="#FBE1D2" stroke="#B4501A" stroke-width=".5"/>
+<rect x="332.3" y="368.3" width="49.595000000000006" height="5.8500000000000005" fill="#FBE1D2" stroke="#B4501A" stroke-width=".5"/>
+<rect x="346.6" y="362.45" width="44.589999999999996" height="5.8500000000000005" fill="#FBE1D2" stroke="#B4501A" stroke-width=".5"/>
+<rect x="360.9" y="356.6" width="39.584999999999994" height="5.8500000000000005" fill="#FBE1D2" stroke="#B4501A" stroke-width=".5"/>
+<rect x="375.2" y="350.75" width="34.58" height="5.8500000000000005" fill="#FBE1D2" stroke="#B4501A" stroke-width=".5"/>
+<line x1="682.0" y1="317.6" x2="702.8000000000001" y2="317.6" stroke="#E8692A" stroke-width="4"/>
+<line x1="682.0" y1="263.0" x2="702.8000000000001" y2="263.0" stroke="#E8692A" stroke-width="4"/>
+<line x1="682.0" y1="200.60000000000002" x2="702.8000000000001" y2="200.60000000000002" stroke="#E8692A" stroke-width="4"/>
+<line x1="763" y1="54" x2="682" y2="203" stroke="#E8692A" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="759" y="48" text-anchor="end" class="lbls" fill="#B4501A">Summer solstice 61.5°</text>
+<line x1="1031" y1="113" x2="682" y2="203" stroke="#E8692A" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="1027" y="107" text-anchor="end" class="lbls" fill="#B4501A">Winter solstice 14.5°</text>
+<path d="M 786.0 348.8 L 687.1999999999999 348.8" stroke="#4F7F99" stroke-width="2.2" marker-end="url(#air)"/>
+<path d="M 487.0 351.4 C 448.0 348.8, 409.0 315.0, 396.0 237.0" fill="none" stroke="#4F7F99" stroke-width="2.2" marker-end="url(#air)"/>
+<path d="M 305.0 289.0 C 331.0 276.0, 357.0 250.0, 370.0 217.5" fill="none" stroke="#4F7F99" stroke-width="2.2" marker-end="url(#air)"/>
+<path d="M 389.5 211.0 L 402.5 126.5" stroke="#B4501A" stroke-width="2.4" marker-end="url(#hot)"/>
+<text x="411.59999999999997" y="122.59999999999997" class="lbls" fill="#B4501A">stack-effect exhaust via actuated rooflights</text>
+<text x="700.1999999999999" y="364.4" class="lbls" fill="#4F7F99">tempered fresh air · low-level</text>
+<text x="110.0" y="126.80000000000001" class="lbls">PV array 310 kWp (north wing roof, south-tilted)</text>
+<text x="487.0" y="181.4" class="lbls">Biodiverse green roof · rain attenuation</text>
+<line x1="136.0" y1="384" x2="136.0" y2="506" stroke="#4F7F99" stroke-width="1.4" stroke-dasharray="2 3"/>
+<line x1="233.5" y1="384" x2="233.5" y2="506" stroke="#4F7F99" stroke-width="1.4" stroke-dasharray="2 3"/>
+<line x1="331.0" y1="384" x2="331.0" y2="506" stroke="#4F7F99" stroke-width="1.4" stroke-dasharray="2 3"/>
+<line x1="428.5" y1="384" x2="428.5" y2="506" stroke="#4F7F99" stroke-width="1.4" stroke-dasharray="2 3"/>
+<line x1="526.0" y1="384" x2="526.0" y2="506" stroke="#4F7F99" stroke-width="1.4" stroke-dasharray="2 3"/>
+<line x1="623.5" y1="384" x2="623.5" y2="506" stroke="#4F7F99" stroke-width="1.4" stroke-dasharray="2 3"/>
+<text x="708.0" y="480" class="lbls" fill="#4F7F99">48 closed-loop boreholes · 150 m deep</text><text x="708.0" y="493" class="lbls" fill="#4F7F99">feeding 2 × 220 kW ground-source heat pumps</text>
+<rect x="500.0" y="396" width="117.0" height="40" rx="6" fill="#DCE6EB" stroke="#1F2326" stroke-width="1"/><text x="558.5" y="421" text-anchor="middle" class="lbls">rainwater 60 m³</text>
+<line x1="40" y1="380.0" x2="104" y2="380.0" stroke="#878D92" stroke-width=".6"/><text x="40" y="376.0" class="grd" text-anchor="start">GF +0.00</text>
+<line x1="40" y1="312.4" x2="104" y2="312.4" stroke="#878D92" stroke-width=".6"/><text x="40" y="308.4" class="grd" text-anchor="start">L1 +5.20</text>
+<line x1="40" y1="257.8" x2="104" y2="257.8" stroke="#878D92" stroke-width=".6"/><text x="40" y="253.8" class="grd" text-anchor="start">L2 +9.40</text>
+<line x1="40" y1="203.20000000000002" x2="104" y2="203.20000000000002" stroke="#878D92" stroke-width=".6"/><text x="40" y="199.20000000000002" class="grd" text-anchor="start">L3 +13.60</text>
+<line x1="40" y1="140.8" x2="104" y2="140.8" stroke="#878D92" stroke-width=".6"/><text x="40" y="136.8" class="grd" text-anchor="start">Roof +18.40</text>
+<text x="207.5" y="356.6" text-anchor="middle" class="room">Heavy lab</text>
+<text x="207.5" y="294.2" text-anchor="middle" class="room">Teaching labs</text>
+<text x="207.5" y="239.6" text-anchor="middle" class="room">Electronics</text>
+<text x="207.5" y="179.79999999999998" text-anchor="middle" class="room">Partnership</text>
+<text x="584.5" y="356.6" text-anchor="middle" class="room">Makerspace</text>
+<text x="584.5" y="294.2" text-anchor="middle" class="room">Collaboration</text>
+<text x="584.5" y="239.6" text-anchor="middle" class="room">Seminar</text>
+<text x="396.0" y="263.0" text-anchor="middle" class="room">THE FORUM</text>
+<text x="110.0" y="400" class="grd">NORTH</text><text x="682.0" y="400" text-anchor="end" class="grd">SOUTH</text>
+</svg>
+<div class="row" style="grid-template-columns: repeat(5, 1fr); gap: 7mm; margin-top: 3mm">
+  <div class="kpi"><b>8 months</b><span>Natural ventilation season (mixed-mode)</span></div>
+  <div class="kpi"><b>440 kW</b><span>Ground-source heating and cooling capacity</span></div>
+  <div class="kpi"><b>0.6</b><span>Air permeability target (m³/h·m² at 50 Pa)</span></div>
+  <div class="kpi"><b>67%</b><span>Annual electricity demand matched by on-site PV</span></div>
+  <div class="kpi"><b>40%</b><span>Potable water saving from rainwater reuse</span></div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Section A–A · north–south</div>
+  <div><span>Scale @ A3</span>1:250</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-200</div>
+</div></section><section class="page ">
+<div class="row" style="grid-template-columns: 2fr 1fr; gap: 12mm">
+  <div>
+    <div class="code">07 · Building systems integration</div>
+    <h2 style="margin-bottom:4mm">Open protocols, one data model, <b>one twin</b></h2>
+    <svg viewBox="0 0 884 560" width="100%" role="img" aria-label="Building systems integration block definition diagram">
+<defs><marker id="dia" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><path d="M0,4 L6,0 L12,4 L6,8 z" fill="#1F2326"/></marker></defs>
+<rect x="300" y="6" width="260" height="72" fill="#F3F2EF" stroke="#1F2326" stroke-width="1.2"/>
+<text x="430.0" y="20" text-anchor="middle" class="stereo">«block»</text>
+<text x="430.0" y="35" text-anchor="middle" class="bname">Halden Hub Building</text>
+<line x1="300" y1="43" x2="560" y2="43" stroke="#1F2326" stroke-width=".8"/>
+<text x="307" y="58" class="bprop">GIA : 7,140 m²</text>
+<text x="307" y="71" class="bprop">EUI : ≤ 62 kWh/m²·yr</text>
+<rect x="15" y="140" width="260" height="88" fill="#DCE6EB" stroke="#1F2326" stroke-width="1.2"/>
+<text x="145.0" y="154" text-anchor="middle" class="stereo">«block»</text>
+<text x="145.0" y="169" text-anchor="middle" class="bname">Supervisory BMS</text>
+<line x1="15" y1="177" x2="275" y2="177" stroke="#1F2326" stroke-width=".8"/>
+<text x="22" y="192" class="bprop">protocol : BACnet/IP</text>
+<text x="22" y="205" class="bprop">points : ~ 9,800</text>
+<text x="22" y="218" class="bprop">role : control & alarms</text>
+<rect x="300" y="140" width="260" height="88" fill="#DCE6EB" stroke="#1F2326" stroke-width="1.2"/>
+<text x="430.0" y="154" text-anchor="middle" class="stereo">«block»</text>
+<text x="430.0" y="169" text-anchor="middle" class="bname">IoT Integration Gateway</text>
+<line x1="300" y1="177" x2="560" y2="177" stroke="#1F2326" stroke-width=".8"/>
+<text x="307" y="192" class="bprop">protocol : MQTT 5 / TLS</text>
+<text x="307" y="205" class="bprop">model : Brick schema 1.4</text>
+<text x="307" y="218" class="bprop">role : normalise & publish</text>
+<rect x="585" y="140" width="260" height="88" fill="#DCE6EB" stroke="#1F2326" stroke-width="1.2"/>
+<text x="715.0" y="154" text-anchor="middle" class="stereo">«block»</text>
+<text x="715.0" y="169" text-anchor="middle" class="bname">Digital Twin & Analytics</text>
+<line x1="585" y1="177" x2="845" y2="177" stroke="#1F2326" stroke-width=".8"/>
+<text x="592" y="192" class="bprop">source : IFC 4.3 + live data</text>
+<text x="592" y="205" class="bprop">fault detection (FDD)</text>
+<text x="592" y="218" class="bprop">role : optimise & report</text>
+<path d="M 572 300 L 572 112 L 430 112 L 430 78" fill="none" stroke="#1F2326" stroke-width="1" marker-end="url(#dia)"/>
+<line x1="77.0" y1="300" x2="807.0" y2="300" stroke="#1F2326" stroke-width="1"/>
+<line x1="77.0" y1="300" x2="77.0" y2="330" stroke="#1F2326" stroke-width="1"/>
+<line x1="77.0" y1="330" x2="145" y2="228" stroke="#4F7F99" stroke-width="1.1" stroke-dasharray="4 3"/>
+<rect x="12.0" y="330" width="130" height="88" fill="#FBE1D2" stroke="#1F2326" stroke-width="1.2"/>
+<text x="77.0" y="344" text-anchor="middle" class="stereo">«block»</text>
+<text x="77.0" y="359" text-anchor="middle" class="bname">Energy</text>
+<line x1="12.0" y1="367" x2="142.0" y2="367" stroke="#1F2326" stroke-width=".8"/>
+<text x="19.0" y="382" class="bprop">GSHP 2 × 220 kW</text>
+<text x="19.0" y="395" class="bprop">PV 310 kWp</text>
+<text x="19.0" y="408" class="bprop">battery 400 kWh</text>
+<line x1="223.0" y1="300" x2="223.0" y2="330" stroke="#1F2326" stroke-width="1"/>
+<line x1="223.0" y1="330" x2="145" y2="228" stroke="#4F7F99" stroke-width="1.1" stroke-dasharray="4 3"/>
+<rect x="158.0" y="330" width="130" height="88" fill="#E6E2DA" stroke="#1F2326" stroke-width="1.2"/>
+<text x="223.0" y="344" text-anchor="middle" class="stereo">«block»</text>
+<text x="223.0" y="359" text-anchor="middle" class="bname">HVAC</text>
+<line x1="158.0" y1="367" x2="288.0" y2="367" stroke="#1F2326" stroke-width=".8"/>
+<text x="165.0" y="382" class="bprop">MVHR AHUs × 4</text>
+<text x="165.0" y="395" class="bprop">mixed-mode vents</text>
+<text x="165.0" y="408" class="bprop">VAV fume cupbds</text>
+<line x1="369.0" y1="300" x2="369.0" y2="330" stroke="#1F2326" stroke-width="1"/>
+<line x1="369.0" y1="330" x2="145" y2="228" stroke="#4F7F99" stroke-width="1.1" stroke-dasharray="4 3"/>
+<rect x="304.0" y="330" width="130" height="88" fill="#FBE1D2" stroke="#1F2326" stroke-width="1.2"/>
+<text x="369.0" y="344" text-anchor="middle" class="stereo">«block»</text>
+<text x="369.0" y="359" text-anchor="middle" class="bname">Lighting</text>
+<line x1="304.0" y1="367" x2="434.0" y2="367" stroke="#1F2326" stroke-width=".8"/>
+<text x="311.0" y="382" class="bprop">DALI-2 drivers</text>
+<text x="311.0" y="395" class="bprop">daylight + PIR</text>
+<text x="311.0" y="408" class="bprop">circadian tuning</text>
+<line x1="515.0" y1="300" x2="515.0" y2="330" stroke="#1F2326" stroke-width="1"/>
+<line x1="515.0" y1="330" x2="430" y2="228" stroke="#5C6B73" stroke-width="1.1" stroke-dasharray="4 3"/>
+<rect x="450.0" y="330" width="130" height="88" fill="#E6E2DA" stroke="#1F2326" stroke-width="1.2"/>
+<text x="515.0" y="344" text-anchor="middle" class="stereo">«block»</text>
+<text x="515.0" y="359" text-anchor="middle" class="bname">Water</text>
+<line x1="450.0" y1="367" x2="580.0" y2="367" stroke="#1F2326" stroke-width=".8"/>
+<text x="457.0" y="382" class="bprop">rainwater 60 m³</text>
+<text x="457.0" y="395" class="bprop">leak detection</text>
+<text x="457.0" y="408" class="bprop">WC flush reuse</text>
+<line x1="661.0" y1="300" x2="661.0" y2="330" stroke="#1F2326" stroke-width="1"/>
+<line x1="661.0" y1="330" x2="145" y2="228" stroke="#4F7F99" stroke-width="1.1" stroke-dasharray="4 3"/>
+<rect x="596.0" y="330" width="130" height="88" fill="#FBE1D2" stroke="#1F2326" stroke-width="1.2"/>
+<text x="661.0" y="344" text-anchor="middle" class="stereo">«block»</text>
+<text x="661.0" y="359" text-anchor="middle" class="bname">Security</text>
+<line x1="596.0" y1="367" x2="726.0" y2="367" stroke="#1F2326" stroke-width=".8"/>
+<text x="603.0" y="382" class="bprop">access (OSDP)</text>
+<text x="603.0" y="395" class="bprop">CCTV (ONVIF)</text>
+<text x="603.0" y="408" class="bprop">gas interlocks</text>
+<line x1="807.0" y1="300" x2="807.0" y2="330" stroke="#1F2326" stroke-width="1"/>
+<line x1="807.0" y1="330" x2="430" y2="228" stroke="#5C6B73" stroke-width="1.1" stroke-dasharray="4 3"/>
+<rect x="742.0" y="330" width="130" height="88" fill="#E6E2DA" stroke="#1F2326" stroke-width="1.2"/>
+<text x="807.0" y="344" text-anchor="middle" class="stereo">«block»</text>
+<text x="807.0" y="359" text-anchor="middle" class="bname">Metering</text>
+<line x1="742.0" y1="367" x2="872.0" y2="367" stroke="#1F2326" stroke-width=".8"/>
+<text x="749.0" y="382" class="bprop">180 sub-meters</text>
+<text x="749.0" y="395" class="bprop">M-Bus / Modbus</text>
+<text x="749.0" y="408" class="bprop">TM39 hierarchy</text>
+<text x="440" y="106" class="lbls">◆ composition (part of)</text>
+<line x1="275" y1="184" x2="300" y2="184" stroke="#1F2326" stroke-width="1.6"/>
+<line x1="560" y1="184" x2="585" y2="184" stroke="#1F2326" stroke-width="1.6"/>
+<rect x="15" y="470" width="260" height="72" fill="#FFFFFF" stroke="#878D92" stroke-width="1.2"/>
+<text x="145.0" y="484" text-anchor="middle" class="stereo">«block»</text>
+<text x="145.0" y="499" text-anchor="middle" class="bname">University CAFM</text>
+<line x1="15" y1="507" x2="275" y2="507" stroke="#878D92" stroke-width=".8"/>
+<text x="22" y="522" class="bprop">work orders · assets</text>
+<text x="22" y="535" class="bprop">REST / OAuth 2</text>
+<rect x="585" y="470" width="260" height="72" fill="#FFFFFF" stroke="#878D92" stroke-width="1.2"/>
+<text x="715.0" y="484" text-anchor="middle" class="stereo">«block»</text>
+<text x="715.0" y="499" text-anchor="middle" class="bname">Grid & Energy Supplier</text>
+<line x1="585" y1="507" x2="845" y2="507" stroke="#878D92" stroke-width=".8"/>
+<text x="592" y="522" class="bprop">demand response</text>
+<text x="592" y="535" class="bprop">OpenADR 2.0b</text>
+<path d="M 845 200 L 876 200 L 876 448 L 145 448 L 145 470" fill="none" stroke="#878D92" stroke-width="1.2" stroke-dasharray="2 3"/>
+<path d="M 715 448 L 715 470" fill="none" stroke="#878D92" stroke-width="1.2" stroke-dasharray="2 3"/>
+<g transform="translate(300,478)"><line x1="0" y1="0" x2="26" y2="0" stroke="#4F7F99" stroke-width="1.2" stroke-dasharray="4 3"/><text x="32" y="3" class="lbls">field data via BMS</text><line x1="0" y1="18" x2="26" y2="18" stroke="#5C6B73" stroke-width="1.2" stroke-dasharray="4 3"/><text x="32" y="21" class="lbls">IP-native, direct to gateway</text><line x1="0" y1="36" x2="26" y2="36" stroke="#878D92" stroke-width="1.2" stroke-dasharray="2 3"/><text x="32" y="39" class="lbls">enterprise / external</text></g>
+</svg>
+    <div class="fig">FIG. 07 — SYSML BLOCK DEFINITION DIAGRAM · BUILDING SYSTEM ARCHITECTURE (CONCEPT LEVEL)</div>
+  </div>
+  <div>
+    <p class="lede" style="margin-top: 16mm">Every subsystem speaks open protocols into one data model: run, optimised and taught from the same live data.</p>
+    <h3>Interface control summary</h3>
+    <table>
+      <tr><th>ID</th><th>From → To</th><th>Protocol · Data</th></tr>
+      <tr><td class="num">IF-01</td><td>Energy subsystem →<br>Supervisory BMS</td><td><b>BACnet/IP</b><br><span style="color:#878D92">Heat-pump state, COP, PV yield, battery state of charge</span></td></tr><tr><td class="num">IF-02</td><td>Lighting subsystem →<br>Supervisory BMS</td><td><b>DALI-2 → BACnet</b><br><span style="color:#878D92">Occupancy, lux levels, driver faults, energy per zone</span></td></tr><tr><td class="num">IF-03</td><td>Supervisory BMS →<br>IoT gateway</td><td><b>MQTT 5 / TLS 1.3</b><br><span style="color:#878D92">All points tagged with Brick 1.4 semantics</span></td></tr><tr><td class="num">IF-04</td><td>Metering subsystem →<br>IoT gateway</td><td><b>Modbus TCP → MQTT</b><br><span style="color:#878D92">Half-hourly sub-meter readings (TM39)</span></td></tr><tr><td class="num">IF-05</td><td>Digital twin →<br>University CAFM</td><td><b>REST · OAuth 2</b><br><span style="color:#878D92">Fault-driven work orders, asset condition</span></td></tr><tr><td class="num">IF-06</td><td>Digital twin →<br>Energy supplier</td><td><b>OpenADR 2.0b</b><br><span style="color:#878D92">Demand-response events, load-shift schedules</span></td></tr>
+    </table>
+    <h3>Requirements traced to Stage 3</h3>
+    <p>42 requirements (function, performance, IEC 62443-3-3 SL2 security), each traced to a block and an interface.</p>
+  </div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Systems integration</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-300</div>
+</div></section><section class="page ">
+<div class="row" style="grid-template-columns: 1fr 2.4fr; gap: 12mm; align-items:end; margin-bottom: 6mm">
+  <div><div class="code">07b · Energy plant</div><h2 style="margin:0">All-electric, <b>ground-coupled</b>, grid-flexible</h2></div>
+  <p class="lede" style="margin:0">One electrical spine feeds heat pumps on a shared ground loop. PV and the battery shift load away from grid peaks.</p>
+</div>
+<svg viewBox="0 0 884 290" width="100%" role="img" aria-label="Energy plant schematic"><defs><marker id="me" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#E8692A"/></marker><marker id="mh" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#B4501A"/></marker><marker id="mc" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4F7F99"/></marker></defs>
+<rect x="20" y="20" width="150" height="50" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="95.0" y="43.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">PV array</text><text x="95.0" y="57.0" text-anchor="middle" class="bprop" style="fill:#1F2326">310 kWp · roof</text>
+<rect x="215" y="20" width="140" height="50" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="285.0" y="43.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Inverters</text><text x="285.0" y="57.0" text-anchor="middle" class="bprop" style="fill:#1F2326">3 × 100 kW</text>
+<rect x="400" y="20" width="170" height="50" fill="#1F2326" stroke="#1F2326" stroke-width="1.3"/><text x="485.0" y="43.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#FFFFFF">Main LV switchboard</text><text x="485.0" y="57.0" text-anchor="middle" class="bprop" style="fill:#FFFFFF">1,600 A</text>
+<rect x="615" y="20" width="170" height="50" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="700.0" y="43.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Grid connection</text><text x="700.0" y="57.0" text-anchor="middle" class="bprop" style="fill:#1F2326">import / export meter</text>
+<rect x="615" y="100" width="170" height="50" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="700.0" y="123.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Battery storage</text><text x="700.0" y="137.0" text-anchor="middle" class="bprop" style="fill:#1F2326">400 kWh · LFP</text>
+<rect x="400" y="175" width="170" height="60" fill="#FBE1D2" stroke="#1F2326" stroke-width="1.3"/><text x="485.0" y="203.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Heat pumps</text><text x="485.0" y="217.0" text-anchor="middle" class="bprop" style="fill:#1F2326">2 × 220 kW · SCOP 4.6</text>
+<rect x="215" y="175" width="140" height="60" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="285.0" y="203.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Ground loop</text><text x="285.0" y="217.0" text-anchor="middle" class="bprop" style="fill:#1F2326">48 × 150 m boreholes</text>
+<rect x="615" y="170" width="140" height="42" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="685.0" y="189.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Heating buffer</text><text x="685.0" y="203.0" text-anchor="middle" class="bprop" style="fill:#1F2326">45 °C · 3,000 L</text>
+<rect x="615" y="228" width="140" height="42" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="685.0" y="247.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Cooling buffer</text><text x="685.0" y="261.0" text-anchor="middle" class="bprop" style="fill:#1F2326">12 °C · 3,000 L</text>
+<rect x="780" y="170" width="96" height="42" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="828.0" y="189.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">AHUs · UFH</text><text x="828.0" y="203.0" text-anchor="middle" class="bprop" style="fill:#1F2326">MVHR 85%</text>
+<rect x="780" y="228" width="96" height="42" fill="#FFFFFF" stroke="#1F2326" stroke-width="1.3"/><text x="828.0" y="247.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">Chilled beams</text><text x="828.0" y="261.0" text-anchor="middle" class="bprop" style="fill:#1F2326">labs · IT</text>
+<rect x="20" y="175" width="150" height="60" fill="#F3F2EF" stroke="#1F2326" stroke-width="1.3"/><text x="95.0" y="203.0" text-anchor="middle" class="bname" style="font-size:11.5px;fill:#1F2326">BMS</text><text x="95.0" y="217.0" text-anchor="middle" class="bprop" style="fill:#1F2326">BACnet/IP supervisor</text>
+<polyline points="170,45 213,45" fill="none" stroke="#E8692A" stroke-width="2.2" marker-end="url(#me)"/>
+<polyline points="355,45 398,45" fill="none" stroke="#E8692A" stroke-width="2.2" marker-end="url(#me)"/>
+<polyline points="572,45 613,45" fill="none" stroke="#E8692A" stroke-width="2.2" marker-end="url(#me)" marker-start="url(#me)"/>
+<polyline points="540,72 540,125 613,125" fill="none" stroke="#E8692A" stroke-width="2.2" marker-end="url(#me)" marker-start="url(#me)"/>
+<polyline points="485,72 485,173" fill="none" stroke="#E8692A" stroke-width="2.2" marker-end="url(#me)"/>
+<polyline points="357,195 398,195" fill="none" stroke="#4F7F99" stroke-width="2.2" marker-end="url(#mc)"/>
+<polyline points="398,215 357,215" fill="none" stroke="#4F7F99" stroke-width="2.2" marker-end="url(#mc)"/>
+<polyline points="572,191 613,191" fill="none" stroke="#B4501A" stroke-width="2.2" marker-end="url(#mh)"/>
+<polyline points="572,222 592,222 592,249 613,249" fill="none" stroke="#4F7F99" stroke-width="2.2" marker-end="url(#mc)"/>
+<polyline points="757,191 778,191" fill="none" stroke="#B4501A" stroke-width="2.2" marker-end="url(#mh)"/>
+<polyline points="757,249 778,249" fill="none" stroke="#4F7F99" stroke-width="2.2" marker-end="url(#mc)"/>
+<line x1="170" y1="205" x2="213" y2="205" stroke="#878D92" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="20" y1="282" x2="50" y2="282" stroke="#E8692A" stroke-width="2.2"/><text x="56" y="286" class="lbls">electricity</text>
+<line x1="180" y1="282" x2="210" y2="282" stroke="#B4501A" stroke-width="2.2"/><text x="216" y="286" class="lbls">heating water</text>
+<line x1="340" y1="282" x2="370" y2="282" stroke="#4F7F99" stroke-width="2.2"/><text x="376" y="286" class="lbls">ground loop · cooling</text>
+<line x1="500" y1="282" x2="530" y2="282" stroke="#878D92" stroke-width="2.2" stroke-dasharray="3 3"/><text x="536" y="286" class="lbls">controls</text>
+</svg>
+<div class="fig">FIG. 07B — ENERGY PLANT SCHEMATIC · CONCEPT LEVEL</div>
+<div class="row" style="grid-template-columns: repeat(5, 1fr); gap: 7mm; margin-top: 4mm">
+  <div class="kpi"><b>0</b><span>fossil fuel on site</span></div><div class="kpi"><b>4.6</b><span>heat-pump seasonal COP</span></div>
+  <div class="kpi"><b>295 MWh</b><span>annual PV yield</span></div><div class="kpi"><b>−38%</b><span>peak grid demand with battery</span></div><div class="kpi"><b>85%</b><span>MVHR heat recovery</span></div>
+</div>
+<h3 style="margin-top:5mm">Plant schedule</h3><div class="row" style="grid-template-columns:1fr 1fr; gap:10mm"><table><tr><th>Tag</th><th>Item</th><th>Capacity</th></tr><tr><td class="num">GSHP-01/02</td><td>Ground-source heat pumps</td><td>2 × 220 kW heat · 2 × 180 kW cool</td></tr><tr><td class="num">GL-01</td><td>Closed ground loop</td><td>48 boreholes × 150 m</td></tr><tr><td class="num">PV-01</td><td>Photovoltaic array</td><td>310 kWp · 295 MWh/yr</td></tr></table><table><tr><th>Tag</th><th>Item</th><th>Capacity</th></tr><tr><td class="num">BAT-01</td><td>Battery energy storage</td><td>400 kWh LFP · 200 kW</td></tr><tr><td class="num">AHU-01–04</td><td>Air handling units (MVHR)</td><td>4 × 6 m³/s · 85% recovery</td></tr><tr><td class="num">BV-01/02</td><td>Buffer vessels</td><td>2 × 3,000 L · 45 °C / 12 °C</td></tr></table></div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Energy plant schematic</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-310</div>
+</div></section><section class="page ">
+<div class="code">08 · Sustainability &amp; performance</div>
+<div class="row" style="grid-template-columns: 1fr 1fr 1fr; gap: 14mm">
+  <div>
+    <h2>Net zero in operation, <b>low carbon</b> to build</h2>
+    <p class="lede">UK Net Zero Carbon Buildings Standard (pilot) and RIBA 2030 targets, verified by TM54 modelling.</p>
+    <h3>Key strategies</h3>
+    <p><span class="num">01</span> Passivhaus-informed fabric · U 0.12 walls, 0.10 roof<br>
+    <span class="num">02</span> All-electric: ground-source heat pumps<br>
+    <span class="num">03</span> CLT + steel frame, 50% GGBS concrete<br>
+    <span class="num">04</span> Reclaimed brick plinth<br>
+    <span class="num">05</span> 400 kWh battery + demand response</p>
+  </div>
+  <div>
+    <div class="lab" style="margin: 3mm 0 3mm">Operational energy · kWh/m²·yr</div>
+    <svg viewBox="0 0 470 142" width="100%">
+<text x="0" y="23" class="room" text-anchor="start">Typical HE lab building</text>
+<text x="0" y="37" class="lbls">CIBSE TM46 benchmark</text>
+<rect x="160" y="12" width="238" height="20" fill="#D5D2CB"/>
+<text x="404" y="27" class="val">230 </text>
+<text x="0" y="67" class="room" text-anchor="start">RIBA 2030 target</text>
+<text x="0" y="81" class="lbls">Higher education</text>
+<rect x="160" y="56" width="78" height="20" fill="#C9CCCE"/>
+<text x="244" y="71" class="val">75 </text>
+<text x="0" y="111" class="room" text-anchor="start">Halden Hub · design</text>
+<text x="0" y="125" class="lbls">TM54 predicted</text>
+<rect x="160" y="100" width="64" height="20" fill="#5C6B73"/>
+<text x="230" y="115" class="val">62 </text>
+</svg>
+    <div class="lab" style="margin: 9mm 0 3mm">Embodied carbon (A1–A5) · kgCO₂e/m²</div>
+    <svg viewBox="0 0 470 142" width="100%">
+<text x="0" y="23" class="room" text-anchor="start">Business as usual</text>
+<text x="0" y="37" class="lbls">RIBA 2025 baseline</text>
+<rect x="160" y="12" width="231" height="20" fill="#D5D2CB"/>
+<text x="397" y="27" class="val">1,000 </text>
+<text x="0" y="67" class="room" text-anchor="start">RIBA 2030 target</text>
+<text x="0" y="81" class="lbls">Higher education</text>
+<rect x="160" y="56" width="144" height="20" fill="#C9CCCE"/>
+<text x="310" y="71" class="val">625 </text>
+<text x="0" y="111" class="room" text-anchor="start">Halden Hub · design</text>
+<text x="0" y="125" class="lbls">Stage 2 OneClick LCA</text>
+<rect x="160" y="100" width="97" height="20" fill="#E8692A"/>
+<text x="263" y="115" class="val">420 </text>
+</svg>
+  </div>
+  <div>
+    <div class="lab" style="margin: 3mm 0 3mm">Certification &amp; targets</div>
+    <table>
+      <tr><th>Metric</th><th style="text-align:right">Target</th></tr>
+      <tr><td>BREEAM New Construction 2018</td><td class="n">Outstanding</td></tr>
+      <tr><td>Operational energy (EUI)</td><td class="n">62 kWh/m²</td></tr>
+      <tr><td>Space-heating demand</td><td class="n">15 kWh/m²</td></tr>
+      <tr><td>Upfront embodied carbon</td><td class="n">420 kgCO₂e/m²</td></tr>
+      <tr><td>On-site renewable generation</td><td class="n">295 MWh/yr</td></tr>
+      <tr><td>Potable water use</td><td class="n">−40%</td></tr>
+      <tr><td>Biodiversity net gain</td><td class="n">+15%</td></tr>
+      <tr><td>WELL v2 (Forum &amp; teaching)</td><td class="n">Gold-ready</td></tr>
+    </table>
+    <div style="background:#E6E2DA; padding: 5mm; margin-top: 6mm">
+      <div class="lab" style="color:#5C6B73">Post-occupancy commitment</div>
+      <p style="margin:1.5mm 0 0">Three years of Soft Landings aftercare (BSRIA BG 54). Metered performance will be published annually through the digital twin dashboard.</p>
+    </div>
+  </div>
+</div>
+<div style="margin-top: 9mm; border-top: .6pt solid #22262A; padding-top: 4mm">
+  <div style="display:flex; justify-content:space-between; align-items:baseline"><div class="lab">Monthly energy balance · MWh · TM54 prediction</div>
+  <div class="legend" style="margin:0"><span><i style="background:#4A5157"></i>Building electricity demand · 443 MWh/yr</span><span><i style="background:#E0A526"></i>On-site PV generation · 295 MWh/yr</span></div></div>
+  <svg viewBox="0 0 1100 230" width="100%" role="img" aria-label="Monthly energy balance">
+<line x1="40" x2="1090" y1="200.0" y2="200.0" stroke="#E4E5E6"/><text x="34" y="203.0" text-anchor="end" class="grd">0</text>
+<line x1="40" x2="1090" y1="164.0" y2="164.0" stroke="#E4E5E6"/><text x="34" y="167.0" text-anchor="end" class="grd">10</text>
+<line x1="40" x2="1090" y1="128.0" y2="128.0" stroke="#E4E5E6"/><text x="34" y="131.0" text-anchor="end" class="grd">20</text>
+<line x1="40" x2="1090" y1="92.0" y2="92.0" stroke="#E4E5E6"/><text x="34" y="95.0" text-anchor="end" class="grd">30</text>
+<line x1="40" x2="1090" y1="56.0" y2="56.0" stroke="#E4E5E6"/><text x="34" y="59.0" text-anchor="end" class="grd">40</text>
+<line x1="40" x2="1090" y1="20.0" y2="20.0" stroke="#E4E5E6"/><text x="34" y="23.0" text-anchor="end" class="grd">50</text>
+<rect x="51.3" y="27.2" width="30" height="172.8" fill="#454B50"/>
+<rect x="85.3" y="167.6" width="30" height="32.4" fill="#E8692A"/>
+<text x="83.3" y="220" text-anchor="middle" class="grd">JAN</text>
+<rect x="138.0" y="45.2" width="30" height="154.8" fill="#454B50"/>
+<rect x="172.0" y="149.6" width="30" height="50.4" fill="#E8692A"/>
+<text x="170.0" y="220" text-anchor="middle" class="grd">FEB</text>
+<rect x="224.7" y="56.0" width="30" height="144.0" fill="#454B50"/>
+<rect x="258.7" y="113.6" width="30" height="86.4" fill="#E8692A"/>
+<text x="256.7" y="220" text-anchor="middle" class="grd">MAR</text>
+<rect x="311.3" y="77.6" width="30" height="122.4" fill="#454B50"/>
+<rect x="345.3" y="84.8" width="30" height="115.2" fill="#E8692A"/>
+<text x="343.3" y="220" text-anchor="middle" class="grd">APR</text>
+<rect x="398.0" y="88.4" width="30" height="111.6" fill="#454B50"/>
+<rect x="432.0" y="63.2" width="30" height="136.8" fill="#E8692A"/>
+<text x="430.0" y="220" text-anchor="middle" class="grd">MAY</text>
+<rect x="484.7" y="95.6" width="30" height="104.4" fill="#454B50"/>
+<rect x="518.7" y="56.0" width="30" height="144.0" fill="#E8692A"/>
+<text x="516.7" y="220" text-anchor="middle" class="grd">JUN</text>
+<rect x="571.3" y="92.0" width="30" height="108.0" fill="#454B50"/>
+<rect x="605.3" y="59.6" width="30" height="140.4" fill="#E8692A"/>
+<text x="603.3" y="220" text-anchor="middle" class="grd">JUL</text>
+<rect x="658.0" y="92.0" width="30" height="108.0" fill="#454B50"/>
+<rect x="692.0" y="77.6" width="30" height="122.4" fill="#E8692A"/>
+<text x="690.0" y="220" text-anchor="middle" class="grd">AUG</text>
+<rect x="744.7" y="84.8" width="30" height="115.2" fill="#454B50"/>
+<rect x="778.7" y="106.4" width="30" height="93.6" fill="#E8692A"/>
+<text x="776.7" y="220" text-anchor="middle" class="grd">SEP</text>
+<rect x="831.3" y="63.2" width="30" height="136.8" fill="#454B50"/>
+<rect x="865.3" y="135.2" width="30" height="64.8" fill="#E8692A"/>
+<text x="863.3" y="220" text-anchor="middle" class="grd">OCT</text>
+<rect x="918.0" y="45.2" width="30" height="154.8" fill="#454B50"/>
+<rect x="952.0" y="160.4" width="30" height="39.6" fill="#E8692A"/>
+<text x="950.0" y="220" text-anchor="middle" class="grd">NOV</text>
+<rect x="1004.7" y="38.0" width="30" height="162.0" fill="#454B50"/>
+<rect x="1038.7" y="164.0" width="30" height="36.0" fill="#E8692A"/>
+<text x="1036.7" y="220" text-anchor="middle" class="grd">DEC</text>
+</svg>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Sustainability</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-400</div>
+</div></section><section class="page ">
+<div class="row" style="grid-template-columns: 96mm 1fr; gap: 14mm">
+  <div>
+    <div class="code">09 · Materials</div>
+    <h2>A palette that is <b>warm, robust</b> and low-carbon</h2>
+    <p class="lede">Chosen to take hard use, be repaired, and show how the building is made.</p>
+    <p>— Timber exposed wherever fire strategy allows<br>— Hard, recycled finishes where wear is highest<br>— PEFC/FSC timber, tracked in a material passport</p>
+
+  </div>
+  <div class="row" style="grid-template-columns: repeat(3, 1fr); gap: 8mm 7mm">
+    <div><div class="sw"><svg viewBox="0 0 200 140" width="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#E3C49D"/><line x1="0" y1="4" x2="200" y2="10" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="15" x2="200" y2="21" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="26" x2="200" y2="32" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="37" x2="200" y2="43" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="48" x2="200" y2="54" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="59" x2="200" y2="65" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="70" x2="200" y2="76" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="81" x2="200" y2="87" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="92" x2="200" y2="98" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="103" x2="200" y2="109" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="114" x2="200" y2="120" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="125" x2="200" y2="131" stroke="#C9A174" stroke-width="1.2"/><line x1="0" y1="136" x2="200" y2="142" stroke="#C9A174" stroke-width="1.2"/></svg></div><div class="num" style="margin-top:2.5mm">M01</div><div style="font-weight:600; font-size:10pt">Cross-laminated timber</div><div style="font-size:8pt; color:#454B50">Exposed soffits and walls, spruce, PEFC-certified</div></div><div><div class="sw"><svg viewBox="0 0 200 140" width="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#C98E55"/><rect x="0" y="0" width="200" height="9" fill="#D29A63"/><rect x="0" y="10" width="200" height="9" fill="#BF8448"/><rect x="0" y="20" width="200" height="9" fill="#D29A63"/><rect x="0" y="30" width="200" height="9" fill="#BF8448"/><rect x="0" y="40" width="200" height="9" fill="#D29A63"/><rect x="0" y="50" width="200" height="9" fill="#BF8448"/><rect x="0" y="60" width="200" height="9" fill="#D29A63"/><rect x="0" y="70" width="200" height="9" fill="#BF8448"/><rect x="0" y="80" width="200" height="9" fill="#D29A63"/><rect x="0" y="90" width="200" height="9" fill="#BF8448"/><rect x="0" y="100" width="200" height="9" fill="#D29A63"/><rect x="0" y="110" width="200" height="9" fill="#BF8448"/><rect x="0" y="120" width="200" height="9" fill="#D29A63"/><rect x="0" y="130" width="200" height="9" fill="#BF8448"/></svg></div><div class="num" style="margin-top:2.5mm">M02</div><div style="font-weight:600; font-size:10pt">Glulam frame</div><div style="font-size:8pt; color:#454B50">Forum columns and roof beams, larch</div></div><div><div class="sw"><svg viewBox="0 0 200 140" width="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#E9E4DE"/><rect x="0" y="1" width="32" height="11" fill="#A65A43"/><rect x="34" y="1" width="32" height="11" fill="#9A5039"/><rect x="68" y="1" width="32" height="11" fill="#B0664D"/><rect x="102" y="1" width="32" height="11" fill="#A65A43"/><rect x="136" y="1" width="32" height="11" fill="#9A5039"/><rect x="170" y="1" width="32" height="11" fill="#B0664D"/><rect x="204" y="1" width="32" height="11" fill="#A65A43"/><rect x="238" y="1" width="32" height="11" fill="#9A5039"/><rect x="-17" y="14" width="32" height="11" fill="#9A5039"/><rect x="17" y="14" width="32" height="11" fill="#B0664D"/><rect x="51" y="14" width="32" height="11" fill="#A65A43"/><rect x="85" y="14" width="32" height="11" fill="#9A5039"/><rect x="119" y="14" width="32" height="11" fill="#B0664D"/><rect x="153" y="14" width="32" height="11" fill="#A65A43"/><rect x="187" y="14" width="32" height="11" fill="#9A5039"/><rect x="221" y="14" width="32" height="11" fill="#B0664D"/><rect x="0" y="27" width="32" height="11" fill="#B0664D"/><rect x="34" y="27" width="32" height="11" fill="#A65A43"/><rect x="68" y="27" width="32" height="11" fill="#9A5039"/><rect x="102" y="27" width="32" height="11" fill="#B0664D"/><rect x="136" y="27" width="32" height="11" fill="#A65A43"/><rect x="170" y="27" width="32" height="11" fill="#9A5039"/><rect x="204" y="27" width="32" height="11" fill="#B0664D"/><rect x="238" y="27" width="32" height="11" fill="#A65A43"/><rect x="-17" y="40" width="32" height="11" fill="#A65A43"/><rect x="17" y="40" width="32" height="11" fill="#9A5039"/><rect x="51" y="40" width="32" height="11" fill="#B0664D"/><rect x="85" y="40" width="32" height="11" fill="#A65A43"/><rect x="119" y="40" width="32" height="11" fill="#9A5039"/><rect x="153" y="40" width="32" height="11" fill="#B0664D"/><rect x="187" y="40" width="32" height="11" fill="#A65A43"/><rect x="221" y="40" width="32" height="11" fill="#9A5039"/><rect x="0" y="53" width="32" height="11" fill="#9A5039"/><rect x="34" y="53" width="32" height="11" fill="#B0664D"/><rect x="68" y="53" width="32" height="11" fill="#A65A43"/><rect x="102" y="53" width="32" height="11" fill="#9A5039"/><rect x="136" y="53" width="32" height="11" fill="#B0664D"/><rect x="170" y="53" width="32" height="11" fill="#A65A43"/><rect x="204" y="53" width="32" height="11" fill="#9A5039"/><rect x="238" y="53" width="32" height="11" fill="#B0664D"/><rect x="-17" y="66" width="32" height="11" fill="#B0664D"/><rect x="17" y="66" width="32" height="11" fill="#A65A43"/><rect x="51" y="66" width="32" height="11" fill="#9A5039"/><rect x="85" y="66" width="32" height="11" fill="#B0664D"/><rect x="119" y="66" width="32" height="11" fill="#A65A43"/><rect x="153" y="66" width="32" height="11" fill="#9A5039"/><rect x="187" y="66" width="32" height="11" fill="#B0664D"/><rect x="221" y="66" width="32" height="11" fill="#A65A43"/><rect x="0" y="79" width="32" height="11" fill="#A65A43"/><rect x="34" y="79" width="32" height="11" fill="#9A5039"/><rect x="68" y="79" width="32" height="11" fill="#B0664D"/><rect x="102" y="79" width="32" height="11" fill="#A65A43"/><rect x="136" y="79" width="32" height="11" fill="#9A5039"/><rect x="170" y="79" width="32" height="11" fill="#B0664D"/><rect x="204" y="79" width="32" height="11" fill="#A65A43"/><rect x="238" y="79" width="32" height="11" fill="#9A5039"/><rect x="-17" y="92" width="32" height="11" fill="#9A5039"/><rect x="17" y="92" width="32" height="11" fill="#B0664D"/><rect x="51" y="92" width="32" height="11" fill="#A65A43"/><rect x="85" y="92" width="32" height="11" fill="#9A5039"/><rect x="119" y="92" width="32" height="11" fill="#B0664D"/><rect x="153" y="92" width="32" height="11" fill="#A65A43"/><rect x="187" y="92" width="32" height="11" fill="#9A5039"/><rect x="221" y="92" width="32" height="11" fill="#B0664D"/><rect x="0" y="105" width="32" height="11" fill="#B0664D"/><rect x="34" y="105" width="32" height="11" fill="#A65A43"/><rect x="68" y="105" width="32" height="11" fill="#9A5039"/><rect x="102" y="105" width="32" height="11" fill="#B0664D"/><rect x="136" y="105" width="32" height="11" fill="#A65A43"/><rect x="170" y="105" width="32" height="11" fill="#9A5039"/><rect x="204" y="105" width="32" height="11" fill="#B0664D"/><rect x="238" y="105" width="32" height="11" fill="#A65A43"/><rect x="-17" y="118" width="32" height="11" fill="#A65A43"/><rect x="17" y="118" width="32" height="11" fill="#9A5039"/><rect x="51" y="118" width="32" height="11" fill="#B0664D"/><rect x="85" y="118" width="32" height="11" fill="#A65A43"/><rect x="119" y="118" width="32" height="11" fill="#9A5039"/><rect x="153" y="118" width="32" height="11" fill="#B0664D"/><rect x="187" y="118" width="32" height="11" fill="#A65A43"/><rect x="221" y="118" width="32" height="11" fill="#9A5039"/><rect x="0" y="131" width="32" height="11" fill="#9A5039"/><rect x="34" y="131" width="32" height="11" fill="#B0664D"/><rect x="68" y="131" width="32" height="11" fill="#A65A43"/><rect x="102" y="131" width="32" height="11" fill="#9A5039"/><rect x="136" y="131" width="32" height="11" fill="#B0664D"/><rect x="170" y="131" width="32" height="11" fill="#A65A43"/><rect x="204" y="131" width="32" height="11" fill="#9A5039"/><rect x="238" y="131" width="32" height="11" fill="#B0664D"/></svg></div><div class="num" style="margin-top:2.5mm">M03</div><div style="font-weight:600; font-size:10pt">Reclaimed brick</div><div style="font-size:8pt; color:#454B50">Ground-floor plinth, reclaimed from site</div></div><div><div class="sw"><svg viewBox="0 0 200 140" width="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#8E9599"/><rect x="10" y="0" width="3" height="140" fill="#7E868A"/><rect x="36" y="0" width="3" height="140" fill="#7E868A"/><rect x="62" y="0" width="3" height="140" fill="#7E868A"/><rect x="88" y="0" width="3" height="140" fill="#7E868A"/><rect x="114" y="0" width="3" height="140" fill="#7E868A"/><rect x="140" y="0" width="3" height="140" fill="#7E868A"/><rect x="166" y="0" width="3" height="140" fill="#7E868A"/><rect x="192" y="0" width="3" height="140" fill="#7E868A"/></svg></div><div class="num" style="margin-top:2.5mm">M04</div><div style="font-weight:600; font-size:10pt">Anodised aluminium</div><div style="font-size:8pt; color:#454B50">Rainscreen & window frames, 75% recycled</div></div><div><div class="sw"><svg viewBox="0 0 200 140" width="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#E7E5E0"/><ellipse cx="108" cy="30" rx="2.2" ry="1.6" transform="rotate(0 108 30)" fill="#9DA3A6"/><ellipse cx="51" cy="88" rx="2.8" ry="2.0" transform="rotate(37 51 88)" fill="#C4874F"/><ellipse cx="25" cy="66" rx="3.7" ry="2.6" transform="rotate(74 25 66)" fill="#56704F"/><ellipse cx="172" cy="70" rx="2.9" ry="2.0" transform="rotate(111 172 70)" fill="#22262A"/><ellipse cx="97" cy="71" rx="3.4" ry="2.4" transform="rotate(148 97 71)" fill="#B9B4AA"/><ellipse cx="5" cy="45" rx="2.3" ry="1.6" transform="rotate(5 5 45)" fill="#9DA3A6"/><ellipse cx="75" cy="37" rx="1.9" ry="1.3" transform="rotate(42 75 37)" fill="#C4874F"/><ellipse cx="191" cy="66" rx="2.9" ry="2.0" transform="rotate(79 191 66)" fill="#56704F"/><ellipse cx="16" cy="13" rx="3.4" ry="2.4" transform="rotate(116 16 13)" fill="#22262A"/><ellipse cx="157" cy="48" rx="1.2" ry="0.9" transform="rotate(153 157 48)" fill="#B9B4AA"/><ellipse cx="153" cy="6" rx="2.9" ry="2.0" transform="rotate(10 153 6)" fill="#9DA3A6"/><ellipse cx="166" cy="110" rx="3.3" ry="2.3" transform="rotate(47 166 110)" fill="#C4874F"/><ellipse cx="27" cy="38" rx="2.0" ry="1.4" transform="rotate(84 27 38)" fill="#56704F"/><ellipse cx="38" cy="114" rx="3.8" ry="2.6" transform="rotate(121 38 114)" fill="#22262A"/><ellipse cx="199" cy="99" rx="4.0" ry="2.8" transform="rotate(158 199 99)" fill="#B9B4AA"/><ellipse cx="93" cy="135" rx="1.2" ry="0.9" transform="rotate(15 93 135)" fill="#9DA3A6"/><ellipse cx="48" cy="122" rx="1.4" ry="1.0" transform="rotate(52 48 122)" fill="#C4874F"/><ellipse cx="58" cy="41" rx="1.3" ry="0.9" transform="rotate(89 58 41)" fill="#56704F"/><ellipse cx="139" cy="3" rx="4.2" ry="2.9" transform="rotate(126 139 3)" fill="#22262A"/><ellipse cx="150" cy="30" rx="4.1" ry="2.9" transform="rotate(163 150 30)" fill="#B9B4AA"/><ellipse cx="144" cy="84" rx="3.0" ry="2.1" transform="rotate(20 144 84)" fill="#9DA3A6"/><ellipse cx="193" cy="128" rx="3.4" ry="2.4" transform="rotate(57 193 128)" fill="#C4874F"/><ellipse cx="102" cy="134" rx="2.0" ry="1.4" transform="rotate(94 102 134)" fill="#56704F"/><ellipse cx="62" cy="0" rx="2.9" ry="2.1" transform="rotate(131 62 0)" fill="#22262A"/><ellipse cx="166" cy="36" rx="3.0" ry="2.1" transform="rotate(168 166 36)" fill="#B9B4AA"/><ellipse cx="123" cy="61" rx="1.4" ry="0.9" transform="rotate(25 123 61)" fill="#9DA3A6"/><ellipse cx="74" cy="124" rx="3.3" ry="2.3" transform="rotate(62 74 124)" fill="#C4874F"/><ellipse cx="47" cy="82" rx="1.3" ry="0.9" transform="rotate(99 47 82)" fill="#56704F"/><ellipse cx="106" cy="72" rx="3.0" ry="2.1" transform="rotate(136 106 72)" fill="#22262A"/><ellipse cx="26" cy="125" rx="4.1" ry="2.9" transform="rotate(173 26 125)" fill="#B9B4AA"/><ellipse cx="8" cy="118" rx="3.6" ry="2.5" transform="rotate(30 8 118)" fill="#9DA3A6"/><ellipse cx="43" cy="33" rx="3.1" ry="2.2" transform="rotate(67 43 33)" fill="#C4874F"/><ellipse cx="104" cy="58" rx="2.2" ry="1.5" transform="rotate(104 104 58)" fill="#56704F"/><ellipse cx="86" cy="21" rx="2.1" ry="1.5" transform="rotate(141 86 21)" fill="#22262A"/><ellipse cx="80" cy="140" rx="3.4" ry="2.4" transform="rotate(178 80 140)" fill="#B9B4AA"/><ellipse cx="73" cy="138" rx="4.4" ry="3.1" transform="rotate(35 73 138)" fill="#9DA3A6"/><ellipse cx="184" cy="24" rx="2.1" ry="1.4" transform="rotate(72 184 24)" fill="#C4874F"/><ellipse cx="117" cy="24" rx="3.3" ry="2.3" transform="rotate(109 117 24)" fill="#56704F"/><ellipse cx="110" cy="74" rx="4.0" ry="2.8" transform="rotate(146 110 74)" fill="#22262A"/><ellipse cx="63" cy="80" rx="4.4" ry="3.1" transform="rotate(3 63 80)" fill="#B9B4AA"/><ellipse cx="65" cy="76" rx="2.1" ry="1.4" transform="rotate(40 65 76)" fill="#9DA3A6"/><ellipse cx="160" cy="37" rx="2.9" ry="2.0" transform="rotate(77 160 37)" fill="#C4874F"/><ellipse cx="51" cy="135" rx="4.4" ry="3.1" transform="rotate(114 51 135)" fill="#56704F"/><ellipse cx="157" cy="76" rx="4.4" ry="3.1" transform="rotate(151 157 76)" fill="#22262A"/><ellipse cx="95" cy="44" rx="2.8" ry="2.0" transform="rotate(8 95 44)" fill="#B9B4AA"/><ellipse cx="67" cy="5" rx="1.7" ry="1.2" transform="rotate(45 67 5)" fill="#9DA3A6"/><ellipse cx="146" cy="42" rx="2.4" ry="1.7" transform="rotate(82 146 42)" fill="#C4874F"/><ellipse cx="47" cy="14" rx="2.1" ry="1.5" transform="rotate(119 47 14)" fill="#56704F"/><ellipse cx="90" cy="28" rx="1.7" ry="1.2" transform="rotate(156 90 28)" fill="#22262A"/><ellipse cx="117" cy="66" rx="3.9" ry="2.7" transform="rotate(13 117 66)" fill="#B9B4AA"/><ellipse cx="69" cy="119" rx="2.3" ry="1.6" transform="rotate(50 69 119)" fill="#9DA3A6"/><ellipse cx="155" cy="84" rx="3.1" ry="2.2" transform="rotate(87 155 84)" fill="#C4874F"/><ellipse cx="103" cy="86" rx="1.6" ry="1.1" transform="rotate(124 103 86)" fill="#56704F"/><ellipse cx="74" cy="103" rx="2.6" ry="1.8" transform="rotate(161 74 103)" fill="#22262A"/><ellipse cx="48" cy="32" rx="1.6" ry="1.2" transform="rotate(18 48 32)" fill="#B9B4AA"/><ellipse cx="9" cy="61" rx="2.8" ry="2.0" transform="rotate(55 9 61)" fill="#9DA3A6"/><ellipse cx="103" cy="91" rx="3.8" ry="2.7" transform="rotate(92 103 91)" fill="#C4874F"/><ellipse cx="151" cy="19" rx="1.5" ry="1.0" transform="rotate(129 151 19)" fill="#56704F"/><ellipse cx="87" cy="46" rx="4.0" ry="2.8" transform="rotate(166 87 46)" fill="#22262A"/><ellipse cx="21" cy="21" rx="3.5" ry="2.4" transform="rotate(23 21 21)" fill="#B9B4AA"/><ellipse cx="7" cy="120" rx="3.1" ry="2.2" transform="rotate(60 7 120)" fill="#9DA3A6"/><ellipse cx="73" cy="132" rx="3.1" ry="2.2" transform="rotate(97 73 132)" fill="#C4874F"/><ellipse cx="72" cy="105" rx="1.4" ry="1.0" transform="rotate(134 72 105)" fill="#56704F"/><ellipse cx="21" cy="57" rx="2.1" ry="1.5" transform="rotate(171 21 57)" fill="#22262A"/><ellipse cx="29" cy="130" rx="4.4" ry="3.1" transform="rotate(28 29 130)" fill="#B9B4AA"/><ellipse cx="111" cy="56" rx="3.0" ry="2.1" transform="rotate(65 111 56)" fill="#9DA3A6"/><ellipse cx="98" cy="87" rx="2.9" ry="2.0" transform="rotate(102 98 87)" fill="#C4874F"/><ellipse cx="166" cy="111" rx="2.1" ry="1.4" transform="rotate(139 166 111)" fill="#56704F"/><ellipse cx="195" cy="7" rx="4.3" ry="3.0" transform="rotate(176 195 7)" fill="#22262A"/><ellipse cx="69" cy="88" rx="2.6" ry="1.8" transform="rotate(33 69 88)" fill="#B9B4AA"/><ellipse cx="193" cy="10" rx="2.7" ry="1.9" transform="rotate(70 193 10)" fill="#9DA3A6"/><ellipse cx="153" cy="14" rx="2.1" ry="1.5" transform="rotate(107 153 14)" fill="#C4874F"/><ellipse cx="189" cy="131" rx="2.7" ry="1.9" transform="rotate(144 189 131)" fill="#56704F"/><ellipse cx="115" cy="110" rx="1.4" ry="1.0" transform="rotate(1 115 110)" fill="#22262A"/><ellipse cx="168" cy="59" rx="2.4" ry="1.7" transform="rotate(38 168 59)" fill="#B9B4AA"/><ellipse cx="182" cy="129" rx="1.3" ry="0.9" transform="rotate(75 182 129)" fill="#9DA3A6"/><ellipse cx="176" cy="52" rx="4.5" ry="3.1" transform="rotate(112 176 52)" fill="#C4874F"/><ellipse cx="25" cy="35" rx="3.3" ry="2.3" transform="rotate(149 25 35)" fill="#56704F"/><ellipse cx="185" cy="64" rx="4.4" ry="3.1" transform="rotate(6 185 64)" fill="#22262A"/><ellipse cx="185" cy="44" rx="1.7" ry="1.2" transform="rotate(43 185 44)" fill="#B9B4AA"/><ellipse cx="170" cy="38" rx="3.0" ry="2.1" transform="rotate(80 170 38)" fill="#9DA3A6"/><ellipse cx="130" cy="8" rx="2.3" ry="1.6" transform="rotate(117 130 8)" fill="#C4874F"/><ellipse cx="154" cy="82" rx="1.3" ry="0.9" transform="rotate(154 154 82)" fill="#56704F"/><ellipse cx="154" cy="53" rx="1.3" ry="0.9" transform="rotate(11 154 53)" fill="#22262A"/><ellipse cx="190" cy="138" rx="1.9" ry="1.3" transform="rotate(48 190 138)" fill="#B9B4AA"/><ellipse cx="141" cy="55" rx="4.2" ry="3.0" transform="rotate(85 141 55)" fill="#9DA3A6"/><ellipse cx="170" cy="62" rx="3.0" ry="2.1" transform="rotate(122 170 62)" fill="#C4874F"/><ellipse cx="108" cy="55" rx="3.2" ry="2.2" transform="rotate(159 108 55)" fill="#56704F"/><ellipse cx="171" cy="5" rx="4.4" ry="3.1" transform="rotate(16 171 5)" fill="#22262A"/><ellipse cx="137" cy="72" rx="4.4" ry="3.1" transform="rotate(53 137 72)" fill="#B9B4AA"/></svg></div><div class="num" style="margin-top:2.5mm">M05</div><div style="font-weight:600; font-size:10pt">Recycled-aggregate terrazzo</div><div style="font-size:8pt; color:#454B50">Forum floor, including crushed site concrete</div></div><div><div class="sw"><svg viewBox="0 0 200 140" width="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="#7D9A62"/><circle cx="119" cy="42" r="3.3" fill="#9DB97A"/><circle cx="138" cy="139" r="2.4" fill="#5E7D4A"/><circle cx="196" cy="136" r="3.0" fill="#B7A94F"/><circle cx="67" cy="48" r="5.1" fill="#C98A9B"/><circle cx="181" cy="111" r="2.1" fill="#E4D9A0"/><circle cx="2" cy="61" r="4.9" fill="#9DB97A"/><circle cx="117" cy="32" r="2.0" fill="#5E7D4A"/><circle cx="113" cy="22" r="5.6" fill="#B7A94F"/><circle cx="110" cy="62" r="5.9" fill="#C98A9B"/><circle cx="112" cy="113" r="3.8" fill="#E4D9A0"/><circle cx="85" cy="55" r="5.3" fill="#9DB97A"/><circle cx="27" cy="117" r="4.9" fill="#5E7D4A"/><circle cx="127" cy="15" r="3.2" fill="#B7A94F"/><circle cx="183" cy="86" r="3.7" fill="#C98A9B"/><circle cx="5" cy="123" r="2.6" fill="#E4D9A0"/><circle cx="96" cy="57" r="2.9" fill="#9DB97A"/><circle cx="33" cy="15" r="3.1" fill="#5E7D4A"/><circle cx="163" cy="33" r="4.4" fill="#B7A94F"/><circle cx="121" cy="123" r="4.6" fill="#C98A9B"/><circle cx="66" cy="2" r="4.1" fill="#E4D9A0"/><circle cx="54" cy="136" r="4.0" fill="#9DB97A"/><circle cx="130" cy="84" r="3.9" fill="#5E7D4A"/><circle cx="108" cy="56" r="5.0" fill="#B7A94F"/><circle cx="24" cy="36" r="4.9" fill="#C98A9B"/><circle cx="154" cy="0" r="4.2" fill="#E4D9A0"/><circle cx="104" cy="37" r="5.0" fill="#9DB97A"/><circle cx="184" cy="119" r="3.3" fill="#5E7D4A"/><circle cx="44" cy="11" r="4.5" fill="#B7A94F"/><circle cx="197" cy="132" r="5.6" fill="#C98A9B"/><circle cx="62" cy="53" r="5.3" fill="#E4D9A0"/><circle cx="153" cy="10" r="3.3" fill="#9DB97A"/><circle cx="37" cy="5" r="5.3" fill="#5E7D4A"/><circle cx="199" cy="54" r="4.2" fill="#B7A94F"/><circle cx="135" cy="18" r="3.1" fill="#C98A9B"/><circle cx="185" cy="38" r="4.0" fill="#E4D9A0"/><circle cx="135" cy="94" r="3.5" fill="#9DB97A"/><circle cx="32" cy="12" r="4.6" fill="#5E7D4A"/><circle cx="64" cy="17" r="5.6" fill="#B7A94F"/><circle cx="30" cy="102" r="6.0" fill="#C98A9B"/><circle cx="45" cy="128" r="5.7" fill="#E4D9A0"/><circle cx="36" cy="106" r="4.1" fill="#9DB97A"/><circle cx="98" cy="44" r="4.3" fill="#5E7D4A"/><circle cx="92" cy="96" r="3.7" fill="#B7A94F"/><circle cx="90" cy="8" r="5.1" fill="#C98A9B"/><circle cx="95" cy="91" r="5.9" fill="#E4D9A0"/><circle cx="24" cy="124" r="4.0" fill="#9DB97A"/><circle cx="47" cy="42" r="4.3" fill="#5E7D4A"/><circle cx="188" cy="46" r="5.0" fill="#B7A94F"/><circle cx="31" cy="59" r="4.9" fill="#C98A9B"/><circle cx="95" cy="121" r="2.1" fill="#E4D9A0"/><circle cx="27" cy="21" r="5.4" fill="#9DB97A"/><circle cx="80" cy="96" r="3.1" fill="#5E7D4A"/><circle cx="78" cy="79" r="5.1" fill="#B7A94F"/><circle cx="146" cy="84" r="4.8" fill="#C98A9B"/><circle cx="72" cy="15" r="3.1" fill="#E4D9A0"/><circle cx="60" cy="97" r="4.3" fill="#9DB97A"/><circle cx="84" cy="136" r="2.7" fill="#5E7D4A"/><circle cx="86" cy="19" r="5.0" fill="#B7A94F"/><circle cx="46" cy="3" r="3.3" fill="#C98A9B"/><circle cx="112" cy="23" r="3.5" fill="#E4D9A0"/><circle cx="1" cy="119" r="4.5" fill="#9DB97A"/><circle cx="30" cy="70" r="4.1" fill="#5E7D4A"/><circle cx="147" cy="21" r="4.3" fill="#B7A94F"/><circle cx="115" cy="76" r="2.7" fill="#C98A9B"/><circle cx="129" cy="85" r="5.4" fill="#E4D9A0"/><circle cx="66" cy="125" r="3.0" fill="#9DB97A"/><circle cx="187" cy="91" r="5.5" fill="#5E7D4A"/><circle cx="20" cy="75" r="2.3" fill="#B7A94F"/><circle cx="50" cy="122" r="3.0" fill="#C98A9B"/><circle cx="136" cy="128" r="4.2" fill="#E4D9A0"/><circle cx="176" cy="28" r="4.8" fill="#9DB97A"/><circle cx="47" cy="7" r="5.2" fill="#5E7D4A"/><circle cx="124" cy="48" r="3.0" fill="#B7A94F"/><circle cx="6" cy="105" r="5.9" fill="#C98A9B"/><circle cx="197" cy="130" r="5.9" fill="#E4D9A0"/><circle cx="32" cy="138" r="3.2" fill="#9DB97A"/><circle cx="102" cy="71" r="2.7" fill="#5E7D4A"/><circle cx="17" cy="60" r="3.4" fill="#B7A94F"/><circle cx="88" cy="112" r="2.8" fill="#C98A9B"/><circle cx="141" cy="122" r="2.1" fill="#E4D9A0"/><circle cx="103" cy="12" r="3.6" fill="#9DB97A"/><circle cx="182" cy="10" r="4.6" fill="#5E7D4A"/><circle cx="132" cy="96" r="2.1" fill="#B7A94F"/><circle cx="110" cy="127" r="2.3" fill="#C98A9B"/><circle cx="119" cy="19" r="5.5" fill="#E4D9A0"/><circle cx="131" cy="55" r="5.1" fill="#9DB97A"/><circle cx="71" cy="15" r="2.7" fill="#5E7D4A"/><circle cx="4" cy="61" r="3.3" fill="#B7A94F"/><circle cx="108" cy="87" r="2.4" fill="#C98A9B"/><circle cx="67" cy="19" r="4.3" fill="#E4D9A0"/><circle cx="33" cy="6" r="2.3" fill="#9DB97A"/><circle cx="69" cy="50" r="4.8" fill="#5E7D4A"/><circle cx="15" cy="78" r="3.3" fill="#B7A94F"/><circle cx="25" cy="121" r="3.2" fill="#C98A9B"/><circle cx="95" cy="93" r="4.7" fill="#E4D9A0"/><circle cx="69" cy="79" r="4.9" fill="#9DB97A"/><circle cx="198" cy="55" r="4.5" fill="#5E7D4A"/><circle cx="10" cy="109" r="4.9" fill="#B7A94F"/><circle cx="79" cy="75" r="2.2" fill="#C98A9B"/><circle cx="67" cy="119" r="4.7" fill="#E4D9A0"/><circle cx="1" cy="105" r="5.3" fill="#9DB97A"/><circle cx="96" cy="125" r="5.8" fill="#5E7D4A"/><circle cx="91" cy="137" r="4.1" fill="#B7A94F"/><circle cx="71" cy="63" r="2.6" fill="#C98A9B"/><circle cx="132" cy="36" r="5.3" fill="#E4D9A0"/><circle cx="76" cy="49" r="5.5" fill="#9DB97A"/><circle cx="8" cy="29" r="3.0" fill="#5E7D4A"/><circle cx="70" cy="78" r="4.6" fill="#B7A94F"/><circle cx="8" cy="73" r="3.1" fill="#C98A9B"/><circle cx="124" cy="20" r="3.4" fill="#E4D9A0"/><circle cx="17" cy="4" r="4.5" fill="#9DB97A"/><circle cx="106" cy="10" r="5.1" fill="#5E7D4A"/><circle cx="121" cy="5" r="4.0" fill="#B7A94F"/><circle cx="75" cy="6" r="3.7" fill="#C98A9B"/><circle cx="21" cy="71" r="3.0" fill="#E4D9A0"/><circle cx="96" cy="124" r="2.1" fill="#9DB97A"/><circle cx="177" cy="3" r="5.4" fill="#5E7D4A"/><circle cx="185" cy="136" r="4.0" fill="#B7A94F"/><circle cx="1" cy="87" r="4.1" fill="#C98A9B"/><circle cx="56" cy="130" r="2.7" fill="#E4D9A0"/><circle cx="67" cy="139" r="3.3" fill="#9DB97A"/><circle cx="159" cy="92" r="2.5" fill="#5E7D4A"/><circle cx="161" cy="15" r="2.8" fill="#B7A94F"/><circle cx="30" cy="55" r="5.0" fill="#C98A9B"/><circle cx="31" cy="19" r="5.7" fill="#E4D9A0"/><circle cx="134" cy="115" r="4.2" fill="#9DB97A"/><circle cx="146" cy="89" r="3.4" fill="#5E7D4A"/><circle cx="193" cy="24" r="3.6" fill="#B7A94F"/><circle cx="64" cy="22" r="5.6" fill="#C98A9B"/><circle cx="189" cy="92" r="5.3" fill="#E4D9A0"/><circle cx="154" cy="77" r="4.0" fill="#9DB97A"/><circle cx="15" cy="18" r="4.5" fill="#5E7D4A"/><circle cx="121" cy="109" r="3.8" fill="#B7A94F"/><circle cx="67" cy="138" r="3.4" fill="#C98A9B"/><circle cx="26" cy="19" r="2.7" fill="#E4D9A0"/><circle cx="161" cy="15" r="5.3" fill="#9DB97A"/><circle cx="183" cy="74" r="4.0" fill="#5E7D4A"/><circle cx="91" cy="94" r="5.6" fill="#B7A94F"/><circle cx="147" cy="119" r="5.1" fill="#C98A9B"/><circle cx="19" cy="45" r="5.2" fill="#E4D9A0"/><circle cx="139" cy="139" r="5.3" fill="#9DB97A"/><circle cx="155" cy="114" r="5.5" fill="#5E7D4A"/><circle cx="45" cy="50" r="5.2" fill="#B7A94F"/><circle cx="125" cy="11" r="2.3" fill="#C98A9B"/><circle cx="129" cy="22" r="5.2" fill="#E4D9A0"/><circle cx="171" cy="44" r="4.9" fill="#9DB97A"/><circle cx="99" cy="121" r="3.7" fill="#5E7D4A"/><circle cx="177" cy="60" r="5.8" fill="#B7A94F"/><circle cx="122" cy="1" r="5.6" fill="#C98A9B"/><circle cx="52" cy="29" r="4.3" fill="#E4D9A0"/><circle cx="73" cy="79" r="4.9" fill="#9DB97A"/><circle cx="106" cy="100" r="4.5" fill="#5E7D4A"/><circle cx="172" cy="14" r="3.5" fill="#B7A94F"/><circle cx="17" cy="62" r="5.3" fill="#C98A9B"/><circle cx="61" cy="90" r="2.7" fill="#E4D9A0"/><circle cx="107" cy="84" r="3.6" fill="#9DB97A"/><circle cx="113" cy="18" r="4.0" fill="#5E7D4A"/><circle cx="87" cy="76" r="4.5" fill="#B7A94F"/><circle cx="169" cy="111" r="5.1" fill="#C98A9B"/><circle cx="79" cy="79" r="3.2" fill="#E4D9A0"/></svg></div><div class="num" style="margin-top:2.5mm">M06</div><div style="font-weight:600; font-size:10pt">Biodiverse roof</div><div style="font-size:8pt; color:#454B50">South wing roof, native wildflower mix</div></div>
+  </div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Materials palette</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-500</div>
+</div></section><section class="page ">
+<div class="code">10 · Programme &amp; next steps</div>
+<h2>From concept to the <b>first teaching term</b> in three years</h2>
+<div class="tl">
+  <div class="done"><b>Mar–Sep 2026</b><strong>Stage 2 · Concept</strong><span>This report. Concept approved by the Capital Programme Board.</span></div>
+  <div><b>Oct 2026–Feb 2027</b><strong>Stage 3 · Spatial coordination</strong><span>Systems requirements baselined, BIM to LOD 300.</span></div>
+  <div><b>Mar 2027</b><strong>Planning submission</strong><span>Pre-application meetings held May and July 2026.</span></div>
+  <div><b>Apr–Nov 2027</b><strong>Stage 4 · Technical design</strong><span>Two-stage design and build tender.</span></div>
+  <div><b>Feb 2028</b><strong>Start on site</strong><span>Remediation and borehole drilling first.</span></div>
+  <div><b>Jun 2029</b><strong>Practical completion</strong><span>Seasonal commissioning; digital twin goes live.</span></div>
+  <div><b>Sep 2029</b><strong>First teaching term</strong><span>Soft Landings aftercare begins.</span></div>
+</div>
+<div style="margin-top: 9mm"><svg viewBox="0 0 1100 226" width="100%" role="img" aria-label="Programme Gantt chart">
+<line x1="230.0" x2="230.0" y1="6" y2="226" stroke="#C9CCCE" stroke-width=".8"/><text x="234.0" y="16" class="grd">2026</text>
+<line x1="417.0" x2="417.0" y1="6" y2="226" stroke="#C9CCCE" stroke-width=".8"/><text x="421.0" y="16" class="grd">2027</text>
+<line x1="641.3" x2="641.3" y1="6" y2="226" stroke="#C9CCCE" stroke-width=".8"/><text x="645.3" y="16" class="grd">2028</text>
+<line x1="865.7" x2="865.7" y1="6" y2="226" stroke="#C9CCCE" stroke-width=".8"/><text x="869.7" y="16" class="grd">2029</text>
+<line x1="0" x2="1100" y1="50.0" y2="50.0" stroke="#E4E5E6"/>
+<text x="0" y="41" class="room">Stage 2 · Concept</text>
+<rect x="230.0" y="31" width="128.9" height="14" fill="#E8692A"/>
+<line x1="0" x2="1100" y1="74.0" y2="74.0" stroke="#E4E5E6"/>
+<text x="0" y="65" class="room">Stage 3 · Spatial coordination</text>
+<rect x="360.9" y="55" width="91.5" height="14" fill="#454B50"/>
+<line x1="0" x2="1100" y1="98.0" y2="98.0" stroke="#E4E5E6"/>
+<text x="0" y="89" class="room">Planning determination</text>
+<rect x="454.3" y="79" width="72.8" height="14" fill="#878D92"/>
+<line x1="0" x2="1100" y1="122.0" y2="122.0" stroke="#E4E5E6"/>
+<text x="0" y="113" class="room">Stage 4 · Technical design & tender</text>
+<rect x="473.0" y="103" width="147.6" height="14" fill="#454B50"/>
+<line x1="0" x2="1100" y1="146.0" y2="146.0" stroke="#E4E5E6"/>
+<text x="0" y="137" class="room">Enabling works & boreholes</text>
+<rect x="660.0" y="127" width="72.8" height="14" fill="#5C6B73"/>
+<line x1="0" x2="1100" y1="170.0" y2="170.0" stroke="#E4E5E6"/>
+<text x="0" y="161" class="room">Construction</text>
+<rect x="660.0" y="151" width="297.1" height="14" fill="#5C6B73"/>
+<line x1="0" x2="1100" y1="194.0" y2="194.0" stroke="#E4E5E6"/>
+<text x="0" y="185" class="room">Commissioning & digital twin</text>
+<rect x="921.7" y="175" width="72.8" height="14" fill="#8FA7B3"/>
+<line x1="0" x2="1100" y1="218.0" y2="218.0" stroke="#E4E5E6"/>
+<text x="0" y="209" class="room">Soft Landings aftercare (3 yrs)</text>
+<rect x="1015.2" y="199" width="72.8" height="14" fill="#E8692A"/>
+<line x1="342.2" x2="342.2" y1="20" y2="226" stroke="#B4501A" stroke-width="1.4" stroke-dasharray="3 3"/><text x="346.2" y="222" class="lbls" fill="#B4501A">this report · 04.09.2026</text>
+</svg></div>
+<div class="row" style="grid-template-columns: 1fr 1fr 1fr; gap: 12mm; margin-top: 9mm">
+  <div><h3 style="margin-top:0">Decisions requested</h3><p>1. Approve the Stage 2 concept and the £41.8m cost plan.<br>2. Confirm the open-protocol BMS and digital-twin strategy, procured separately from the main contract.<br>3. Release £2.6m of Stage 3 fees.</p></div>
+  <div><h3 style="margin-top:0">Key risks</h3><p>Ground contamination worse than surveyed (contingency held). CLT supply-chain lead times (early contractor involvement). Planning conditions on river-edge biodiversity.</p></div>
+  <div style="border-left: .6pt solid #1F2326; padding-left: 8mm">
+    <div class="lab">Document credits</div>
+    <p style="margin-top:2mm; color:#1F2326">Brightwater Polytechnic · Estates &amp; Capital Projects<br>Halden Engineering &amp; Innovation Hub<br>RIBA Stage 2 Concept Design Report · Rev C<br>Completed 4 September 2026</p>
+    <p style="font-size:12pt; font-weight:600; color:#1F2326; margin-top:4mm">Designed by Cynthia Agwaraonye</p>
+    <p class="fig">Fictional client and illustrative data, prepared as a portfolio case study. Drawings are concept-level and not for construction.</p>
+  </div>
+</div><div class="tb">
+  <div><span>Project</span>Halden Engineering &amp; Innovation Hub</div>
+  <div><span>Client</span>Brightwater Polytechnic</div>
+  <div><span>Sheet</span>Programme & credits</div>
+  <div><span>Scale @ A3</span>NTS</div>
+  <div><span>Stage</span>RIBA 2 · Rev C</div>
+  <div><span>Date</span>04.09.2026</div>
+  <div class="no"><span>No.</span>HEIH-900</div>
+</div></section>
+</body></html>
